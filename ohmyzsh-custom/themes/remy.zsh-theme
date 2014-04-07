@@ -94,6 +94,18 @@ function prompt_online() {
   fi
 }
 
+# return my IP address
+local_ip() {
+    # Get's local IP from ipconfig
+    echo "`ipconfig getifaddr en0`"
+}
+
+# return my external IP address
+external_ip() {
+    # Gets external IP from opendns.com
+    echo "`dig +short myip.opendns.com @resolver1.opendns.com`"
+}
+
 # Dir: current working directory
 prompt_dir() {
   prompt_segment blue black '%~'
@@ -126,7 +138,7 @@ build_prompt() {
   prompt_end
 }
 
-RPROMPT='$(prompt_online) $(battery_charge)'
+RPROMPT='$(prompt_online) $(local_ip) : $(external_ip) $(battery_charge)'
 
-PROMPT='%{%f%b%k%}$(build_prompt) 
+PROMPT='%{%f%b%k%}$(build_prompt)
 » '
