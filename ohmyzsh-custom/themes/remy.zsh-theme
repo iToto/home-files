@@ -138,7 +138,7 @@ build_prompt() {
   prompt_end
 }
 
-RPROMPT='$(prompt_online) $(local_ip) : $(external_ip) $(battery_charge)'
+RPROMPT='$(prompt_online) $(local_ip)@$(external_ip) $(battery_charge)'
 
 PROMPT='%{%f%b%k%}$(build_prompt)
 » '
