@@ -1,13 +1,23 @@
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
+#Go Path
+export GOPATH=/Users/sdagostino/Dev/ViralNinjas/platform/APIv2/golang/
+export GOROOT=/usr/local
+export PATH=$PATH:$GOPATH/bin
+
 ############################
 #       My ALIASES         #
 ############################
-alias vhost="sublime /private/etc/apache2/extra/httpd-vhosts.conf"
-alias hosts="sublime /etc/hosts"
-alias zshconfig="sublime ~/.zshrc"
+alias vhost="sublime -n /private/etc/apache2/extra/httpd-vhosts.conf"
+alias hosts="sublime -n /etc/hosts"
+alias zshconfig="sublime -n ~/.zshrc"
 
+# Vaprobash
+alias vaprobash="curl -L http://bit.ly/vaprobash > Vagrantfile"
+
+# Vagrant-Docker run
+alias docker-up="vagrant up --provider=docker"
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -56,7 +66,7 @@ ZSH_THEME="remy"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git battery atom composer fabric git-extras git-flow git-prompt gitignore go golang heroku jira laravel4 npm nvm sublime vagrant)
+plugins=(git battery atom composer fabric git-extras git-flow git-prompt gitignore go golang heroku jira laravel4 npm nvm sublime vagrant docker)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -204,3 +214,6 @@ source ~/.vn-aliases
 
 
 [ -s "/Users/sdagostino/.nvm/nvm.sh" ] && . "/Users/sdagostino/.nvm/nvm.sh" # This loads nvm
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
