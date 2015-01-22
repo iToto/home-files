@@ -2,9 +2,12 @@
 export ZSH=$HOME/.oh-my-zsh
 
 #Go Path
-export GOPATH=/Users/sdagostino/Dev/ViralNinjas/platform/APIv2/golang/
-export GOROOT=/usr/local
+export GOPATH=/Users/sdagostino/Dev/golang
 export PATH=$PATH:$GOPATH/bin
+# export PATH=$PATH:/usr/local/opt/go/libexec/bin
+
+# boot2docker
+$(boot2docker shellinit)
 
 ############################
 #       My ALIASES         #
@@ -12,6 +15,10 @@ export PATH=$PATH:$GOPATH/bin
 alias vhost="sublime -n /private/etc/apache2/extra/httpd-vhosts.conf"
 alias hosts="sublime -n /etc/hosts"
 alias zshconfig="sublime -n ~/.zshrc"
+
+# Docker
+alias docker-del-containers="docker ps -q -a | xargs docker rm"
+alias docker-del-nameless-images="docker rmi $(docker images | grep '^<none>' | awk '{print $3}')"
 
 # Vaprobash
 alias vaprobash="curl -L http://bit.ly/vaprobash > Vagrantfile"
@@ -217,3 +224,26 @@ source ~/.vn-aliases
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+##############
+# JDK Setter #
+##############
+function setjdk() {
+  if [ $# -ne 0 ]; then
+   removeFromPath '/System/Library/Frameworks/JavaVM.framework/Home/bin'
+   if [ -n "${JAVA_HOME+x}" ]; then
+    removeFromPath $JAVA_HOME
+   fi
+   export JAVA_HOME=`/usr/libexec/java_home -v $@`
+   export PATH=$JAVA_HOME/bin:$PATH
+  fi
+ }
+ function removeFromPath() {
+  export PATH=$(echo $PATH | sed -E -e "s;:$1;;" -e "s;$1:?;;")
+ }
+setjdk 1.7
+
+#Postgres.app
+export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin
