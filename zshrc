@@ -1,11 +1,6 @@
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
-#Go Path
-export GOPATH=/Users/sdagostino/Dev/golang
-export PATH=$PATH:$GOPATH/bin
-# export PATH=$PATH:/usr/local/opt/go/libexec/bin
-
 # boot2docker
 $(boot2docker shellinit)
 
@@ -247,3 +242,8 @@ setjdk 1.7
 
 #Postgres.app
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin
+
+#Go Path
+export GOPATH=/Users/sdagostino/Dev/golang
+export PATH=$PATH:$GOPATH/bin
+# export PATH=$PATH:/usr/local/opt/go/libexec/bin
