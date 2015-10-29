@@ -1,8 +1,7 @@
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
-# boot2docker
-$(boot2docker shellinit)
+eval "$(docker-machine env default)"
 
 ############################
 #       My ALIASES         #
@@ -25,7 +24,7 @@ alias docker-up="vagrant up --provider=docker"
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="remy"
+ZSH_THEME="re5et"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -68,7 +67,7 @@ ZSH_THEME="remy"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git battery atom composer fabric git-extras git-flow git-prompt gitignore go golang heroku jira laravel4 npm nvm sublime vagrant docker)
+plugins=(git battery atom composer fabric git-extras git-flow git-prompt gitignore go golang heroku jira laravel4 npm nvm sublime vagrant docker brew)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -209,36 +208,16 @@ mcd () {
 }
 
 
-############################
-#       VON ALIASES        #
-############################
-source ~/.vn-aliases
+### This loads nvm
+[ -s "/Users/sdagostino/.nvm/nvm.sh" ] && . "/Users/sdagostino/.nvm/nvm.sh"
 
-
-[ -s "/Users/sdagostino/.nvm/nvm.sh" ] && . "/Users/sdagostino/.nvm/nvm.sh" # This loads nvm
+### Homebrew
+export PATH="/usr/local/sbin:$PATH"
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-
-##############
-# JDK Setter #
-##############
-function setjdk() {
-  if [ $# -ne 0 ]; then
-   removeFromPath '/System/Library/Frameworks/JavaVM.framework/Home/bin'
-   if [ -n "${JAVA_HOME+x}" ]; then
-    removeFromPath $JAVA_HOME
-   fi
-   export JAVA_HOME=`/usr/libexec/java_home -v $@`
-   export PATH=$JAVA_HOME/bin:$PATH
-  fi
- }
- function removeFromPath() {
-  export PATH=$(echo $PATH | sed -E -e "s;:$1;;" -e "s;$1:?;;")
- }
-setjdk 1.7
 
 #Postgres.app
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin
