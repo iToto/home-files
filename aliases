@@ -15,3 +15,7 @@ alias vaprobash="curl -L http://bit.ly/vaprobash > Vagrantfile"
 # Vagrant-Docker run
 alias docker-up="vagrant up --provider=docker"
 
+# Load custom aliases here
+if [ -e .aliases-custom ]; then
+    source .aliases-custom
+fi
