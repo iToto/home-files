@@ -3,22 +3,8 @@ export ZSH=$HOME/.oh-my-zsh
 
 eval "$(docker-machine env default)"
 
-############################
-#       My ALIASES         #
-############################
-alias vhost="sublime -n /private/etc/apache2/extra/httpd-vhosts.conf"
-alias hosts="sublime -n /etc/hosts"
-alias zshconfig="sublime -n ~/.zshrc"
-
-# Docker
-alias docker-del-containers="docker ps -q -a | xargs docker rm"
-alias docker-del-nameless-images="docker rmi $(docker images | grep '^<none>' | awk '{print $3}')"
-
-# Vaprobash
-alias vaprobash="curl -L http://bit.ly/vaprobash > Vagrantfile"
-
-# Vagrant-Docker run
-alias docker-up="vagrant up --provider=docker"
+### My Local Aliases
+source .aliases
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -214,6 +200,9 @@ mcd () {
 ### Homebrew
 export PATH="/usr/local/sbin:$PATH"
 
+### PHP
+export PATH="$(brew --prefix homebrew/php/php56)/bin:$PATH"
+
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
@@ -223,6 +212,6 @@ export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin
 
 #Go Path
-export GOPATH=/Users/sdagostino/Dev/golang
+export GOPATH=~/Dev/golang
 export PATH=$PATH:$GOPATH/bin
 # export PATH=$PATH:/usr/local/opt/go/libexec/bin
