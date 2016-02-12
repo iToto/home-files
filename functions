@@ -4,7 +4,12 @@
 purgeOrphanBranches() {
     git checkout master
     git fetch --all
-    git merge origin master
+    git merge origin/master
     git branch --merged | xargs git branch -d
     git checkout -
+}
+
+rebaseOffLatest() {
+    git fetch --all
+    git rebase origin/$@
 }
