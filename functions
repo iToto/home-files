@@ -13,3 +13,10 @@ rebaseOffLatest() {
     git fetch --all
     git rebase origin/$@
 }
+
+updateBranchFromOrigin() {
+    git checkout $@
+    git fetch --all
+    git merge origin/$@
+    git checkout -
+}
