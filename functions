@@ -1,0 +1,10 @@
+##################
+# BASH FUNCTIONS #
+##################
+purgeKilledOriginBranches() {
+    git checkout master
+    git fetch --all
+    git merge origin master
+    git branch --merged | xargs git branch -d
+    git checkout -
+}
