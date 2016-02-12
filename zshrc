@@ -4,7 +4,10 @@ export ZSH=$HOME/.oh-my-zsh
 eval "$(docker-machine env default)"
 
 ### My Local Aliases
-source .aliases
+source ~/.aliases
+
+### My Local Functions
+source ~/.functions
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
