@@ -1,7 +1,7 @@
 ##################
 # BASH FUNCTIONS #
 ##################
-purgeKilledOriginBranches() {
+purgeOrphanBranches() {
     git checkout master
     git fetch --all
     git merge origin master
