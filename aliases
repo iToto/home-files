@@ -1,9 +1,9 @@
 ############################
 #       My ALIASES         #
 ############################
-alias vhost="sublime -n /private/etc/apache2/extra/httpd-vhosts.conf"
-alias hosts="sublime -n /etc/hosts"
-alias zshconfig="sublime -n ~/.zshrc"
+alias vhost="subl -n /private/etc/apache2/extra/httpd-vhosts.conf"
+alias hosts="subl -n /etc/hosts"
+alias zshconfig="subl -n ~/.zshrc"
 
 # Docker
 alias docker-del-containers="docker ps -q -a | xargs docker rm"
