@@ -13,7 +13,7 @@ source ~/.functions
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="re5et"
+ZSH_THEME="ys"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -194,3 +194,5 @@ export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin
 export GOPATH=~/Dev/golang
 export PATH=$PATH:$GOPATH/bin
 # export PATH=$PATH:/usr/local/opt/go/libexec/bin
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
