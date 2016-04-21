@@ -8,6 +8,7 @@ alias zshconfig="subl -n ~/.zshrc"
 # Docker
 alias docker-del-containers="docker ps -q -a | xargs docker rm"
 alias docker-del-nameless-images="docker rmi $(docker images | grep '^<none>' | awk '{print $3}')"
+alias docker-del-dead-images="docker rmi -f $(docker images -qa)"
 
 # Vaprobash
 alias vaprobash="curl -L http://bit.ly/vaprobash > Vagrantfile"
