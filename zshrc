@@ -13,7 +13,8 @@ source ~/.functions
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="re5et"
+# ZSH_THEME="re5et"
+ZSH_THEME="ys"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -194,3 +195,9 @@ export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin
 export GOPATH=~/Dev/golang
 export PATH=$PATH:$GOPATH/bin
 # export PATH=$PATH:/usr/local/opt/go/libexec/bin
+
+# VM SSHFS
+alias mdev='sudo mount_nfs -o resvport,rw,soft,intr,rsize=8192,wsize=8192,timeo=900,retrans=3,proto=tcp cloudflare.lol:/home/cloudflare/cf-repos /Users/gimli/Dev/CloudFlare/cfdev'
+alias udev='sudo diskutil umount force ~/Dev/CloudFlare/cfdev'
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
