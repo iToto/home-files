@@ -6,6 +6,9 @@ eval "$(docker-machine env default)"
 ### My Local Aliases
 source ~/.aliases
 
+### My Custom Aliases
+source ~/.aliases-custom
+
 ### My Local Functions
 source ~/.functions
 
@@ -193,7 +196,9 @@ export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin
 
 #Go Path
 export GOPATH=~/Dev/golang
-export PATH=$PATH:$GOPATH/bin
+export GOBIN=$GOPATH/bin
+export PATH=$PATH:$GOBIN
+
 # export PATH=$PATH:/usr/local/opt/go/libexec/bin
 
 # VM SSHFS
