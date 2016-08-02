@@ -206,3 +206,7 @@ alias mdev='sudo mount_nfs -o resvport,rw,soft,intr,rsize=8192,wsize=8192,timeo=
 alias udev='sudo diskutil umount force ~/Dev/CloudFlare/cfdev'
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+# NVM
+export NVM_DIR="$HOME/.nvm"
+  . "$(brew --prefix nvm)/nvm.sh"
