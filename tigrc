@@ -1,0 +1,5 @@
+# My Custom Tig Configuration
+
+# add verbose to git commit
+bind status    C    !git commit -v
+
