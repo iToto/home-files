@@ -1,16 +1,8 @@
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
-eval "$(docker-machine env default)"
-
 ### My Local Aliases
 source ~/.aliases
-
-### My Custom Aliases
-source ~/.aliases-custom
-
-### My Local Functions
-source ~/.functions
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -210,3 +202,19 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 # NVM
 export NVM_DIR="$HOME/.nvm"
   . "$(brew --prefix nvm)/nvm.sh"
+
+# Docker
+dockerEnter() { docker exec -it $1 /bin/bash ;};
+alias de=dockerEnter
+
+### My Custom Aliases
+source ~/.aliases-custom
+
+#### My CF Custom Aliases
+source ~/.cf-aliases
+
+### My Local Functions
+source ~/.functions
+
+### My Custom Exports
+source ~/.exports
