@@ -20,3 +20,13 @@ updateBranchFromOrigin() {
     git merge origin/$@
     git checkout -
 }
+deleteRemoteBranch() {
+    git fetch --all
+    git push origin --delete $@
+}
+
+deleteLocalAndRemoteBranch() {
+    git fetch --all
+    git push origin --delete $@
+    git branch -d $@
+}
