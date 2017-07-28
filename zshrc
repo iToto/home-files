@@ -177,7 +177,7 @@ mcd () {
 export PATH="/usr/local/sbin:$PATH"
 
 ### PHP
-export PATH="$(brew --prefix homebrew/php/php56)/bin:$PATH"
+# export PATH="$(brew --prefix homebrew/php/php56)/bin:$PATH"
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
@@ -210,9 +210,6 @@ alias de=dockerEnter
 
 ### My Custom Aliases
 source ~/.aliases-custom
-
-#### My CF Custom Aliases
-source ~/.cf-aliases
 
 ### My Local Functions
 source ~/.functions
