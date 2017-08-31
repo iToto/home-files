@@ -187,6 +187,9 @@ export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 #Postgres.app
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin
 
+# Add Visual Studio Code (code)
+export PATH=$PATH:/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin
+
 #Go Path
 export GOPATH=~/Dev/golang
 export GOBIN=$GOPATH/bin
