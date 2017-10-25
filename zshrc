@@ -217,5 +217,8 @@ source ~/.aliases-custom
 ### My Local Functions
 source ~/.functions
 
+### Apple shortcuts
+alias fixOSXCamera='sudo killall AppleCameraAssistant'
+
 ### My Custom Exports
 source ~/.exports
