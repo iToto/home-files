@@ -30,3 +30,7 @@ deleteLocalAndRemoteBranch() {
     git push origin --delete $@
     git branch -d $@
 }
+
+de() {
+    docker exec -it $@ sh
+}
