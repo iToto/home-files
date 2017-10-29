@@ -177,7 +177,7 @@ mcd () {
 export PATH="/usr/local/sbin:$PATH"
 
 ### PHP
-export PATH="$(brew --prefix homebrew/php/php56)/bin:$PATH"
+# export PATH="$(brew --prefix homebrew/php/php56)/bin:$PATH"
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
@@ -186,6 +186,9 @@ export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 #Postgres.app
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin
+
+# Add Visual Studio Code (code)
+export PATH=$PATH:/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin
 
 #Go Path
 export GOPATH=~/Dev/golang
@@ -211,11 +214,11 @@ alias de=dockerEnter
 ### My Custom Aliases
 source ~/.aliases-custom
 
-#### My CF Custom Aliases
-source ~/.cf-aliases
-
 ### My Local Functions
 source ~/.functions
+
+### Apple shortcuts
+alias fixOSXCamera='sudo killall AppleCameraAssistant'
 
 ### My Custom Exports
 source ~/.exports
