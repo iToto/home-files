@@ -205,7 +205,7 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 
 # NVM
 export NVM_DIR="$HOME/.nvm"
-  . "$(brew --prefix nvm)/nvm.sh"
+  . "/usr/local/opt/nvm/nvm.sh"
 
 # Docker
 dockerEnter() { docker exec -it $1 /bin/bash ;};

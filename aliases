@@ -21,3 +21,11 @@ alias docker-up="vagrant up --provider=docker"
 if [ -e .aliases-custom ]; then
     source .aliases-custom
 fi
+
+alias nukeDocker='osascript <<EOD
+    quit app "Docker"
+EOD
+rm -f ~/Library/Containers/com.docker.docker/Data/com.docker.driver.amd64-linux/Docker.qcow2 &&\
+open -a Docker &&\
+say -v Daniel Mega Nuke Complete, waiting for Docker to be available &&\
+sleep 20'
