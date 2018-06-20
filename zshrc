@@ -197,10 +197,6 @@ export PATH=$PATH:$GOBIN
 
 # export PATH=$PATH:/usr/local/opt/go/libexec/bin
 
-# VM SSHFS
-alias mdev='sudo mount_nfs -o resvport,rw,soft,intr,rsize=8192,wsize=8192,timeo=900,retrans=3,proto=tcp cloudflare.lol:/home/cloudflare/cf-repos /Users/gimli/Dev/CloudFlare/cfdev'
-alias udev='sudo diskutil umount force ~/Dev/CloudFlare/cfdev'
-
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 # NVM
