@@ -1,8 +1,8 @@
 #!/bin/sh
 
 # Start VPN
-osascript -e 'tell app "Private Internet Access" to activate'
+osascript -e 'launch app "Private Internet Access"'
 # Sleep for 10 seconds to give VPN time to connect
 sleep 10
 # Start Transmission
-osascript -e 'tell app "Transmission" to activate'
+osascript -e 'launch app "Transmission"'
