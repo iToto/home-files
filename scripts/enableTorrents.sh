@@ -6,3 +6,5 @@ osascript -e 'launch app "Private Internet Access"'
 sleep 10
 # Start Transmission
 osascript -e 'launch app "Transmission"'
+# Start Sonarr
+open -a Sonarr
