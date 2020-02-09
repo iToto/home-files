@@ -5,6 +5,8 @@ alias vhost="subl -n /private/etc/apache2/extra/httpd-vhosts.conf"
 alias hosts="subl -n /etc/hosts"
 alias zshconfig="subl -n ~/.zshrc"
 alias lra="ls -ltra"
+alias llf="du -sh * | sort -h"
+alias dfh="df -h"
 
 # Docker
 alias docker-clean-containers='docker rm -v $(docker ps -a -q -f status=exited)'
