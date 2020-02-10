@@ -8,3 +8,5 @@ sleep 10
 osascript -e 'launch app "Transmission"'
 # Start Sonarr
 open -a Sonarr
+# open NZBGet
+open -a nzbget
