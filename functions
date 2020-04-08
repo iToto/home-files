@@ -31,6 +31,6 @@ deleteLocalAndRemoteBranch() {
     git branch -d $@
 }
 
-de() {
-    docker exec -it $1 bash
-}
+# de() {
+#     docker exec -it $1 bash
+# }
