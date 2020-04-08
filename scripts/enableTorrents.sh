@@ -6,7 +6,11 @@ osascript -e 'launch app "Private Internet Access"'
 sleep 10
 # Start Transmission
 osascript -e 'launch app "Transmission"'
+open -a "Transmission"
 # Start Sonarr
 open -a Sonarr
 # open NZBGet
 open -a nzbget
+# open Radarr
+open -a Radarr
+
