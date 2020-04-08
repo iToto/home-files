@@ -13,4 +13,5 @@ open -a Sonarr
 open -a nzbget
 # open Radarr
 open -a Radarr
-
+# mount volumes
+osascript -e 'launch app "mount-zion-discs"'
