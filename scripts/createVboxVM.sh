@@ -30,7 +30,7 @@ VBoxManage createvm --name $VM_NAME --ostype $OS --register --basefolder `pwd`
 #Set memory and network
 VBoxManage modifyvm $VM_NAME --ioapic on
 VBoxManage modifyvm $VM_NAME --memory $MEMORY_SIZE --vram 128
-VBoxManage modifyvm $VM_NAME --nic1 nat
+VBoxManage modifyvm $VM_NAME --nic1 bridged --bridgeadapter1 eno1
 
 #Create HDD
 VBoxManage createhd --filename $HDD_PATH --size 250000 --format VDI
