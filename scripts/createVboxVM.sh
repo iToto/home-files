@@ -26,16 +26,20 @@ HDD_PATH=$VM_HOST_PATH/$VM_NAME/$VM_NAME.vdi
 
 #Create VM
 VBoxManage createvm --name $VM_NAME --ostype $OS --register --basefolder `pwd`
+
 #Set memory and network
 VBoxManage modifyvm $VM_NAME --ioapic on
 VBoxManage modifyvm $VM_NAME --memory $MEMORY_SIZE --vram 128
 VBoxManage modifyvm $VM_NAME --nic1 nat
-#Create Disk and connect Debian Iso
+
+#Create HDD
 VBoxManage createhd --filename $HDD_PATH --size 250000 --format VDI
 VBoxManage storagectl $VM_NAME --name "SATA Controller" --add sata --controller IntelAhci
 VBoxManage storageattach $VM_NAME --storagectl "SATA Controller" --port 0 --device 0 --type hdd --medium  $HDD_PATH
+
+#Create ROM
 VBoxManage storagectl $VM_NAME --name "IDE Controller" --add ide --controller PIIX4
-VBoxManage storageattach $VM_NAME --storagectl "IDE Controller" --port 1 --device 0 --type dvddrive --medium $4
+VBoxManage storageattach $VM_NAME --storagectl "IDE Controller" --port 1 --device 0 --type dvddrive --medium $ISO_PATH
 VBoxManage modifyvm $VM_NAME --boot1 dvd --boot2 disk --boot3 none --boot4 none
 
 #Enable RDP
