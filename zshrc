@@ -55,7 +55,7 @@ ZSH_THEME="rkj-repos"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git battery atom composer fabric git-extras git-flow git-prompt gitignore go golang heroku jira laravel4 npm nvm sublime vagrant docker brew)
+plugins=(git battery composer fabric git-extras git-flow git-prompt gitignore golang golang heroku jira laravel4 npm nvm sublime vagrant docker brew)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -201,10 +201,6 @@ export PATH=$PATH:$GOBIN
 # export PATH=$PATH:/usr/local/opt/go/libexec/bin
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-
-# NVM
-export NVM_DIR="$HOME/.nvm"
-  . "/usr/local/opt/nvm/nvm.sh"
 
 # Docker
 dockerEnter() { docker exec -it $1 /bin/bash ;};
