@@ -30945,6 +30945,8 @@
 	<string>~/Dev/home-files/iTerm_settings</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
 	<string>{925, 582}</string>
+	<key>NSOverlayScrollersFallBackForAccessoryViews</key>
+	<false/>
 	<key>NSQuotedKeystrokeBinding</key>
 	<string></string>
 	<key>NSRepeatCountBinding</key>
@@ -30987,13 +30989,13 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame SUAutomaticUpdateAlert</key>
-	<string>1432 1052 616 174 0 0 2048 1257 </string>
+	<string>1612 1052 616 174 0 0 3840 1577 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>1610 1308 620 392 0 0 3840 2137 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>379 1553 592 584 0 0 3840 2137 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 0 2048 1257 0 0 2048 1257 </string>
+	<string>2560 0 1280 1577 0 0 3840 1577 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>655 216 570 450 0 0 3840 1577 </string>
 	<key>New Bookmarks</key>
@@ -31190,7 +31192,7 @@
 			<key>Blur</key>
 			<true/>
 			<key>Blur Radius</key>
-			<real>7.0171022366751261</real>
+			<real>7.1831079473350243</real>
 			<key>Bold Color</key>
 			<dict>
 				<key>Blue Component</key>
@@ -31927,7 +31929,7 @@
 			<key>Title Components</key>
 			<integer>66</integer>
 			<key>Transparency</key>
-			<real>0.15847081218274112</real>
+			<real>0.36507177982233502</real>
 			<key>Triggers</key>
 			<array/>
 			<key>Unlimited Scrollback</key>
@@ -32878,7 +32880,7 @@
 			<key>Title Components</key>
 			<integer>66</integer>
 			<key>Transparency</key>
-			<real>0.15847081218274112</real>
+			<real>0.3328600888324873</real>
 			<key>Triggers</key>
 			<array/>
 			<key>Unlimited Scrollback</key>
@@ -33831,7 +33833,7 @@
 			<key>Title Components</key>
 			<integer>66</integer>
 			<key>Transparency</key>
-			<real>0.15847081218274112</real>
+			<real>0.28522961611675124</real>
 			<key>Triggers</key>
 			<array/>
 			<key>Unlimited Scrollback</key>
@@ -34887,7 +34889,7 @@
 			<key>Title Components</key>
 			<integer>66</integer>
 			<key>Transparency</key>
-			<real>0.15847081218274112</real>
+			<real>0.28885231598984773</real>
 			<key>Triggers</key>
 			<array/>
 			<key>Unlimited Scrollback</key>
@@ -34912,17 +34914,20 @@
 	</array>
 	<key>NoSyncAllAppVersions</key>
 	<array>
-		<string>3.3.6</string>
-		<string>3.3.7beta4</string>
 		<string>3.3.10beta3</string>
-		<string>3.3.7beta3</string>
-		<string>3.3.8beta5</string>
-		<string>3.3.7beta2</string>
-		<string>3.3.8beta4</string>
-		<string>3.3.7beta1</string>
-		<string>3.3.10beta2</string>
 		<string>3.3.10beta4</string>
+		<string>3.3.12beta2</string>
+		<string>3.3.7beta1</string>
+		<string>3.3.8beta5</string>
+		<string>3.3.7beta3</string>
+		<string>3.4.0beta2</string>
+		<string>3.3.6</string>
+		<string>3.3.8beta4</string>
+		<string>3.3.7beta2</string>
+		<string>3.3.7beta4</string>
+		<string>3.3.10beta2</string>
 		<string>3.3.11beta1</string>
+		<string>3.4.0beta3</string>
 	</array>
 	<key>NoSyncCommandHistoryHasEverBeenUsed</key>
 	<true/>
@@ -34936,20 +34941,24 @@
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
 		<key>screenFrame</key>
-		<string>{{0, 0}, {2048, 1280}}</string>
+		<string>{{0, 0}, {3840, 1600}}</string>
 		<key>topLeft</key>
-		<string>{870, 1006}</string>
+		<string>{749, 946}</string>
 	</dict>
+	<key>NoSyncIgnoreSystemWindowRestoration</key>
+	<true/>
 	<key>NoSyncInstallUtilitiesPackage</key>
 	<true/>
 	<key>NoSyncInstallUtilitiesPackage_selection</key>
 	<integer>0</integer>
 	<key>NoSyncInstallationId</key>
 	<string>DDE661E8-1B70-4F72-9B6F-55896C112356</string>
+	<key>NoSyncLastOSVersion</key>
+	<string>Version 10.15.6 (Build 19G2021)</string>
 	<key>NoSyncLastTipTime</key>
-	<real>610324238.50721896</real>
+	<real>618758736.23961401</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>57</integer>
+	<integer>71</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -35067,6 +35076,14 @@
 				<key>isTerminal</key>
 				<true/>
 				<key>name</key>
+				<string>selectionLength</string>
+				<key>nonterminalContext</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>isTerminal</key>
+				<true/>
+				<key>name</key>
 				<string>path</string>
 				<key>nonterminalContext</key>
 				<integer>0</integer>
@@ -35078,6 +35095,14 @@
 				<string>triggerName</string>
 				<key>nonterminalContext</key>
 				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>isTerminal</key>
+				<false/>
+				<key>name</key>
+				<string>parentSession</string>
+				<key>nonterminalContext</key>
+				<integer>1</integer>
 			</dict>
 			<dict>
 				<key>isTerminal</key>
@@ -35196,6 +35221,14 @@
 				<true/>
 				<key>name</key>
 				<string>tmuxStatusLeft</string>
+				<key>nonterminalContext</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>isTerminal</key>
+				<true/>
+				<key>name</key>
+				<string>selection</string>
 				<key>nonterminalContext</key>
 				<integer>0</integer>
 			</dict>
@@ -35682,6 +35715,8 @@
 			</dict>
 		</array>
 	</dict>
+	<key>NoSyncRestoreWindowsCount</key>
+	<integer>0</integer>
 	<key>NoSyncTipOfTheDayEligibilityBeganTime</key>
 	<real>592885110.42282104</real>
 	<key>NoSyncTipsToNotShow</key>
@@ -35742,6 +35777,7 @@
 		<string>0042</string>
 		<string>0035</string>
 		<string>0028</string>
+		<string>0078</string>
 		<string>0021</string>
 		<string>0014</string>
 		<string>0007</string>
@@ -35764,7 +35800,7 @@
 		<string>000</string>
 		<string>0044</string>
 		<string>0051</string>
-		<string>0078</string>
+		<string>0079</string>
 	</array>
 	<key>OnlyWhenMoreTabs</key>
 	<true/>
@@ -35834,11 +35870,11 @@
 	<key>SUFeedAlternateAppNameKey</key>
 	<string>iTerm</string>
 	<key>SUFeedURL</key>
-	<string>https://iterm2.com/appcasts/testing_new.xml?shard=22</string>
+	<string>https://iterm2.com/appcasts/testing_modern.xml?shard=22</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-06-26T16:09:04Z</date>
+	<date>2020-08-29T19:18:18Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
@@ -35892,7 +35928,7 @@
 	<key>findMode_iTerm</key>
 	<integer>0</integer>
 	<key>iTerm Version</key>
-	<string>3.3.11beta1</string>
+	<string>3.4.0beta3</string>
 	<key>kCPFavoritesUserDefaultsKey</key>
 	<array>
 		<data>
