@@ -31929,7 +31929,7 @@
 			<key>Title Components</key>
 			<integer>66</integer>
 			<key>Transparency</key>
-			<real>0.36507177982233502</real>
+			<real>0.1462642766497462</real>
 			<key>Triggers</key>
 			<array/>
 			<key>Unlimited Scrollback</key>
@@ -32880,7 +32880,7 @@
 			<key>Title Components</key>
 			<integer>66</integer>
 			<key>Transparency</key>
-			<real>0.3328600888324873</real>
+			<real>0.0998294733502538</real>
 			<key>Triggers</key>
 			<array/>
 			<key>Unlimited Scrollback</key>
@@ -33833,7 +33833,7 @@
 			<key>Title Components</key>
 			<integer>66</integer>
 			<key>Transparency</key>
-			<real>0.28522961611675124</real>
+			<real>0.14701380076142134</real>
 			<key>Triggers</key>
 			<array/>
 			<key>Unlimited Scrollback</key>
@@ -34889,7 +34889,7 @@
 			<key>Title Components</key>
 			<integer>66</integer>
 			<key>Transparency</key>
-			<real>0.28885231598984773</real>
+			<real>0.1409283788071066</real>
 			<key>Triggers</key>
 			<array/>
 			<key>Unlimited Scrollback</key>
@@ -34914,20 +34914,22 @@
 	</array>
 	<key>NoSyncAllAppVersions</key>
 	<array>
-		<string>3.3.10beta3</string>
+		<string>3.4.0beta3</string>
 		<string>3.3.10beta4</string>
-		<string>3.3.12beta2</string>
+		<string>3.4.0beta5</string>
 		<string>3.3.7beta1</string>
 		<string>3.3.8beta5</string>
+		<string>3.3.10beta3</string>
 		<string>3.3.7beta3</string>
 		<string>3.4.0beta2</string>
 		<string>3.3.6</string>
+		<string>3.4.0beta4</string>
 		<string>3.3.8beta4</string>
 		<string>3.3.7beta2</string>
 		<string>3.3.7beta4</string>
 		<string>3.3.10beta2</string>
 		<string>3.3.11beta1</string>
-		<string>3.4.0beta3</string>
+		<string>3.3.12beta2</string>
 	</array>
 	<key>NoSyncCommandHistoryHasEverBeenUsed</key>
 	<true/>
@@ -34958,7 +34960,7 @@
 	<key>NoSyncLastTipTime</key>
 	<real>618758736.23961401</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>71</integer>
+	<integer>76</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -35077,6 +35079,14 @@
 				<true/>
 				<key>name</key>
 				<string>selectionLength</string>
+				<key>nonterminalContext</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>isTerminal</key>
+				<true/>
+				<key>name</key>
+				<string>processTitle</string>
 				<key>nonterminalContext</key>
 				<integer>0</integer>
 			</dict>
@@ -35378,6 +35388,14 @@
 				<string>currentTab</string>
 				<key>nonterminalContext</key>
 				<integer>2</integer>
+			</dict>
+			<dict>
+				<key>isTerminal</key>
+				<true/>
+				<key>name</key>
+				<string>currentTab.currentSession.processTitle</string>
+				<key>nonterminalContext</key>
+				<integer>0</integer>
 			</dict>
 			<dict>
 				<key>isTerminal</key>
@@ -35874,11 +35892,11 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-08-29T19:18:18Z</date>
+	<date>2020-10-05T18:58:56Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
-	<true/>
+	<false/>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
@@ -35928,7 +35946,7 @@
 	<key>findMode_iTerm</key>
 	<integer>0</integer>
 	<key>iTerm Version</key>
-	<string>3.4.0beta3</string>
+	<string>3.4.0beta5</string>
 	<key>kCPFavoritesUserDefaultsKey</key>
 	<array>
 		<data>

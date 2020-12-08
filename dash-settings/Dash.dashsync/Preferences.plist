@@ -9,7 +9,7 @@
 			<key>Bash_Shortcuts</key>
 			<dict>
 				<key>date</key>
-				<date>2020-09-14T22:25:00Z</date>
+				<date>2020-09-15T13:06:01Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -27,7 +27,7 @@
 			<key>Docker</key>
 			<dict>
 				<key>date</key>
-				<date>2020-09-14T22:24:39Z</date>
+				<date>2020-09-15T13:06:01Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -43,7 +43,7 @@
 			<key>Dockerfile</key>
 			<dict>
 				<key>date</key>
-				<date>2020-09-14T22:24:40Z</date>
+				<date>2020-09-15T13:06:01Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -59,7 +59,7 @@
 			<key>Git</key>
 			<dict>
 				<key>date</key>
-				<date>2020-09-14T22:24:11Z</date>
+				<date>2020-09-15T13:06:01Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -80,7 +80,7 @@
 			<key>HTTP_Status_Codes</key>
 			<dict>
 				<key>date</key>
-				<date>2020-09-14T22:23:57Z</date>
+				<date>2020-09-15T13:06:01Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -96,7 +96,7 @@
 			<key>Oh-My-Zsh_Git</key>
 			<dict>
 				<key>date</key>
-				<date>2020-09-14T22:24:12Z</date>
+				<date>2020-09-15T13:06:01Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -119,7 +119,7 @@
 			<key>Swift</key>
 			<dict>
 				<key>date</key>
-				<date>2020-09-14T22:24:31Z</date>
+				<date>2020-11-02T23:00:12Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -149,7 +149,7 @@
 			<key>Xcode_Shortcuts</key>
 			<dict>
 				<key>date</key>
-				<date>2020-09-14T22:24:33Z</date>
+				<date>2020-09-15T13:06:01Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -178,7 +178,7 @@
 			<key>iTerm2</key>
 			<dict>
 				<key>date</key>
-				<date>2020-09-14T22:24:22Z</date>
+				<date>2020-09-15T13:06:01Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -199,7 +199,7 @@
 			<key>tmux</key>
 			<dict>
 				<key>date</key>
-				<date>2020-09-14T22:24:03Z</date>
+				<date>2020-09-15T13:06:01Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -319,52 +319,52 @@
 			<key>http://kapeli.com/feeds/AppleScript.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2020-09-14T22:23:42Z</date>
+				<date>2020-09-15T13:06:06Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/Apple_API_Reference.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2020-09-14T22:23:32Z</date>
+				<date>2020-09-15T13:06:15Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/Arduino.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2020-09-14T22:23:39Z</date>
+				<date>2020-09-15T13:06:24Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/Bash.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2020-09-14T22:25:11Z</date>
+				<date>2020-09-15T13:06:01Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/Docker.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2020-09-14T22:26:26Z</date>
+				<date>2020-09-15T13:06:14Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/Go.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2020-09-14T22:23:36Z</date>
+				<date>2020-09-15T13:06:18Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/Markdown.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2020-09-14T22:27:04Z</date>
+				<date>2020-09-15T13:06:17Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/PostgreSQL.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2020-09-14T22:23:37Z</date>
+				<date>2020-09-15T13:06:19Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/Vim.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2020-09-14T22:27:43Z</date>
+				<date>2020-09-15T13:06:07Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/VueJS.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2020-09-14T22:27:44Z</date>
+				<date>2020-09-15T13:06:17Z</date>
 			</dict>
 		</dict>
 		<key>uninstalled</key>
@@ -400,9 +400,9 @@
 	<key>searchKey</key>
 	<dict>
 		<key>keyCode</key>
-		<integer>43</integer>
+		<integer>44</integer>
 		<key>modifiers</key>
-		<integer>4864</integer>
+		<integer>768</integer>
 	</dict>
 	<key>shouldRestoreTabs</key>
 	<true/>
