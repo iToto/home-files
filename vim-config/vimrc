@@ -1,0 +1,32 @@
+set runtimepath+=~/.vim_runtime
+set number
+
+source ~/.vim_runtime/vimrcs/basic.vim
+source ~/.vim_runtime/vimrcs/filetypes.vim
+source ~/.vim_runtime/vimrcs/plugins_config.vim
+source ~/.vim_runtime/vimrcs/extended.vim
+
+try
+source ~/.vim_runtime/my_configs.vim
+catch
+endtry
+
+" NERDTree
+" Start NERDTree. If a file is specified, move the cursor to its window.
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * NERDTree | if argc() > 0 || exists("s:std_in") | wincmd p | endif
+" Exit Vim if NERDTree is the only window left.
+autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() |
+\ quit | endif
+let g:NERDTreeWinPos = "left"
+" NERDTree plugin specific commands
+:nnoremap <C-g> :NERDTreeToggle<CR>
+
+" vim-go 
+au filetype go inoremap <buffer> . .<C-x><C-o>
+set backspace=indent,eol,start
+let g:go_fmt_command = "goimports"    " Run goimports along gofmt on each save     
+let g:go_auto_type_info = 1           " Automatically get signature/type info for object under cursor
+
+" vim-airline
+let g:airline_theme='badwolf'
