@@ -1,16 +1,3 @@
-set runtimepath+=~/.vim_runtime
-set number
-
-source ~/.vim_runtime/vimrcs/basic.vim
-source ~/.vim_runtime/vimrcs/filetypes.vim
-source ~/.vim_runtime/vimrcs/plugins_config.vim
-source ~/.vim_runtime/vimrcs/extended.vim
-
-try
-source ~/.vim_runtime/my_configs.vim
-catch
-endtry
-
 " NERDTree
 " Start NERDTree. If a file is specified, move the cursor to its window.
 autocmd StdinReadPre * let s:std_in=1
@@ -27,6 +14,22 @@ au filetype go inoremap <buffer> . .<C-x><C-o>
 set backspace=indent,eol,start
 let g:go_fmt_command = "goimports"    " Run goimports along gofmt on each save     
 let g:go_auto_type_info = 1           " Automatically get signature/type info for object under cursor
+let g:go_highlight_functions = 1
+let g:go_highlight_function_calls = 1
+let g:go_highlight_methods = 1
+let g:go_fold_enable = ['block', 'import', 'varconst', 'package_comment']
+let g:go_highlight_extra_types = 1
+let g:go_highlight_trailing_whitespace_error = 1
+let g:go_highlight_operators = 1
+let g:go_highlight_function_parameters = 1
+let g:go_highlight_types = 1
+let g:go_highlight_fields = 1
+let g:go_highlight_generate_tags = 1
+let g:go_highlight_variable_declarations = 1
+let g:go_highlight_variable_assignments = 1
 
 " vim-airline
 let g:airline_theme='badwolf'
+
+colorscheme delek 
+
