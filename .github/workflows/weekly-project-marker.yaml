@@ -20,7 +20,7 @@ jobs:
           mediaType: |
             previews: 
               - inertia
-          column_id: {{ COLUMN_ID }}
+          column_id: ${{ secrets.COLUMN_ID }}
           note: "👆 Week of ${{ steps.monday.outputs.datestring}} to ${{ steps.sunday.outputs.datestring}} 👆"
         env:
           GITHUB_TOKEN: ${{ secrets.API_PAT_WRITE_ORG }}
