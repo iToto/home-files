@@ -1,0 +1,26 @@
+name: Create weekly project card
+on:
+  schedule:
+    # https://crontab.guru/every-monday
+    # 11 UTC is 2am Pacific time
+    - cron: 0 11 * * MON
+  workflow_dispatch:
+jobs:
+  create-card:
+    name: create-card
+    runs-on: ubuntu-latest
+    steps:
+      - id: monday
+        run: echo "::set-output name=datestring::`date \"+%b %d\"`"
+      - id: sunday
+        run: echo "::set-output name=datestring::`date -d \"+6 days\" \"+%b %d\"`"
+      - uses: octokit/request-action@v2.x
+        with:
+          route: "POST /projects/columns/{column_id}/cards"
+          mediaType: |
+            previews: 
+              - inertia
+          column_id: {{ COLUMN_ID }}
+          note: "👆 Week of ${{ steps.monday.outputs.datestring}} to ${{ steps.sunday.outputs.datestring}} 👆"
+        env:
+          GITHUB_TOKEN: ${{ secrets.API_PAT_WRITE_ORG }}
