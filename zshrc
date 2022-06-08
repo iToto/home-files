@@ -63,6 +63,12 @@ source $ZSH/oh-my-zsh.sh
 
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 export PATH=$PATH:~/.local/bin
+
+if [ -d "/usr/local/opt/ruby/bin" ]; then
+  export PATH=/usr/local/opt/ruby/bin:$PATH
+  export PATH=`gem environment gemdir`/bin:$PATH
+fi
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -219,3 +225,8 @@ alias fixOSXCamera='sudo killall AppleCameraAssistant'
 source ~/.exports
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/local/bin/terraform terraform
+
+TERM='xterm'
+export TERM
+
+

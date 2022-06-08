@@ -10,7 +10,7 @@ let g:NERDTreeWinPos = "left"
 :nnoremap <C-g> :NERDTreeToggle<CR>
 
 " vim-go 
-au filetype go inoremap <buffer> . .<C-x><C-o>
+" au filetype go inoremap <buffer> . .<C-x><C-o>
 set backspace=indent,eol,start
 let g:go_fmt_command = "goimports"    " Run goimports along gofmt on each save     
 let g:go_auto_type_info = 1           " Automatically get signature/type info for object under cursor
