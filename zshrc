@@ -225,7 +225,7 @@ alias fixOSXCamera='sudo killall AppleCameraAssistant'
 source ~/.exports
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/local/bin/terraform terraform
-
+export PATH="/usr/local/opt/ruby/bin:$PATH"
 TERM='xterm'
 export TERM
 
