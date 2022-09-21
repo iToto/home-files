@@ -13,6 +13,13 @@ $ ln -s {PATH_TO_ZSHRC} ~/.zshrc
 $ ln -s {PATH_TO_aliases} ~/.aliases
 ```
 
+## Brewfile
+
+To install Brewfile: 
+```sh
+$ brew bundle --file=~/home-files/Brewfile
+```
+
 ## Oh-my-zsh Themes
 
 ### Remy
