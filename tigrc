@@ -3,3 +3,7 @@
 # add verbose to git commit
 bind status    C    !git commit -v
 
+# signatures
+set log-options = --show-signature
+set diff-options = --show-signature
+
