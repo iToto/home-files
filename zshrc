@@ -191,8 +191,9 @@ mcd () {
 [ -s "/Users/sdagostino/.nvm/nvm.sh" ] && . "/Users/sdagostino/.nvm/nvm.sh"
 
 ### Homebrew
-export PATH="/usr/local/sbin:$PATH"
-eval "$(/usr/local/bin/brew shellenv)"
+# export PATH="/usr/local/sbin:$PATH"
+export PATH=$PATH:/opt/homebrew/bin
+# eval "$(/usr/local/bin/brew shellenv)"
 
 ### PHP
 # export PATH="$(brew --prefix homebrew/php/php56)/bin:$PATH"
