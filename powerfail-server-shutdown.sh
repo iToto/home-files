@@ -10,6 +10,10 @@ fi
 echo "Suspending the virtual machine..."
 VBoxManage controlvm nebu savestate
 
+# send an email to the admin notifying them of the power failure
+echo "Power failure detected. The server has been shut down." | mail -s "Power Failure Detected"
+
+
 # Gracefully shutdown the server
 echo "Shutting down the server..."
 shutdown -h now
