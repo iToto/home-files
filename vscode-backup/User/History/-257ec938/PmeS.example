@@ -1,0 +1,57 @@
+PORT=8080
+BTC_URL=http://0.0.0.0
+ETH_URL=http://0.0.0.0
+STUB_SIGNAL=true
+SIMULATE_TRADE=true
+SIGNAL_RESOLUTION=30
+
+# DB
+# local
+DATABASE_URL=postgres://postgres:password@localhost:5432/yield-mvp?sslmode=disable
+
+# coinRoutes
+# UAT
+CR_URL=https://uat.coinroutes.io
+CR_TOKEN=[TOKEN]
+CR_WS_BASE_URL=portal.coinroutes.com
+CR_WS_TOKEN=[TOKEN]
+
+# logs
+PRETTY_LOGS=true
+MIN_LOG_LEVEL=debug
+
+# strategies
+BTC_LONG_SHORT=btclstest
+ETH_LONG_SHORT=yttest3
+ETH_USDT=3usdttest
+BTC_LONG_NEUTRAL=btc-simulation
+ETH_LONG_NEUTRAL=eth-simulation
+BTC_FTX_LONG_SHORT=SET_ME
+
+# trade logger
+TRADELOGGER_GCP_PROJECT_ID=yieldchain-track-records
+TRADELOGGER_DATASET=yield_mvp
+TRADELOGGER_TABLE=test_trade_log
+# only used for local development
+TRADELOGGER_SERVICE_ACCOUNT_FILE=
+
+# signal logger
+SIGNALLOGGER_GCP_PROJECT_ID=yieldchain-track-records
+SIGNALLOGGER_DATASET=yield_mvp
+SIGNALLOGGER_TABLE=test_signal_log
+# only used for local development
+SIGNALLOGGER_SERVICE_ACCOUNT_FILE=
+
+# balance logger
+BALANCELOGGER_GCP_PROJECT_ID=yieldchain-track-records
+BALANCELOGGER_DATASET=yield_mvp
+BALANCELOGGER_TABLE=test_balance_log
+# only used for local development
+BALANCELOGGER_SERVICE_ACCOUNT_FILE=
+
+# order logger
+ORDERLOGGER_GCP_PROJECT_ID=yieldchain-track-records
+ORDERLOGGER_DATASET=yield_mvp
+ORDERLOGGER_TABLE=test_order_log
+# only used for local development
+ORDERLOGGER_SERVICE_ACCOUNT_FILE=

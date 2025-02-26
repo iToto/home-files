@@ -1,0 +1,34 @@
+CREATE TABLE mvp_signal_log
+(
+id SERIAL UNIQUE ,
+signal VARCHAR(255),
+chain VARCHAR(255),
+trade_time TIMESTAMP WITH TIME ZONE,
+created_at TIMESTAMP WITH TIME ZONE NOT NULL DEFAULT CURRENT_TIMESTAMP,
+updated_at TIMESTAMP WITH TIME ZONE,
+deleted_at TIMESTAMP WITH TIME ZONE,
+CONSTRAINT mvp_signal_log_pkey PRIMARY KEY (id)
+);
+
+CREATE TABLE public.mvp_order
+(
+id VARCHAR(26) NOT NULL,
+client_order_id VARCHAR(255),
+strategy VARCHAR(255),
+status VARCHAR(255),
+currency_pair VARCHAR(255),
+avg_price VARCHAR(255),
+executed_qty VARCHAR(255),
+finished_at TIMESTAMP WITH TIME ZONE,
+created_at TIMESTAMP WITH TIME ZONE NOT NULL DEFAULT CURRENT_TIMESTAMP,
+updated_at TIMESTAMP WITH TIME ZONE,
+deleted_at TIMESTAMP WITH TIME ZONE,
+CONSTRAINT mvp_order_pkey PRIMARY KEY (id)
+);
+
+ALTER TABLE public.mvp_signal_log
+ADD strategy VARCHAR(255);
+
+-- DROP
+DROP TABLE IF EXISTS mvp_signal_log;
+DROP TABLE IF EXISTS mvp_trade;

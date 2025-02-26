@@ -1,0 +1,37 @@
+[user]
+	name = Salvatore D'Agostino
+	email = toto19@gmail.com
+	ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICUucb6cSkkwI3xP/VYz0vPxPeTleJyo7xEJ+hwudyjp
+[url "git@github.com:"]
+	insteadOf = https://github.com/
+[merge]
+	tool = kdiff3
+[mergetool "kdiff3"]
+	path = /Applications/kdiff3.app/Contents/MacOS/kdiff3
+[core]
+	excludesfile = /Users/salvatoredagostino/.gitignore_global
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[commit]
+	template = /Users/salvatoredagostino/.stCommitMsg
+	gpgsign = true
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+[pull]
+	ff = only
+[init]
+	defaultBranch = master
+[gpg]
+	program = gpg
+	format = ssh
+[gpg "ssh"]
+  program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
+
+

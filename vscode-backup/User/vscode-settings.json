@@ -1,0 +1,35 @@
+{
+    "editor.minimap.side": "left",
+    "vim.disableAnnoyingNeovimMessage": true,
+    "editor.formatOnSave": true,
+    "go.formatOnSave": true,
+    "extensions.ignoreRecommendations": true,
+    "workbench.panel.location": "right",
+    "editor.renderWhitespace": "all",
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.colorTheme": "One Dark Pro Vivid",
+    "files.associations": {
+        ".cflintrc": "json",
+        ".gitignore": "shellscript",
+        "zshrc": "shellscript",
+        ".aliases-custom": "shellscript"
+    },
+    "editor.rulers": [
+        80,
+        120
+    ],
+    "spellright.language": "en",
+    "workbench.panel.location": "bottom",
+    "git.autofetch": true,
+    "sublimeTextKeymap.promptV3Features": true,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.snippetSuggestions": "top",
+    "editor.formatOnPaste": true,
+    "go.coverageDecorator": "highlight",
+    "go.coverageOptions": "showUncoveredCodeOnly",
+    "go.coverOnSave": true,
+    "go.coverOnTestPackage": true,
+    "git.promptToSaveFilesBeforeCommit": true,
+    "terminal.integrated.copyOnSelection": true,
+    "gitlens.keymap": "alternate",
+}

@@ -1,0 +1,56 @@
+PORT=8080
+BTC_URL=http://34.91.227.63
+ETH_URL=http://34.91.74.58
+SIGNAL_RESOLUTION=30
+SIMULATE_TRADE=false
+
+# DB
+DB_USER=postgres
+DB_PASS=uhCx*7QpJvJVMnGovb
+INSTANCE_CONNECTION_NAME=yieldchain-track-records:us-east1:yield-mvp
+DB_NAME=yield-mvp
+
+# coinRoutes
+CR_URL=https://yieldchain.coinroutes.io
+CR_TOKEN=75f1b084913f43b70f6b4bee6d67da6ae981eb9b
+CR_WS_BASE_URL=portal.coinroutes.com
+CR_WS_TOKEN=aca3055df0b67a6bda687885e973eb8985a0b790
+
+# logs
+PRETTY_LOGS=false
+MIN_LOG_LEVEL=debug
+
+# strategies
+BTC_FTX_LONG_SHORT=ftxbtctest
+ETH_USDT=3usdttest
+BTC_LONG_SHORT=REMOVED
+ETH_LONG_SHORT=REMOVED
+BTC_LONG_NEUTRAL=REMOVED
+ETH_LONG_NEUTRAL=REMOVED
+FTX_ETH_COMPOUND=ftxethcompound2#
+
+# live strategies
+BINANCE_USDM_BTC_LS=newcobtcusdt
+BINANCE_USDM_ETH_LS=newcoethusdt
+BINANCE_USDM_BTC_LS2X=ycbtcusdt
+BINANCE_USDM_ETH_LS2X=ycethusdt
+
+# trade logger
+TRADELOGGER_GCP_PROJECT_ID=yieldchain-track-records
+TRADELOGGER_DATASET=yield_mvp
+TRADELOGGER_TABLE=trade_log
+
+# signal logger
+SIGNALLOGGER_GCP_PROJECT_ID=yieldchain-track-records
+SIGNALLOGGER_DATASET=yield_mvp
+SIGNALLOGGER_TABLE=signal_log
+
+# balance logger
+BALANCELOGGER_GCP_PROJECT_ID=yieldchain-track-records
+BALANCELOGGER_DATASET=yield_mvp
+BALANCELOGGER_TABLE=balance_log
+
+# order logger
+ORDERLOGGER_GCP_PROJECT_ID=yieldchain-track-records
+ORDERLOGGER_DATASET=yield_mvp
+ORDERLOGGER_TABLE=order_log

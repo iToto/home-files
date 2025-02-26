@@ -1,0 +1,26 @@
+.PHONY: run build-docker
+
+build:
+	GOARCH=amd64 CGO_ENABLED=0 go build -o bin/yield-signal-logger ./cmd/yield-signal-logger/main.go
+
+run:
+	TZ=UTC go run ./cmd/yield-signal-logger/main.go -e ./configs/env.local -local
+
+clean:
+	rm -Rf vendor
+	rm -R bin/*
+
+docker/build:
+	go mod vendor
+	docker build -t gcr.io/yieldchain-track-records/yield-signal-logger -f Dockerfile .
+	rm -Rf vendor
+
+docker/run:
+	docker compose up -d
+
+docker/build-and-push-image: docker/build
+	docker push gcr.io/yieldchain-track-records/yield-signal-logger
+
+cloudrun/deploy:
+	gcloud run deploy yield-signal-logger --image gcr.io/yieldchain-track-records/yield-signal-logger
+

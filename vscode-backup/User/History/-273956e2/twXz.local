@@ -1,0 +1,23 @@
+PORT=8080
+SIGNAL_RESOLUTION=5
+
+# logs
+PRETTY_LOGS=true
+MIN_LOG_LEVEL=debug
+
+# DB
+DATABASE_URL=postgres://postgres:password@localhost:5432/yield-mvp?sslmode=disable
+
+# signal logger
+SIGNALLOGGER_GCP_PROJECT_ID=yieldchain-track-records
+SIGNALLOGGER_DATASET=yield_mvp
+SIGNALLOGGER_TABLE=test_signal_log
+# only used for local development
+SIGNALLOGGER_SERVICE_ACCOUNT_FILE=/Users/salvatoredagostino/.gcp/yieldchain-track-records-d5ffccc9acb6.json
+
+# signal logger v2
+SIGNALLOGGER_V2_GCP_PROJECT_ID=yieldchain-track-records
+SIGNALLOGGER_V2_DATASET=yield_mvp
+SIGNALLOGGER_V2_TABLE=test_signal_log_v2
+# only used for local development
+SIGNALLOGGER_V2_SERVICE_ACCOUNT_FILE=/Users/salvatoredagostino/.gcp/yieldchain-track-records-d5ffccc9acb6.json

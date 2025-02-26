@@ -1,0 +1,43 @@
+alias ssh-hack="ssh gimli@165.227.32.172"
+alias ssh-matrix="ssh salvatoredagostino@10.0.0.200"
+alias ssh-zion="ssh neo@10.0.0.210"
+alias ssh-nebu="ssh morpheous@10.0.0.243"
+
+# GCP env
+export GOOGLE_APPLICATION_CREDENTIALS="/Users/salvatoredagostino/Dev/wingo/test-terraformer/gcp-credentials/braavos-staging-274420-b4f95db89b2a.json"
+# export GOOGLE_APPLICATION_CREDENTIALS="/Users/salvatoredagostino/.gcp/braavos-staging-eaf43580aee4.json"
+# export GOOGLE_APPLICATION_CREDENTIALS="/Users/salvatoredagostino/.gcp/wingo-32fd8-firebase-adminsdk-ejbs6-b14d69c1b0.json"
+# export GOOGLE_APPLICATION_CREDENTIALS="/Users/salvatoredagostino/.gcp/wingo-33c73-firebase-adminsdk-ss7jl-8b0ecc56bf.json"
+
+# GO Modules
+export GOPRIVATE=github.com/wingocard/utils/*,github.com/wingocard/entities
+
+# Wingo Variables
+export WINGO_LOCAL_DATA_DIR="/Users/salvatoredagostino/Dev/wingo/data/braavos-db"
+export WINGO_ENVIRONMENT="local"
+
+# SSH Wingo VMs
+# SFTP for RDF files (from Galileo)
+alias ssh-wingo-sftp="ssh -i ~/.ssh/google_compute_engine salvatoredagostino@sftp.wingocard.com"
+
+alias psql-braavos-local="PGPASSWORD=password psql -U postgres -h localhost -d braavos"
+alias psql-yield-local="PGPASSWORD=password psql -U postgres -h localhost -d yield-mvp"
+
+alias psql-braavos-staging-sam="psql \"sslmode=verify-ca sslrootcert=/Users/salvatoredagostino/Dev/wingo/db-ssl-keys/staging/server-ca.pem sslcert=/Users/salvatoredagostino/Dev/wingo/db-ssl-keys/staging/client-cert.pem sslkey=/Users/salvatoredagostino/Dev/wingo/db-ssl-keys/staging/client-key.pem user=sdagostino dbname=braavos hostaddr=35.196.161.37\""
+alias psql-braavos-staging-admin="psql \"sslmode=verify-ca sslrootcert=/Users/salvatoredagostino/Dev/wingo/db-ssl-keys/staging/server-ca.pem sslcert=/Users/salvatoredagostino/Dev/wingo/db-ssl-keys/staging/client-cert.pem sslkey=/Users/salvatoredagostino/Dev/wingo/db-ssl-keys/staging/client-key.pem user=postgres dbname=braavos hostaddr=35.196.161.37\""
+alias psql-braavos-staging-braavos="psql \"sslmode=verify-ca sslrootcert=/Users/salvatoredagostino/Dev/wingo/db-ssl-keys/staging/server-ca.pem sslcert=/Users/salvatoredagostino/Dev/wingo/db-ssl-keys/staging/client-cert.pem sslkey=/Users/salvatoredagostino/Dev/wingo/db-ssl-keys/staging/client-key.pem user=braavos-staging-user dbname=braavos hostaddr=35.196.161.37\" "
+
+alias psql-braavos-production-admin="psql \"sslmode=verify-ca sslrootcert=/Users/salvatoredagostino/Dev/wingo/db-ssl-keys/production/server-ca.pem sslcert=/Users/salvatoredagostino/Dev/wingo/db-ssl-keys/production/client-cert.pem sslkey=/Users/salvatoredagostino/Dev/wingo/db-ssl-keys/production/client-key.pem user=postgres dbname=braavos hostaddr=35.237.35.73\""
+alias psql-braavos-production-replica="psql \"sslmode=verify-ca sslrootcert=/Users/salvatoredagostino/Dev/wingo/db-ssl-keys/production/read-replica/server-ca.pem sslcert=/Users/salvatoredagostino/Dev/wingo/db-ssl-keys/production/read-replica/client-cert.pem sslkey=/Users/salvatoredagostino/Dev/wingo/db-ssl-keys/production/read-replica/client-key.pem user=postgres dbname=braavos hostaddr=104.196.59.245 \""
+alias psql-braavos-production-braavos="psql \"sslmode=verify-ca sslrootcert=/Users/salvatoredagostino/Dev/wingo/db-ssl-keys/production/server-ca.pem sslcert=/Users/salvatoredagostino/Dev/wingo/db-ssl-keys/production/client-cert.pem sslkey=/Users/salvatoredagostino/Dev/wingo/db-ssl-keys/production/client-key.pem user=braavos-user dbname=braavos hostaddr=35.237.35.73\" "
+
+alias psql-yield-production="psql \"user=postgres dbname=yield-mvp hostaddr=34.74.208.50\""
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/salvatoredagostino/Dev/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/salvatoredagostino/Dev/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/salvatoredagostino/Dev/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/salvatoredagostino/Dev/google-cloud-sdk/completion.zsh.inc'; fi
+
+# NVM
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh

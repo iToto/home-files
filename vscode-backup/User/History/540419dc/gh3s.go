@@ -1,0 +1,32 @@
+package handler
+
+import (
+	"errors"
+	"time"
+
+	"github.com/guregu/null"
+)
+
+type SignalType string
+
+const (
+	Short SignalType = "short"
+	Sell  SignalType = "sell"
+	Null  SignalType = "null"
+	Long  SignalType = "long"
+	Buy   SignalType = "buy"
+)
+
+var (
+	ErrRecordNotFound = errors.New("record not found")
+)
+
+type Signal struct {
+	ID        string     `db:"id" json:"id"`
+	Chain     string     `db:"chain" json:"chain"`
+	Signal    SignalType `db:"signal" json:"signal"`
+	TradeTime time.Time  `db:"trade_time" json:"trade_time"`
+	CreatedAt null.Time  `db:"created_at" json:"created_at,omitempty"`
+	UpdatedAt null.Time  `db:"updated_at" json:"updated_at,omitempty"`
+	DeletedAt null.Time  `db:"deleted_at" json:"deleted_at,omitempty"`
+}

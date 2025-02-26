@@ -1,0 +1,7 @@
+version: "3.1"
+services:
+  on-air:
+    build: .
+    ports:
+      - "8080:8080"
+    image: "itoto/on-air"

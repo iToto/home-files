@@ -1,0 +1,160 @@
+PORT=8080
+BTC_URL=http://34.91.227.63
+ETH_URL=http://34.91.74.58
+STUB_SIGNAL=true
+SIMULATE_TRADE=true
+SIGNAL_RESOLUTION=1000000000000
+
+# DB
+DATABASE_URL=postgres://postgres:password@localhost:5432/yield-mvp?sslmode=disable
+
+# coinRoutes
+
+# UAT
+# CR_URL=https://uat.coinroutes.io
+# CR_TOKEN=457a69e6168935ee2733dd77b704cd046651609b
+
+# production
+# CR_URL=https://yieldchain.coinroutes.io
+# CR_TOKEN=75f1b084913f43b70f6b4bee6d67da6ae981eb9b
+# CR_WS_BASE_URL=portal.coinroutes.com
+# CR_WS_TOKEN=aca3055df0b67a6bda687885e973eb8985a0b790
+
+# japan box
+CR_URL=https://yieldchain2.coinroutes.io
+CR_TOKEN=4d757623e7c70501e77193caa54350143d80d0da
+CR_WS_BASE_URL=portal.coinroutes.com
+CR_WS_TOKEN=aca3055df0b67a6bda687885e973eb8985a0b790
+
+# logs
+PRETTY_LOGS=true
+MIN_LOG_LEVEL=debug
+
+# user_id
+USER_ID=01G9XKZ6B407M8XARHRE3FXME1
+
+# email
+SMTP_PORT=587
+SMTP_HOST=smtp.gmail.com
+SMTP_USER=salvatore@lunaitconsulting.com
+SMTP_PASS=fvpmtfchirprvvej
+PATH_TO_CSV=reports
+
+# trade logger
+TRADELOGGER_GCP_PROJECT_ID=yieldchain-track-records
+TRADELOGGER_DATASET=yield_mvp
+TRADELOGGER_TABLE=test_trade_log
+# only used for local development
+TRADELOGGER_SERVICE_ACCOUNT_FILE=/Users/salvatoredagostino/.gcp/yieldchain-track-records-d5ffccc9acb6.json
+
+# signal logger
+SIGNALLOGGER_GCP_PROJECT_ID=yieldchain-track-records
+SIGNALLOGGER_DATASET=yield_mvp
+SIGNALLOGGER_TABLE=test_signal_log
+# only used for local development
+SIGNALLOGGER_SERVICE_ACCOUNT_FILE=/Users/salvatoredagostino/.gcp/yieldchain-track-records-d5ffccc9acb6.json
+
+# balance logger
+BALANCELOGGER_GCP_PROJECT_ID=yieldchain-track-records
+BALANCELOGGER_DATASET=yield_mvp
+BALANCELOGGER_TABLE=test_balance_log
+# only used for local development
+BALANCELOGGER_SERVICE_ACCOUNT_FILE=/Users/salvatoredagostino/.gcp/yieldchain-track-records-d5ffccc9acb6.json
+
+# order logger
+ORDERLOGGER_GCP_PROJECT_ID=yieldchain-track-records
+ORDERLOGGER_DATASET=yield_mvp
+ORDERLOGGER_TABLE=test_order_log
+# only used for local development
+ORDERLOGGER_SERVICE_ACCOUNT_FILE=/Users/salvatoredagostino/.gcp/yieldchain-track-records-d5ffccc9acb6.json
+
+# strategy reporting
+OKX_STRAT_ONE_NAME=ztradebtcv2
+OKX_STRAT_ONE_API_KEY=06df1ce5-b819-454d-a084-ccc517f18dbc
+OKX_STRAT_ONE_PASSPHRASE=a98Br!cYyc#a3H9t$yzq
+OKX_STRAT_ONE_SECRET_KEY=EA6884F1784B7F4C71F8F67A53354B7C
+
+OKX_STRAT_TWO_NAME=ytradeliqethsoprlong
+OKX_STRAT_TWO_API_KEY=93d63c58-4b91-4f30-94ca-dccf248fa035
+OKX_STRAT_TWO_PASSPHRASE=a98Br!cYyc#a3H9t$yzq
+OKX_STRAT_TWO_SECRET_KEY=4955A2C2A53974554F17A4C2C9B97F0F
+
+
+
+new705 
+COIN	
+a98Br!cYyc#a3H9t$yzq	
+06df1ce5-b819-454d-a084-ccc517f18dbc	
+EA6884F1784B7F4C71F8F67A53354B7CA
+
+ztradebtcv2 
+COIN	
+98fjkspjfe875dDwsSS@	
+b22272b7-0e6c-4396-a0fd-750623e61e13	
+33FDB048AE67667C08042E5AEA97EEF9A
+
+ytradeliqbtc18long 
+USD	
+98fjkspjfe875dDwsSS@	
+85ad6dbc-3455-4574-8e1e-48aea26a39dc	
+3F86BE20E4DF907A79D91FA4961BA770A
+
+ztradebtcmicmaclong 
+COIN	
+a98Br!cYyc#a3H9t$yzq	
+cc948038-0500-4cce-99ac-df4632af43d0	
+FADEA98DFA9678DDB892556696BE4AC3A
+
+feb24btcmicmac 
+USD	
+a98Br!cYyc#a3H9t$yzq	
+023f8645-86e2-4094-82a3-1319541b653e	
+4E92A8E26F242394E34A80A17909F6AFA
+
+longtermdec13 
+COIN	
+98fjkspjfe875dDwsSS@	
+ced491ca-d611-4a3a-8db0-d3e7532b8fb5	
+4CA694AE4F7CDD3839EA7617AC1CB565A
+
+ytradeliqeth18long 
+USD	
+98fjkspjfe875dDwsSS@	
+86274e21-279b-43c0-8904-06dc3b9866c8	
+0E0281D10C2F3AFC0246680162EB95CDA
+
+ytradeliqethsoprlong 
+USD	
+98fjkspjfe875dDwsSS@	
+34447d68-1524-45ed-a546-6b5df3893089	
+E847B196BBDBF8317869CB2416EFD7B0A
+
+ztradeethmicmacl 
+COIN	
+98fjkspjfe875dDwsSS@	
+070f913f-8de5-4e1e-b789-ac9357614b21	
+1FF10995A65AE5CDB689BD59B89DB199A
+
+mlbtcliq18 
+USD	
+a98Br!cYyc#a3H9t$yzq	
+121714a9-bab3-4787-9c97-f54f862ae3e1	
+3590DDB661A78B99A00141EFADB8DFFBA
+
+mlethliq18 
+USD	
+a98Br!cYyc#a3H9t$yzq	
+79389fa2-88aa-4c9c-9628-ef29fc8a836e	
+BA42095091C139A9090D7C29FD6ABC53A
+
+trach708 
+USD	
+98fjkspjfe875dDSS@d	2
+e4c969e-dd3a-439b-9f0b-31bfb98fa839	F
+E09FD9C28063FCC2ADDFD0E4DAA930EA
+
+tracklong6h5 
+USD	
+98fjkspjfe875dDSS@d	5
+88f0eac-839a-4520-b767-aeea8142701b	F
+43021DF1D6FD49DCF151D4EADF958B7A

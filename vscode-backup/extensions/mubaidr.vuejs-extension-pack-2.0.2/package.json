@@ -1,0 +1,60 @@
+{
+	"bugs": {
+		"url": "https://github.com/mubaidr/vuejs-extension-pack/issues"
+	},
+	"categories": [
+		"Extension Packs"
+	],
+	"description": "Popular VS Code extensions for Vue.js development providing Syntax highlighting, Code format, Code snippets, IntelliSense, Linting support, npm & node tools.",
+	"displayName": "Vue.js Extension Pack",
+	"engines": {
+		"vscode": "^1.26.0"
+	},
+	"extensionPack": [
+		"Vue.volar",
+		"Nuxt.mdc",
+		"Nuxtr.nuxtr-vscode",
+		"sdras.vue-vscode-snippets",
+		"antfu.vite",
+		"ZixuanChen.vitest-explorer",
+		"xabikos.javascriptsnippets",
+		"dbaeumer.vscode-eslint",
+		"esbenp.prettier-vscode",
+		"tombonnike.vscode-status-bar-format-toggle",
+		"christian-kohler.npm-intellisense",
+		"VisualStudioExptTeam.vscodeintellicode"
+	],
+	"galleryBanner": {
+		"color": "#333333",
+		"theme": "dark"
+	},
+	"homepage": "https://github.com/mubaidr/vuejs-extension-pack",
+	"icon": "vuejs-icon.png",
+	"keywords": [
+		"vue",
+		"nuxt",
+		"javascript",
+		"typescript",
+		"snippets"
+	],
+	"name": "vuejs-extension-pack",
+	"publisher": "mubaidr",
+	"repository": {
+		"url": "https://github.com/mubaidr/vuejs-extension-pack"
+	},
+	"version": "2.0.2",
+	"__metadata": {
+		"id": "cbf3bf40-02cc-4efa-b596-aa4cb09851f7",
+		"publisherId": "7fa486b8-8f93-4089-b530-dfd067a12d94",
+		"publisherDisplayName": "Muhammad Ubaid Raza",
+		"targetPlatform": "undefined",
+		"isApplicationScoped": false,
+		"isPreReleaseVersion": false,
+		"hasPreReleaseVersion": false,
+		"installedTimestamp": 1720982804633,
+		"pinned": false,
+		"preRelease": false,
+		"source": "gallery",
+		"size": 16343
+	}
+}

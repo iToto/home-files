@@ -1,0 +1,50 @@
+{
+	"name": "vscode-multi-line-tricks",
+	"displayName": "Multi Line tricks",
+	"description": "Enable Alt+L (line select) and Alt+Shift+L (selection to multi-cursor) behavior on VSCode",
+	"version": "0.0.3",
+	"publisher": "bigous",
+	"repository": {
+		"url": "https://github.com/BCJTI/vscode-multi-line-tricks"
+	},
+	"engines": {
+		"vscode": "^0.10.1"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:bcjti.selectLine",
+		"onCommand:bcjti.breakSelection"
+	],
+	"main": "./out/src/extension",
+	"contributes": {
+		"commands": [],
+		"keybindings": [
+			{
+				"key": "alt+l",
+				"when": "editorTextFocus",
+				"command": "bcjti.selectLine"
+			},
+			{
+				"key": "shift+alt+l",
+				"when": "editorTextFocus",
+				"command": "bcjti.breakSelection"
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "node ./node_modules/vscode/bin/compile",
+		"compile": "node ./node_modules/vscode/bin/compile -watch -p ./"
+	},
+	"devDependencies": {
+		"typescript": "^1.6.2",
+		"vscode": "0.10.x"
+	},
+	"__metadata": {
+		"id": "494eea46-9105-4bfa-8382-acdb070e2b9b",
+		"publisherId": "487cbad2-917a-49ef-8d21-c8b54d999495",
+		"publisherDisplayName": "Richard Natal",
+		"size": 1864718
+	}
+}

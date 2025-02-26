@@ -1,0 +1,3055 @@
+_type: export
+__export_format: 4
+__export_date: 2022-08-19T01:24:52.659Z
+__export_source: insomnia.desktop.app:v2022.5.0
+resources:
+  - _id: req_2eeb44ae83eb43348758404ca801e31b
+    parentId: fld_9485e241dfa74f92a55c9aa813ee840d
+    modified: 1660840958040
+    created: 1651798657792
+    url: "{{base_url}}/a"
+    name: BTC
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - description: ""
+        id: pair_13e8f5cbd54e4f73814873891a8b8de9
+        name: Authorization
+        value: Bearer
+          eyJhbGciOiJSUzI1NiIsImtpZCI6IjM4ZjM4ODM0NjhmYzY1OWFiYjQ0NzVmMzYzMTNkMjI1ODVjMmQ3Y2EiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzMjU1NTk0MDU1OS5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImF1ZCI6IjMyNTU1OTQwNTU5LmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTE3MDEwNjk3OTc0ODM5MDM2OTUxIiwiaGQiOiJsdW5haXRjb25zdWx0aW5nLmNvbSIsImVtYWlsIjoic2FsdmF0b3JlQGx1bmFpdGNvbnN1bHRpbmcuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiJvSC1RNUx5cUxMVnZBSmpqVDRSQUZ3IiwiaWF0IjoxNjU0MTQwMzg3LCJleHAiOjE2NTQxNDM5ODd9.Q1lhIJzYb7x46uvz6C8If5AxRMGxZ0Ee1akyaCPJj6kKf_cX5twtk1FjK-PvnQOsPDeyxj79k_roBW9DmohdnkmtDig0JZnjKnO-OXF4xeV8ZwDfGYMImFjlLo5o3ik-Gw2ShSVMipz9EiNbsWontrl-XldHSHXSNe-Vr0d67T3nGDSPJFQsov9ezo7wDRnZE6tt4weo8HzjZBUEarLwH-F1tHpe6k5YRfIfPQiOvKhwPkXvOkNy9-DZpMOVgTlr2fiGtTLllu0J3vjg-0Tq2roJNZ1pkOnPh1HgO2tA-j_QX6rXzWKjTR6KhnTDiSZoB1euzKGpZUtxKTET8hkyAQ
+    authentication:
+      disabled: true
+      prefix: ""
+      token: ya29.A0ARrdaM_VH5Uc3PGeaIlT3rleC-1_LkeY3e93zVEHkIuBvGUbawHWYq33C8cjGKGALHJYshCTyh4o3mWVcuZgp1FfFTw5O9pTS5t0EtDiLvH9bZbpGAhm1SwwhmesCUsmPwhlWPJ3Zuqo8EumxQmHkmC6J8POPs5WKWUgSw
+      type: bearer
+    metaSortKey: -1650748870368
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_9485e241dfa74f92a55c9aa813ee840d
+    parentId: wrk_708129d2e97d4714a6df16be3f84b8af
+    modified: 1652148291215
+    created: 1651798594994
+    name: Yield MVP
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1651798466446
+    _type: request_group
+  - _id: wrk_708129d2e97d4714a6df16be3f84b8af
+    parentId: null
+    modified: 1652973959281
+    created: 1651798450948
+    name: Yield
+    description: ""
+    scope: collection
+    _type: workspace
+  - _id: req_cb610d90efc24978976c1447f3345609
+    parentId: fld_9485e241dfa74f92a55c9aa813ee840d
+    modified: 1660840958040
+    created: 1651798852392
+    url: "{{base_url}}/b"
+    name: ETH
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1650748870318
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_0d754df0e3544c6d87e1706f980850d7
+    parentId: fld_9485e241dfa74f92a55c9aa813ee840d
+    modified: 1652841664904
+    created: 1652841529149
+    url: "{{base_url}}/accounts"
+    name: Get Exchange Accounts
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1650748870418
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_eba622bb18b243c3bd969df940f0f124
+    parentId: fld_9485e241dfa74f92a55c9aa813ee840d
+    modified: 1660840958040
+    created: 1660185474056
+    url: "{{base_url}}/update_balance"
+    name: Update Balance
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - description: ""
+        id: pair_13e8f5cbd54e4f73814873891a8b8de9
+        name: Authorization
+        value: Bearer
+          eyJhbGciOiJSUzI1NiIsImtpZCI6IjM4ZjM4ODM0NjhmYzY1OWFiYjQ0NzVmMzYzMTNkMjI1ODVjMmQ3Y2EiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzMjU1NTk0MDU1OS5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImF1ZCI6IjMyNTU1OTQwNTU5LmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTE3MDEwNjk3OTc0ODM5MDM2OTUxIiwiaGQiOiJsdW5haXRjb25zdWx0aW5nLmNvbSIsImVtYWlsIjoic2FsdmF0b3JlQGx1bmFpdGNvbnN1bHRpbmcuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiJvSC1RNUx5cUxMVnZBSmpqVDRSQUZ3IiwiaWF0IjoxNjU0MTQwMzg3LCJleHAiOjE2NTQxNDM5ODd9.Q1lhIJzYb7x46uvz6C8If5AxRMGxZ0Ee1akyaCPJj6kKf_cX5twtk1FjK-PvnQOsPDeyxj79k_roBW9DmohdnkmtDig0JZnjKnO-OXF4xeV8ZwDfGYMImFjlLo5o3ik-Gw2ShSVMipz9EiNbsWontrl-XldHSHXSNe-Vr0d67T3nGDSPJFQsov9ezo7wDRnZE6tt4weo8HzjZBUEarLwH-F1tHpe6k5YRfIfPQiOvKhwPkXvOkNy9-DZpMOVgTlr2fiGtTLllu0J3vjg-0Tq2roJNZ1pkOnPh1HgO2tA-j_QX6rXzWKjTR6KhnTDiSZoB1euzKGpZUtxKTET8hkyAQ
+    authentication:
+      disabled: true
+      prefix: ""
+      token: ya29.A0ARrdaM_VH5Uc3PGeaIlT3rleC-1_LkeY3e93zVEHkIuBvGUbawHWYq33C8cjGKGALHJYshCTyh4o3mWVcuZgp1FfFTw5O9pTS5t0EtDiLvH9bZbpGAhm1SwwhmesCUsmPwhlWPJ3Zuqo8EumxQmHkmC6J8POPs5WKWUgSw
+      type: bearer
+    metaSortKey: -1650748870393
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_faecaf7b968c4480810580579bb801bd
+    parentId: fld_9485e241dfa74f92a55c9aa813ee840d
+    modified: 1660793162986
+    created: 1660188811644
+    url: "{{base_url}}/disable_strategy/onofftest"
+    name: Disable Strategy
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - description: ""
+        id: pair_13e8f5cbd54e4f73814873891a8b8de9
+        name: Authorization
+        value: Bearer {{ _.gcp_token }}
+    authentication:
+      disabled: true
+      prefix: ""
+      token: ""
+      type: bearer
+    metaSortKey: -1651798604898.25
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_a2a9c86e23fa4642bf65e9e463b4c0cf
+    parentId: fld_9485e241dfa74f92a55c9aa813ee840d
+    modified: 1660793165062
+    created: 1660272429184
+    url: "{{base_url}}/enable_strategy/onofftest"
+    name: Enable Strategy
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - description: ""
+        id: pair_13e8f5cbd54e4f73814873891a8b8de9
+        name: Authorization
+        value: Bearer {{ _.gcp_token }}
+    authentication:
+      disabled: true
+      prefix: ""
+      token: ""
+      type: bearer
+    metaSortKey: -1651798596082.625
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_539836c1bb944d139a9da523b06034c8
+    parentId: fld_9485e241dfa74f92a55c9aa813ee840d
+    modified: 1660840958039
+    created: 1660701888136
+    url: "{{base_url}}/strategy"
+    name: Create Strategy
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"currency_pair": "ETH-USD.PERP",
+        	"enabled": true,
+        	"exchange": "ftx",
+        	"fixed_trade_amount": 9500,
+        	"leverage": 1,
+        	"margin": "usdm",
+        	"name": "bar",
+        	"signal_source_id": "01G9XM980S4DDAXPB60ZNXVMFY",
+        	"trade_strategy": "fixed",
+        	"type": "long_neutral",
+        	"user_id": "01G9XKZ6B407M8XARHRE3FXME1"
+        }
+    parameters: []
+    headers:
+      - description: ""
+        id: pair_13e8f5cbd54e4f73814873891a8b8de9
+        name: Authorization
+        value: Bearer {{ _.gcp_token }}
+      - id: pair_f299aead38564ea5bde93482ef16e708
+        name: Content-Type
+        value: application/json
+    authentication:
+      disabled: true
+      prefix: ""
+      token: ""
+      type: bearer
+    metaSortKey: -1651798604948.25
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_c8e57ffc2d7a444382070db98cb4b36f
+    parentId: fld_9485e241dfa74f92a55c9aa813ee840d
+    modified: 1660840958040
+    created: 1660702000206
+    url: "{{base_url}}/strategy"
+    name: Update Strategy
+    description: ""
+    method: PATCH
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"id": "01GAMRT1VT4ZA8NY4KVB6Q4GZG",
+        	"signal_source_id": "01G9XM980S4DDAXPB60ZNXVMFY",
+        	"type": "foo",
+        	"name": "foo",
+        	"exchange": "foo",
+        	"margin": "usdt",
+        	"leverage": 2,
+        	"fixed_trade_amount": 100,
+        	"trade_strategy": "fixed",
+        	"currency_pair": "ETH-USD.PERP"
+        }
+    parameters: []
+    headers:
+      - description: ""
+        id: pair_13e8f5cbd54e4f73814873891a8b8de9
+        name: Authorization
+        value: Bearer {{ _.gcp_token }}
+      - id: pair_f299aead38564ea5bde93482ef16e708
+        name: Content-Type
+        value: application/json
+    authentication:
+      disabled: true
+      prefix: ""
+      token: ""
+      type: bearer
+    metaSortKey: -1651798604923.25
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_545779f06df544fd93ce70c8cacdb667
+    parentId: fld_9485e241dfa74f92a55c9aa813ee840d
+    modified: 1660872252974
+    created: 1660793200744
+    url: "{{base_url}}/strategy"
+    name: Get Strategies
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - description: ""
+        id: pair_13e8f5cbd54e4f73814873891a8b8de9
+        name: Authorization
+        value: Bearer {{ _.gcp_token }}
+    authentication:
+      disabled: true
+      prefix: ""
+      token: ""
+      type: bearer
+    metaSortKey: -1651798591674.8125
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_5c5d98d2657a46fa83cd677b674e7efb
+    parentId: fld_9485e241dfa74f92a55c9aa813ee840d
+    modified: 1660840958039
+    created: 1660829748656
+    url: "{{base_url}}/strategy"
+    name: Get Strategies
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - description: ""
+        id: pair_13e8f5cbd54e4f73814873891a8b8de9
+        name: Authorization
+        value: Bearer {{ _.gcp_token }}
+    authentication:
+      disabled: true
+      prefix: ""
+      token: ""
+      type: bearer
+    metaSortKey: -1651798604998.25
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_2332ae642bd944deb8733d874ad4cf17
+    parentId: fld_da2b7f0d4a604c89bbb8d6a82925b1a3
+    modified: 1654027238548
+    created: 1654027133154
+    url: http://35.204.101.142/test-api
+    name: BTC Signal
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1654027173170
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_da2b7f0d4a604c89bbb8d6a82925b1a3
+    parentId: wrk_708129d2e97d4714a6df16be3f84b8af
+    modified: 1654027105094
+    created: 1652320425236
+    name: Signal API
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1652320425237
+    _type: request_group
+  - _id: req_990752b5df7e48f5b19821bacd725a10
+    parentId: fld_da2b7f0d4a604c89bbb8d6a82925b1a3
+    modified: 1654027231300
+    created: 1654027173120
+    url: http://34.141.231.198/test-api
+    name: ETH Signal
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1654027173120
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_aa09e380519247c39c8e4ee557a612c6
+    parentId: fld_da2b7f0d4a604c89bbb8d6a82925b1a3
+    modified: 1660793131317
+    created: 1655919939682
+    url: http://34.91.227.63/test-api
+    name: BTC Signal New
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1654027173070
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_06c868d134c8412395373d21b4302249
+    parentId: fld_da2b7f0d4a604c89bbb8d6a82925b1a3
+    modified: 1660793131316
+    created: 1655919967709
+    url: http://34.90.130.174/test-api
+    name: ETH Signal New
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1654027173020
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_ee29416f64ee40759bb382654b63f1ed
+    parentId: fld_da2b7f0d4a604c89bbb8d6a82925b1a3
+    modified: 1660793131317
+    created: 1658278719973
+    url: https://api.beta.eth.xeohive.com/test-api/r15v100-beta
+    name: BTC 17 old
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1658278719973
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_282ffd6cefb1432f8fa4120997e32301
+    parentId: fld_da2b7f0d4a604c89bbb8d6a82925b1a3
+    modified: 1660793131316
+    created: 1658279004069
+    url: https://api.beta.eth.xeohive.com/test-api/r15-old
+    name: ETH 17 old
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1658278720023
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_046ea89ec0f748cb96616fb4f7e841f8
+    parentId: fld_8b9a56b00cbf4add87d2f871f1f8b687
+    modified: 1653496394149
+    created: 1652320534857
+    url: "{{ _.cr_base_url
+      }}/api/client_orders/b612be50-e89c-4f4d-97b0-b243ac3215c6/cancel/"
+    name: Order Cancel
+    description: ""
+    method: POST
+    body: {}
+    parameters: []
+    headers:
+      - name: Authorization
+        value: Token {{ _.cr_token }}
+        id: pair_63ae84cdec2348778eb7f2bcd3a3631f
+      - name: ""
+        value: ""
+        id: pair_185b4ca28458468a8ed16b200693b1e6
+    authentication: {}
+    metaSortKey: -1652320534857
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_8b9a56b00cbf4add87d2f871f1f8b687
+    parentId: wrk_708129d2e97d4714a6df16be3f84b8af
+    modified: 1652320556191
+    created: 1652320540883
+    name: YieldChain
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1652059445841.5
+    _type: request_group
+  - _id: req_87d1d06ea1b94a8091eedb349a23a470
+    parentId: fld_8b9a56b00cbf4add87d2f871f1f8b687
+    modified: 1653496383296
+    created: 1652320534859
+    url: "{{ _.cr_base_url }}/api/currency_pairs"
+    name: New Order Target Currency
+    description: ""
+    method: POST
+    body:
+      mimeType: multipart/form-data
+      params:
+        - type: text
+          name: order_type
+          disabled: false
+          value: smart post
+          id: pair_de457cc23c50462aaf25e4abb2fed747
+        - type: text
+          name: order_status
+          disabled: false
+          value: open
+          id: pair_6e7433dc259b4c249dedecb1ba6e85cd
+        - type: text
+          name: aggression
+          disabled: false
+          value: neutral
+          id: pair_a721c45190804403829d411b487819ce
+        - type: text
+          name: move_percentage
+          disabled: true
+          value: string
+          id: pair_78b4f581311f4882921de174efae6ab8
+        - type: text
+          name: percent_limit_price
+          disabled: true
+          value: "1.00"
+          id: pair_da52511cb30e4d9f9649598159a8f1cb
+        - type: text
+          name: max_post_size
+          disabled: false
+          value: "1"
+          id: pair_cde046d05aeb4fe8ab242036bb9ef5c9
+        - type: text
+          name: is_twap
+          disabled: true
+          value: "false"
+          id: pair_46ef0a552ba548cab46f59a10ac366e8
+        - type: text
+          name: end_time
+          disabled: true
+          value: 2019-08-24T14:15:22Z
+          id: pair_2d359836b39c401e8bb4be62e3e33486
+        - type: text
+          name: interval_length
+          disabled: true
+          value: "5"
+          id: pair_9b9a593f7aec4b22b403b9571dbe771d
+        - type: text
+          name: tolerance_pct
+          disabled: true
+          value: "20"
+          id: pair_d33be74c94c6429a930cfed1efad94be
+        - type: text
+          name: sweep_pct
+          disabled: true
+          value: "0.1500"
+          id: pair_ef85c1b622154e56ad3129e371b8917b
+        - type: text
+          name: reprice_seconds
+          disabled: true
+          value: "1"
+          id: pair_8993bef2bca848ba9de558491a846041
+        - type: text
+          name: reprice_randomization_pct
+          disabled: true
+          value: "20.0000"
+          id: pair_d005c369cc2a44be87028af9d20f5d09
+        - type: text
+          name: currency_pair
+          disabled: false
+          value: ETH-USD
+          id: pair_1355d30e52e940788d3a66bf2f5bbb7f
+        - type: text
+          name: quantity
+          disabled: false
+          value: "1000"
+          id: pair_84b622d42fed43c3af494ddfe4678629
+        - type: text
+          name: limit_price
+          disabled: true
+          value: "200"
+          id: pair_c87c95e483b9466cb97cf310517c7f2f
+        - type: text
+          name: side
+          disabled: false
+          value: buy
+          id: pair_d9a618d11eb246f69db9a8d317cd6050
+        - type: text
+          name: exchanges
+          disabled: true
+          value: sim_kraken
+          id: pair_cf7140bb781a44479cd2f852578f6ba0
+        - type: text
+          name: market_data_exchanges
+          disabled: true
+          value: sim_kraken
+          id: pair_cc5c632807e646488a4ee461e7b6c754
+        - type: text
+          name: client_order_id
+          disabled: true
+          value: ""
+          id: pair_f137cf579e7d4abf9784b8052dfd4fc2
+        - type: text
+          name: strategy
+          disabled: false
+          value: yieldchain
+          id: pair_4c53f05bf45b48b2a8a0a20ec3a0e64d
+        - type: text
+          name: post_exchange_count
+          disabled: true
+          value: "2"
+          id: pair_844d9c331676430495a309567f3a4334
+        - type: text
+          name: max_order_count
+          disabled: true
+          value: "4"
+          id: pair_f339b576e8e74279b22586c45e5475db
+        - type: text
+          name: margin_leverage
+          disabled: true
+          value: "0"
+          id: pair_4b4592f637a44608b57a26d53eaf6a72
+        - type: text
+          name: margin_borrow_pct
+          disabled: true
+          value: "0"
+          id: pair_6f37fb222e5740dcb63b34577075f43a
+        - type: text
+          name: parent_order
+          disabled: true
+          value: ""
+          id: pair_299231992994446dad5bc9d47ee40d6e
+        - type: text
+          name: ignore_filter_levels
+          disabled: true
+          value: "false"
+          id: pair_4e0ff3360e4e4439ba4d6eedce0e34b9
+        - type: text
+          name: use_funding_currency
+          disabled: true
+          value: "true"
+          id: pair_0ce883ab7fac442a9812ad6a881c481f
+        - type: text
+          name: stop_price
+          disabled: true
+          value: string
+          id: pair_6c8cee91ec7f4665ae9a88754801bb67
+        - type: text
+          name: end_offset
+          disabled: true
+          value: "0"
+          id: pair_9bcc9779df7d4ce9a54b2712f54d6329
+        - type: text
+          name: quantity_currency
+          disabled: true
+          value: string
+          id: pair_df7c4d517e684208a33f572f03733c29
+        - type: text
+          name: sweep_to
+          disabled: true
+          value: disabled
+          id: pair_580b2028d0e142c88daa88f095ed63d0
+    parameters: []
+    headers:
+      - name: Authorization
+        value: Token {{ _.cr_token }}
+        id: pair_e037d2414ba64efb9e4f77276d3cbd9a
+    authentication: {}
+    metaSortKey: -1652320534860.5
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_2f663e393f274634923eef2f4880ddd5
+    parentId: fld_8b9a56b00cbf4add87d2f871f1f8b687
+    modified: 1653496386583
+    created: 1652320534860
+    url: "{{ _.cr_base_url }}/api/client_orders"
+    name: New Order Funding Currency
+    description: ""
+    method: POST
+    body:
+      mimeType: multipart/form-data
+      params:
+        - type: text
+          name: order_type
+          disabled: false
+          value: smart post
+          id: pair_a73eee2a5d0c4f8a89b173fcba616d18
+        - type: text
+          name: order_status
+          disabled: false
+          value: open
+          id: pair_295a4d305dd84f909df52b45b124b2e8
+        - type: text
+          name: aggression
+          disabled: false
+          value: neutral
+          id: pair_3a07f9dc932647b2a4a90bf34ef295ee
+        - type: text
+          name: move_percentage
+          disabled: true
+          value: string
+          id: pair_d6976a7487e447ff809026cb3114b350
+        - type: text
+          name: percent_limit_price
+          disabled: true
+          value: "1.00"
+          id: pair_de8c1f4ccbf449c8a7a195b586e2e833
+        - type: text
+          name: max_post_size
+          disabled: false
+          value: "1"
+          id: pair_5572151278924bdf8f5c8b780d50cba3
+        - type: text
+          name: is_twap
+          disabled: true
+          value: "false"
+          id: pair_34bb9f0580cc437998f16f1a5209d3d3
+        - type: text
+          name: end_time
+          disabled: true
+          value: 2019-08-24T14:15:22Z
+          id: pair_cc0b568ce77146eb85660f6000d22909
+        - type: text
+          name: interval_length
+          disabled: true
+          value: "5"
+          id: pair_773318018f3f478e91197302da70584f
+        - type: text
+          name: tolerance_pct
+          disabled: true
+          value: "20"
+          id: pair_fee28be1920449a893e53fc7eaab030c
+        - type: text
+          name: sweep_pct
+          disabled: true
+          value: "0.1500"
+          id: pair_3c2282a70f524a58914d4dbf911a09a7
+        - type: text
+          name: reprice_seconds
+          disabled: true
+          value: "1"
+          id: pair_bba1f424fd6f4447acd835f641223d9c
+        - type: text
+          name: reprice_randomization_pct
+          disabled: true
+          value: "20.0000"
+          id: pair_6ee3e22e9052494aadb628a885e90921
+        - type: text
+          name: currency_pair
+          disabled: false
+          value: ETH-USD.IPERP
+          id: pair_6ee5bb7c111846d1bdccfb2da8fc2bd0
+        - type: text
+          name: quantity
+          disabled: false
+          value: "98"
+          id: pair_94ada24b445344b4a2dd5fc88101181c
+        - type: text
+          name: limit_price
+          disabled: true
+          value: "200"
+          id: pair_437e5b1c37334d41a33321e6e286f6a0
+        - type: text
+          name: side
+          disabled: false
+          value: sell
+          id: pair_b9b5b68d4b5b42108d16244db9a61074
+        - type: text
+          name: exchanges
+          disabled: true
+          value: sim_kraken
+          id: pair_ff5ad52281164ae4a4ba86bc68eea307
+        - type: text
+          name: market_data_exchanges
+          disabled: true
+          value: sim_kraken
+          id: pair_79d992a1e3a64a9694506859c23aba0c
+        - type: text
+          name: client_order_id
+          disabled: true
+          value: ""
+          id: pair_3041366ef4ed4eebbde6270347dc49f6
+        - type: text
+          name: strategy
+          disabled: false
+          value: yieldchain
+          id: pair_6a29ec643cd94a53827f8fce162870cb
+        - type: text
+          name: post_exchange_count
+          disabled: true
+          value: "2"
+          id: pair_a9e90838cafb4ebb820a9f08df566189
+        - type: text
+          name: max_order_count
+          disabled: true
+          value: "4"
+          id: pair_0725daff1d07487580fbdffb882638c5
+        - type: text
+          name: margin_leverage
+          disabled: true
+          value: "0"
+          id: pair_e245d40ee04f4527b9c1add1293e5158
+        - type: text
+          name: margin_borrow_pct
+          disabled: true
+          value: "0"
+          id: pair_cac196d84c3246539560b9a8c6f7e34e
+        - type: text
+          name: parent_order
+          disabled: true
+          value: ""
+          id: pair_4f2a3f8ad51f448a8187ce76ef682e1d
+        - type: text
+          name: ignore_filter_levels
+          disabled: true
+          value: "false"
+          id: pair_e34e02dc8980446f9d84048fea93c07c
+        - type: text
+          name: use_funding_currency
+          disabled: true
+          value: "true"
+          id: pair_68bcbd5065684d55979bf7be9af91b72
+        - type: text
+          name: stop_price
+          disabled: true
+          value: string
+          id: pair_b4e03e00bc49463ca9de205485ea6d85
+        - type: text
+          name: end_offset
+          disabled: true
+          value: "0"
+          id: pair_4b9ffc4b8c99416c9239351864b62722
+        - type: text
+          name: quantity_currency
+          disabled: true
+          value: string
+          id: pair_d8ca89d77b754e66beeaf5939d64fffc
+        - type: text
+          name: sweep_to
+          disabled: true
+          value: disabled
+          id: pair_cf72d0be64244f2cb105e96d15bc7cc9
+    parameters: []
+    headers:
+      - name: Authorization
+        value: Token {{ _.cr_token }}
+        id: pair_d2090145541242c5b3d844529889dc59
+    authentication: {}
+    metaSortKey: -1652320534860
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_e9b5e74fa4c3446b8532aa1c37a44d62
+    parentId: fld_8b9a56b00cbf4add87d2f871f1f8b687
+    modified: 1660793131317
+    created: 1652320534861
+    url: "{{ _.cr_base_url
+      }}/api/client_orders/7f078846-d4c9-40dd-aff6-b51cdb753fca/"
+    name: Order List
+    description: ""
+    method: GET
+    body:
+      mimeType: multipart/form-data
+      params:
+        - disabled: true
+          id: pair_09579d9adcfd42579558609ef2d73504
+          name: order_type
+          type: text
+          value: smart post
+        - disabled: true
+          id: pair_48f639acbf2741f88b1b5f17aeff50a6
+          name: order_status
+          type: text
+          value: open
+        - disabled: true
+          id: pair_c8774680002f4246bd6868d4e54090c9
+          name: aggression
+          type: text
+          value: neutral
+        - disabled: true
+          id: pair_3bc791f96a574ced8fad20a6f87ce365
+          name: move_percentage
+          type: text
+          value: string
+        - disabled: true
+          id: pair_d25cd8ef16f6459fae992927a2526cb6
+          name: percent_limit_price
+          type: text
+          value: "1.00"
+        - disabled: true
+          id: pair_96e4d638075e4f898cdc5e92a4ff2d38
+          name: max_post_size
+          type: text
+          value: string
+        - disabled: true
+          id: pair_9e61335e90114ef09cbfb6a3cc0d0900
+          name: is_twap
+          type: text
+          value: "false"
+        - disabled: true
+          id: pair_cd2cc356362a44e7930bd802e19e849d
+          name: end_time
+          type: text
+          value: 2019-08-24T14:15:22Z
+        - disabled: true
+          id: pair_285bea8a5b5344aaac62211e2404d13b
+          name: interval_length
+          type: text
+          value: "5"
+        - disabled: true
+          id: pair_2fcf39b4c1fc4d988eb5b2148a39538f
+          name: tolerance_pct
+          type: text
+          value: "20"
+        - disabled: true
+          id: pair_8f01b4b8b38e47f4a8e0549552a07465
+          name: sweep_pct
+          type: text
+          value: "0.1500"
+        - disabled: true
+          id: pair_c1772361fb9a478ca43c6366abbc938f
+          name: reprice_seconds
+          type: text
+          value: "1"
+        - disabled: true
+          id: pair_1d093a89216c4e8a9a17a5662bff3a2d
+          name: reprice_randomization_pct
+          type: text
+          value: "20.0000"
+        - disabled: true
+          id: pair_8fa7c8ae42a947ff94f7cc56f81f6df9
+          name: currency_pair
+          type: text
+          value: ETH-USD
+        - disabled: true
+          id: pair_a629f342d95946cdb0f0f2d1bebd034c
+          name: quantity
+          type: text
+          value: "1"
+        - disabled: true
+          id: pair_02e0299bc3c44586b40f4ccb13fce19a
+          name: limit_price
+          type: text
+          value: "200"
+        - disabled: true
+          id: pair_7dfb22ad26334062ac6ff0693fa40bce
+          name: side
+          type: text
+          value: buy
+        - disabled: true
+          id: pair_0bac08de13f042b0a4f177b57e822d9c
+          name: exchanges
+          type: text
+          value: sim_kraken
+        - disabled: true
+          id: pair_66fbe92d287f41bcad777a24b6f9b159
+          name: market_data_exchanges
+          type: text
+          value: sim_kraken
+        - disabled: false
+          id: pair_b4e3e1da38d447a3aacb33c979a76be2
+          name: client_order_id
+          type: text
+          value: 8ba452f9-d385-41a8-92bd-74cbb3ceda0c
+        - disabled: true
+          id: pair_c6a9d01936de4e7d976416a045b166fd
+          name: strategy
+          type: text
+          value: Test1
+        - disabled: true
+          id: pair_9962b30bae1747c7bbb2a61d92b8463b
+          name: post_exchange_count
+          type: text
+          value: "2"
+        - disabled: true
+          id: pair_ec9d2e8d3fbb40a0bbe60e04c28558d2
+          name: max_order_count
+          type: text
+          value: "4"
+        - disabled: true
+          id: pair_0148342f650648eebdedeab365878452
+          name: margin_leverage
+          type: text
+          value: "0"
+        - disabled: true
+          id: pair_c36eb797b1b34bf6a9e262e7e3e02f56
+          name: margin_borrow_pct
+          type: text
+          value: "0"
+        - disabled: true
+          id: pair_66f26aa830484ea1a0e43293312ad936
+          name: parent_order
+          type: text
+          value: f3f1aa5e-8b21-4d14-96fb-2217d6524c79
+        - disabled: true
+          id: pair_ac1edce17c1d40bc9be15d185e62e93c
+          name: ignore_filter_levels
+          type: text
+          value: "false"
+        - disabled: true
+          id: pair_cc6b15ed5d864d42947b50e44d1922b7
+          name: use_funding_currency
+          type: text
+          value: "false"
+        - disabled: true
+          id: pair_20baf3b62adc4abd8ad59d01af94aa2b
+          name: stop_price
+          type: text
+          value: string
+        - disabled: true
+          id: pair_c8c5ad6b969641038b913fc6bba7376a
+          name: end_offset
+          type: text
+          value: "0"
+        - disabled: true
+          id: pair_324436e2bf9941299dca5ee628b45726
+          name: quantity_currency
+          type: text
+          value: string
+        - disabled: true
+          id: pair_6fa04eb79a1e410aa66f926dadd1ad19
+          name: sweep_to
+          type: text
+          value: disabled
+    parameters: []
+    headers:
+      - id: pair_060c89f7559c4fec97d4ecf585b7679a
+        name: Authorization
+        value: Token {{ _.cr_token }}
+    authentication: {}
+    metaSortKey: -1652320534861
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_25ff4ad58cab4d438fb712ff471fcfcb
+    parentId: fld_8b9a56b00cbf4add87d2f871f1f8b687
+    modified: 1656382239361
+    created: 1652320534862
+    url: "{{ _.cr_base_url }}/api/currency_pairs"
+    name: Currency Pairs All
+    description: ""
+    method: GET
+    body:
+      mimeType: multipart/form-data
+      params:
+        - type: text
+          name: order_type
+          disabled: true
+          value: smart post
+          id: pair_5d2b65049229436c808edf8e8c2ccbd3
+        - type: text
+          name: order_status
+          disabled: true
+          value: open
+          id: pair_323326d40ed1453c9ea20704782983e6
+        - type: text
+          name: aggression
+          disabled: true
+          value: neutral
+          id: pair_c806edb8752248a184721346ca249432
+        - type: text
+          name: move_percentage
+          disabled: true
+          value: string
+          id: pair_01302c93b7e5411a9f4e346451bb0e80
+        - type: text
+          name: percent_limit_price
+          disabled: true
+          value: "1.00"
+          id: pair_1036958c0aa54120ac87852406887b55
+        - type: text
+          name: max_post_size
+          disabled: true
+          value: string
+          id: pair_daac6a7830e94fcc9b6dd23d60bd7d6f
+        - type: text
+          name: is_twap
+          disabled: true
+          value: "false"
+          id: pair_dd89552ae19140118ab78b0ffebcddee
+        - type: text
+          name: end_time
+          disabled: true
+          value: 2019-08-24T14:15:22Z
+          id: pair_ad281853d38f4f6b8c57af9199288ca7
+        - type: text
+          name: interval_length
+          disabled: true
+          value: "5"
+          id: pair_4d849757f551488eb745bcf50adcde5c
+        - type: text
+          name: tolerance_pct
+          disabled: true
+          value: "20"
+          id: pair_7523788ae94f4f349e3bb6b9f6ec93bf
+        - type: text
+          name: sweep_pct
+          disabled: true
+          value: "0.1500"
+          id: pair_61a247c8c3c74716909a9548d3b07961
+        - type: text
+          name: reprice_seconds
+          disabled: true
+          value: "1"
+          id: pair_7f1a572ebbfd4983917b73e20d3acfc1
+        - type: text
+          name: reprice_randomization_pct
+          disabled: true
+          value: "20.0000"
+          id: pair_9dc6340ab7194e6fb3dcf21b550d7ff2
+        - type: text
+          name: currency_pair
+          disabled: true
+          value: ETH-USD
+          id: pair_d0982ad803d74ba8921930a74bd107a0
+        - type: text
+          name: quantity
+          disabled: true
+          value: "1"
+          id: pair_88a877bf0f1741fb9f67e3a475e05eb7
+        - type: text
+          name: limit_price
+          disabled: true
+          value: "200"
+          id: pair_3fe76eb5694a4da18b88aa0dd784282e
+        - type: text
+          name: side
+          disabled: true
+          value: buy
+          id: pair_7d81dbae0e9149d0ba77c57b27fc8b99
+        - type: text
+          name: exchanges
+          disabled: true
+          value: sim_kraken
+          id: pair_d2c13863be064c198d0de45839d9f511
+        - type: text
+          name: market_data_exchanges
+          disabled: true
+          value: sim_kraken
+          id: pair_4547fa32f7bd4df68c93000aff9e9604
+        - type: text
+          name: client_order_id
+          disabled: false
+          value: 8ba452f9-d385-41a8-92bd-74cbb3ceda0c
+          id: pair_1d305aebc94f46ebac1f8392def28c7b
+        - type: text
+          name: strategy
+          disabled: true
+          value: Test1
+          id: pair_ea99012c0153446f9ce8ae98de0a3d97
+        - type: text
+          name: post_exchange_count
+          disabled: true
+          value: "2"
+          id: pair_b1b2d5efa7384a16a4012d2d82276112
+        - type: text
+          name: max_order_count
+          disabled: true
+          value: "4"
+          id: pair_9a870d30979343d9909ac1478d8cd2d1
+        - type: text
+          name: margin_leverage
+          disabled: true
+          value: "0"
+          id: pair_72eb1cfd05694cfc956495fe15d7a25a
+        - type: text
+          name: margin_borrow_pct
+          disabled: true
+          value: "0"
+          id: pair_aad3e868df914f55aa626438a1f98bc2
+        - type: text
+          name: parent_order
+          disabled: true
+          value: f3f1aa5e-8b21-4d14-96fb-2217d6524c79
+          id: pair_3bb3eae3f02545eaa9d9a8a981d00f85
+        - type: text
+          name: ignore_filter_levels
+          disabled: true
+          value: "false"
+          id: pair_cc8b7dd768634361901ff8992c1e8f17
+        - type: text
+          name: use_funding_currency
+          disabled: true
+          value: "false"
+          id: pair_abb4fec35ce04794bb0c0f618b5a6b02
+        - type: text
+          name: stop_price
+          disabled: true
+          value: string
+          id: pair_77e5d5305ecf4b1e874b955c627906e2
+        - type: text
+          name: end_offset
+          disabled: true
+          value: "0"
+          id: pair_51dda0b66e0143b29cfefe122bcdc187
+        - type: text
+          name: quantity_currency
+          disabled: true
+          value: string
+          id: pair_0dcefd2018424f67817aeff7ab66d2c5
+        - type: text
+          name: sweep_to
+          disabled: true
+          value: disabled
+          id: pair_8fcc4a7aa07f43069f59d8285a4df7c9
+    parameters: []
+    headers:
+      - name: Authorization
+        value: Token {{ _.cr_token }}
+        id: pair_2728741c1d6d4640a6abe4711d0932b9
+    authentication: {}
+    metaSortKey: -1652320534862
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_57359b68cdff4f23a0e8ffd8244b20f6
+    parentId: fld_8b9a56b00cbf4add87d2f871f1f8b687
+    modified: 1660793131317
+    created: 1652320534862
+    url: "{{ _.cr_base_url }}/api/currency_pairs?strategy=ftxethcompound2"
+    name: Currency Pair
+    description: ""
+    method: GET
+    body:
+      mimeType: multipart/form-data
+      params:
+        - disabled: true
+          id: pair_b389281c6da949f28f70504ef73902e9
+          name: order_type
+          type: text
+          value: smart post
+        - disabled: true
+          id: pair_fa37fe64907d47f3bd98d71a4f554054
+          name: order_status
+          type: text
+          value: open
+        - disabled: true
+          id: pair_6f1174dacf824ad7a10eb8468c44a5f1
+          name: aggression
+          type: text
+          value: neutral
+        - disabled: true
+          id: pair_eeb14f492e53474b8aa937a431d54b7e
+          name: move_percentage
+          type: text
+          value: string
+        - disabled: true
+          id: pair_8654ac5c403941e182301a3b466d4967
+          name: percent_limit_price
+          type: text
+          value: "1.00"
+        - disabled: true
+          id: pair_60273954d8ad4e92aa7f0f9001120767
+          name: max_post_size
+          type: text
+          value: string
+        - disabled: true
+          id: pair_56558ebf186b489780c2d801e9bfc59f
+          name: is_twap
+          type: text
+          value: "false"
+        - disabled: true
+          id: pair_6e06cd0a1f0c4c8abd50c55e7bcfccb8
+          name: end_time
+          type: text
+          value: 2019-08-24T14:15:22Z
+        - disabled: true
+          id: pair_bb1876dbef0e4a15838ee6f90b00c33e
+          name: interval_length
+          type: text
+          value: "5"
+        - disabled: true
+          id: pair_0d03f156b2ee4e289500b618bf23e378
+          name: tolerance_pct
+          type: text
+          value: "20"
+        - disabled: true
+          id: pair_d14be0beb37545bf96fdbb019f345aa7
+          name: sweep_pct
+          type: text
+          value: "0.1500"
+        - disabled: true
+          id: pair_4423e22feb314a63bc7c3f88c69ffe41
+          name: reprice_seconds
+          type: text
+          value: "1"
+        - disabled: true
+          id: pair_c906cd4e35be43c6a05896ec48a6e23a
+          name: reprice_randomization_pct
+          type: text
+          value: "20.0000"
+        - disabled: true
+          id: pair_9a7c180d2c1c4cf9987011b198a9f832
+          name: currency_pair
+          type: text
+          value: ETH-USD
+        - disabled: true
+          id: pair_72d772c7972c4f50bf49de6b19de2ae6
+          name: quantity
+          type: text
+          value: "1"
+        - disabled: true
+          id: pair_342b60952dcf49cda33042e915f8f077
+          name: limit_price
+          type: text
+          value: "200"
+        - disabled: true
+          id: pair_48431063b9ee4d74a1d9714204108df8
+          name: side
+          type: text
+          value: buy
+        - disabled: true
+          id: pair_2ab0e4556a9242c188c3a08f112d8193
+          name: exchanges
+          type: text
+          value: sim_kraken
+        - disabled: true
+          id: pair_6d9e165a19704530924633c3d1544e80
+          name: market_data_exchanges
+          type: text
+          value: sim_kraken
+        - disabled: false
+          id: pair_4242ef943b904dc189c1c91baf6a9d78
+          name: client_order_id
+          type: text
+          value: 8ba452f9-d385-41a8-92bd-74cbb3ceda0c
+        - disabled: true
+          id: pair_c945113054ab409cb8631ea3d84960f6
+          name: strategy
+          type: text
+          value: Test1
+        - disabled: true
+          id: pair_33915bc32d3a427c947a0de2e3b9da88
+          name: post_exchange_count
+          type: text
+          value: "2"
+        - disabled: true
+          id: pair_ea67ad17485e4f0ead7b3aaad104efd0
+          name: max_order_count
+          type: text
+          value: "4"
+        - disabled: true
+          id: pair_492c40f1b65c4778a6d64120d484c954
+          name: margin_leverage
+          type: text
+          value: "0"
+        - disabled: true
+          id: pair_2609b5af929743ea99e157d2ed6c97e5
+          name: margin_borrow_pct
+          type: text
+          value: "0"
+        - disabled: true
+          id: pair_9614f39d4fe44b638234563695b6fa31
+          name: parent_order
+          type: text
+          value: f3f1aa5e-8b21-4d14-96fb-2217d6524c79
+        - disabled: true
+          id: pair_bacb777d6c884a0090c0577740f5f4b6
+          name: ignore_filter_levels
+          type: text
+          value: "false"
+        - disabled: true
+          id: pair_e7f056eb58f84ac5b04b0bd3495b369f
+          name: use_funding_currency
+          type: text
+          value: "false"
+        - disabled: true
+          id: pair_4339ec7a07094834bc308e3c09c0a8d6
+          name: stop_price
+          type: text
+          value: string
+        - disabled: true
+          id: pair_21608dfbbf744fbc9b03807b27cac221
+          name: end_offset
+          type: text
+          value: "0"
+        - disabled: true
+          id: pair_57a8e42cccb941c0aa79f61da48b918e
+          name: quantity_currency
+          type: text
+          value: string
+        - disabled: true
+          id: pair_b8e07b33bb45443999b9e4eaa4c1d76a
+          name: sweep_to
+          type: text
+          value: disabled
+    parameters: []
+    headers:
+      - id: pair_300c81e167234014979736b71c45b72a
+        name: Authorization
+        value: Token {{ _.cr_token }}
+    authentication: {}
+    metaSortKey: -1652320534862
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_25c15ca6d9694daab2e7907df3a3515f
+    parentId: fld_8b9a56b00cbf4add87d2f871f1f8b687
+    modified: 1660793131317
+    created: 1652320534863
+    url: "{{ _.cr_base_url
+      }}/api/sor_orders/?client_order_id=d529e71b-dbc7-4377-9c58-9cf0f89b688d"
+    name: Sor Orders
+    description: ""
+    method: GET
+    body:
+      mimeType: multipart/form-data
+      params:
+        - disabled: true
+          id: pair_ac783d48a6824156ace26c17eddd8942
+          name: order_type
+          type: text
+          value: smart post
+        - disabled: true
+          id: pair_352a8dceb5fc473481d7026b1b2675a8
+          name: order_status
+          type: text
+          value: open
+        - disabled: true
+          id: pair_568572fcb856469896765d1dd63736df
+          name: aggression
+          type: text
+          value: neutral
+        - disabled: true
+          id: pair_6fe0fd2dcb024d41bc6bdb838e6b761e
+          name: move_percentage
+          type: text
+          value: string
+        - disabled: true
+          id: pair_08ba78fb19a041c3843987bd565a1308
+          name: percent_limit_price
+          type: text
+          value: "1.00"
+        - disabled: true
+          id: pair_6c5d6a46519f442f8ad7f3d2f3394066
+          name: max_post_size
+          type: text
+          value: string
+        - disabled: true
+          id: pair_de42b61291da4a739afb205609c55522
+          name: is_twap
+          type: text
+          value: "false"
+        - disabled: true
+          id: pair_feb77063102c4f988da811d957371784
+          name: end_time
+          type: text
+          value: 2019-08-24T14:15:22Z
+        - disabled: true
+          id: pair_d41883007db94dc09cb2b30596c34677
+          name: interval_length
+          type: text
+          value: "5"
+        - disabled: true
+          id: pair_c66a87e2d44f46eba09796b367f59844
+          name: tolerance_pct
+          type: text
+          value: "20"
+        - disabled: true
+          id: pair_6c4468e5a1164896a39bcd4046f419c0
+          name: sweep_pct
+          type: text
+          value: "0.1500"
+        - disabled: true
+          id: pair_6a26af868be54d83b3577e7b833909de
+          name: reprice_seconds
+          type: text
+          value: "1"
+        - disabled: true
+          id: pair_d8db5cf43f9c4a709c50ce72a8da1a1d
+          name: reprice_randomization_pct
+          type: text
+          value: "20.0000"
+        - disabled: true
+          id: pair_8e8282bc8e46414488e35c0507bc2b2b
+          name: currency_pair
+          type: text
+          value: ETH-USD
+        - disabled: true
+          id: pair_e7e6c9d1e53047979124c4a765c28227
+          name: quantity
+          type: text
+          value: "1"
+        - disabled: true
+          id: pair_befa0e23ee3a400aaba264a7474f01b4
+          name: limit_price
+          type: text
+          value: "200"
+        - disabled: true
+          id: pair_c347a739bba24f1d8a89fcbe8d1a321b
+          name: side
+          type: text
+          value: buy
+        - disabled: true
+          id: pair_62ad44c10df24df8a69a1fb40895f66a
+          name: exchanges
+          type: text
+          value: sim_kraken
+        - disabled: true
+          id: pair_23acb080779d49969cfd6e65660a6f8c
+          name: market_data_exchanges
+          type: text
+          value: sim_kraken
+        - disabled: false
+          id: pair_e9e14c10381e4767a6ce593f920b0c8d
+          name: client_order_id
+          type: text
+          value: 8ba452f9-d385-41a8-92bd-74cbb3ceda0c
+        - disabled: true
+          id: pair_74b647b6bb924b7bb635e57914bace71
+          name: strategy
+          type: text
+          value: Test1
+        - disabled: true
+          id: pair_f19b5f403c9044caa08babb91d3432e9
+          name: post_exchange_count
+          type: text
+          value: "2"
+        - disabled: true
+          id: pair_b16a079ee7e64ae3a94e28b7690f11a8
+          name: max_order_count
+          type: text
+          value: "4"
+        - disabled: true
+          id: pair_35a889a4eb524d30919a9add910ff9d0
+          name: margin_leverage
+          type: text
+          value: "0"
+        - disabled: true
+          id: pair_9bffbf4e90df4df0b26e24c85eaee9f1
+          name: margin_borrow_pct
+          type: text
+          value: "0"
+        - disabled: true
+          id: pair_95a46ff5eb3a450f99592e318782b37a
+          name: parent_order
+          type: text
+          value: f3f1aa5e-8b21-4d14-96fb-2217d6524c79
+        - disabled: true
+          id: pair_403010e3c4564b35a6468417ce742f36
+          name: ignore_filter_levels
+          type: text
+          value: "false"
+        - disabled: true
+          id: pair_40a2a88651c6428d9aa4e86712420f43
+          name: use_funding_currency
+          type: text
+          value: "false"
+        - disabled: true
+          id: pair_c215c061e28b47ba9aaad191497fe0e4
+          name: stop_price
+          type: text
+          value: string
+        - disabled: true
+          id: pair_3034966bfbec483ea2125094c9bd4510
+          name: end_offset
+          type: text
+          value: "0"
+        - disabled: true
+          id: pair_c743665f3ac7437a8b099dd895de44c2
+          name: quantity_currency
+          type: text
+          value: string
+        - disabled: true
+          id: pair_4568e8c9dd20409da871c39e68d41a96
+          name: sweep_to
+          type: text
+          value: disabled
+    parameters: []
+    headers:
+      - id: pair_d47bf25b7df044d194fe88e4c6dcb1f2
+        name: Authorization
+        value: Token {{ _.cr_token }}
+    authentication: {}
+    metaSortKey: -1652320534863
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_5f285a28f4914bd4a6074a49db7ba6e8
+    parentId: fld_8b9a56b00cbf4add87d2f871f1f8b687
+    modified: 1653938860253
+    created: 1652326477449
+    url: "{{ _.cr_base_url }}/api/strategies"
+    name: API Strategies
+    description: ""
+    method: GET
+    body:
+      mimeType: multipart/form-data
+      params:
+        - type: text
+          name: order_type
+          disabled: true
+          value: smart post
+          id: pair_ac783d48a6824156ace26c17eddd8942
+        - type: text
+          name: order_status
+          disabled: true
+          value: open
+          id: pair_352a8dceb5fc473481d7026b1b2675a8
+        - type: text
+          name: aggression
+          disabled: true
+          value: neutral
+          id: pair_568572fcb856469896765d1dd63736df
+        - type: text
+          name: move_percentage
+          disabled: true
+          value: string
+          id: pair_6fe0fd2dcb024d41bc6bdb838e6b761e
+        - type: text
+          name: percent_limit_price
+          disabled: true
+          value: "1.00"
+          id: pair_08ba78fb19a041c3843987bd565a1308
+        - type: text
+          name: max_post_size
+          disabled: true
+          value: string
+          id: pair_6c5d6a46519f442f8ad7f3d2f3394066
+        - type: text
+          name: is_twap
+          disabled: true
+          value: "false"
+          id: pair_de42b61291da4a739afb205609c55522
+        - type: text
+          name: end_time
+          disabled: true
+          value: 2019-08-24T14:15:22Z
+          id: pair_feb77063102c4f988da811d957371784
+        - type: text
+          name: interval_length
+          disabled: true
+          value: "5"
+          id: pair_d41883007db94dc09cb2b30596c34677
+        - type: text
+          name: tolerance_pct
+          disabled: true
+          value: "20"
+          id: pair_c66a87e2d44f46eba09796b367f59844
+        - type: text
+          name: sweep_pct
+          disabled: true
+          value: "0.1500"
+          id: pair_6c4468e5a1164896a39bcd4046f419c0
+        - type: text
+          name: reprice_seconds
+          disabled: true
+          value: "1"
+          id: pair_6a26af868be54d83b3577e7b833909de
+        - type: text
+          name: reprice_randomization_pct
+          disabled: true
+          value: "20.0000"
+          id: pair_d8db5cf43f9c4a709c50ce72a8da1a1d
+        - type: text
+          name: currency_pair
+          disabled: true
+          value: ETH-USD
+          id: pair_8e8282bc8e46414488e35c0507bc2b2b
+        - type: text
+          name: quantity
+          disabled: true
+          value: "1"
+          id: pair_e7e6c9d1e53047979124c4a765c28227
+        - type: text
+          name: limit_price
+          disabled: true
+          value: "200"
+          id: pair_befa0e23ee3a400aaba264a7474f01b4
+        - type: text
+          name: side
+          disabled: true
+          value: buy
+          id: pair_c347a739bba24f1d8a89fcbe8d1a321b
+        - type: text
+          name: exchanges
+          disabled: true
+          value: sim_kraken
+          id: pair_62ad44c10df24df8a69a1fb40895f66a
+        - type: text
+          name: market_data_exchanges
+          disabled: true
+          value: sim_kraken
+          id: pair_23acb080779d49969cfd6e65660a6f8c
+        - type: text
+          name: client_order_id
+          disabled: false
+          value: 8ba452f9-d385-41a8-92bd-74cbb3ceda0c
+          id: pair_e9e14c10381e4767a6ce593f920b0c8d
+        - type: text
+          name: strategy
+          disabled: true
+          value: Test1
+          id: pair_74b647b6bb924b7bb635e57914bace71
+        - type: text
+          name: post_exchange_count
+          disabled: true
+          value: "2"
+          id: pair_f19b5f403c9044caa08babb91d3432e9
+        - type: text
+          name: max_order_count
+          disabled: true
+          value: "4"
+          id: pair_b16a079ee7e64ae3a94e28b7690f11a8
+        - type: text
+          name: margin_leverage
+          disabled: true
+          value: "0"
+          id: pair_35a889a4eb524d30919a9add910ff9d0
+        - type: text
+          name: margin_borrow_pct
+          disabled: true
+          value: "0"
+          id: pair_9bffbf4e90df4df0b26e24c85eaee9f1
+        - type: text
+          name: parent_order
+          disabled: true
+          value: f3f1aa5e-8b21-4d14-96fb-2217d6524c79
+          id: pair_95a46ff5eb3a450f99592e318782b37a
+        - type: text
+          name: ignore_filter_levels
+          disabled: true
+          value: "false"
+          id: pair_403010e3c4564b35a6468417ce742f36
+        - type: text
+          name: use_funding_currency
+          disabled: true
+          value: "false"
+          id: pair_40a2a88651c6428d9aa4e86712420f43
+        - type: text
+          name: stop_price
+          disabled: true
+          value: string
+          id: pair_c215c061e28b47ba9aaad191497fe0e4
+        - type: text
+          name: end_offset
+          disabled: true
+          value: "0"
+          id: pair_3034966bfbec483ea2125094c9bd4510
+        - type: text
+          name: quantity_currency
+          disabled: true
+          value: string
+          id: pair_c743665f3ac7437a8b099dd895de44c2
+        - type: text
+          name: sweep_to
+          disabled: true
+          value: disabled
+          id: pair_4568e8c9dd20409da871c39e68d41a96
+    parameters: []
+    headers:
+      - name: Authorization
+        value: Token {{ _.cr_token }}
+        id: pair_d47bf25b7df044d194fe88e4c6dcb1f2
+        disabled: false
+    authentication: {}
+    metaSortKey: -1652320534862.5
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_13b43cec9dd14b699fe3780da2e8ffa0
+    parentId: fld_8b9a56b00cbf4add87d2f871f1f8b687
+    modified: 1660793131317
+    created: 1652326549985
+    url: "{{ _.cr_base_url }}/api/positions?strategy=onofftest"
+    name: Positions
+    description: ""
+    method: GET
+    body:
+      mimeType: multipart/form-data
+      params:
+        - disabled: true
+          id: pair_ac783d48a6824156ace26c17eddd8942
+          name: order_type
+          type: text
+          value: smart post
+        - disabled: true
+          id: pair_352a8dceb5fc473481d7026b1b2675a8
+          name: order_status
+          type: text
+          value: open
+        - disabled: true
+          id: pair_568572fcb856469896765d1dd63736df
+          name: aggression
+          type: text
+          value: neutral
+        - disabled: true
+          id: pair_6fe0fd2dcb024d41bc6bdb838e6b761e
+          name: move_percentage
+          type: text
+          value: string
+        - disabled: true
+          id: pair_08ba78fb19a041c3843987bd565a1308
+          name: percent_limit_price
+          type: text
+          value: "1.00"
+        - disabled: true
+          id: pair_6c5d6a46519f442f8ad7f3d2f3394066
+          name: max_post_size
+          type: text
+          value: string
+        - disabled: true
+          id: pair_de42b61291da4a739afb205609c55522
+          name: is_twap
+          type: text
+          value: "false"
+        - disabled: true
+          id: pair_feb77063102c4f988da811d957371784
+          name: end_time
+          type: text
+          value: 2019-08-24T14:15:22Z
+        - disabled: true
+          id: pair_d41883007db94dc09cb2b30596c34677
+          name: interval_length
+          type: text
+          value: "5"
+        - disabled: true
+          id: pair_c66a87e2d44f46eba09796b367f59844
+          name: tolerance_pct
+          type: text
+          value: "20"
+        - disabled: true
+          id: pair_6c4468e5a1164896a39bcd4046f419c0
+          name: sweep_pct
+          type: text
+          value: "0.1500"
+        - disabled: true
+          id: pair_6a26af868be54d83b3577e7b833909de
+          name: reprice_seconds
+          type: text
+          value: "1"
+        - disabled: true
+          id: pair_d8db5cf43f9c4a709c50ce72a8da1a1d
+          name: reprice_randomization_pct
+          type: text
+          value: "20.0000"
+        - disabled: true
+          id: pair_8e8282bc8e46414488e35c0507bc2b2b
+          name: currency_pair
+          type: text
+          value: ETH-USD
+        - disabled: true
+          id: pair_e7e6c9d1e53047979124c4a765c28227
+          name: quantity
+          type: text
+          value: "1"
+        - disabled: true
+          id: pair_befa0e23ee3a400aaba264a7474f01b4
+          name: limit_price
+          type: text
+          value: "200"
+        - disabled: true
+          id: pair_c347a739bba24f1d8a89fcbe8d1a321b
+          name: side
+          type: text
+          value: buy
+        - disabled: true
+          id: pair_62ad44c10df24df8a69a1fb40895f66a
+          name: exchanges
+          type: text
+          value: sim_kraken
+        - disabled: true
+          id: pair_23acb080779d49969cfd6e65660a6f8c
+          name: market_data_exchanges
+          type: text
+          value: sim_kraken
+        - disabled: false
+          id: pair_e9e14c10381e4767a6ce593f920b0c8d
+          name: client_order_id
+          type: text
+          value: 8ba452f9-d385-41a8-92bd-74cbb3ceda0c
+        - disabled: true
+          id: pair_74b647b6bb924b7bb635e57914bace71
+          name: strategy
+          type: text
+          value: Test1
+        - disabled: true
+          id: pair_f19b5f403c9044caa08babb91d3432e9
+          name: post_exchange_count
+          type: text
+          value: "2"
+        - disabled: true
+          id: pair_b16a079ee7e64ae3a94e28b7690f11a8
+          name: max_order_count
+          type: text
+          value: "4"
+        - disabled: true
+          id: pair_35a889a4eb524d30919a9add910ff9d0
+          name: margin_leverage
+          type: text
+          value: "0"
+        - disabled: true
+          id: pair_9bffbf4e90df4df0b26e24c85eaee9f1
+          name: margin_borrow_pct
+          type: text
+          value: "0"
+        - disabled: true
+          id: pair_95a46ff5eb3a450f99592e318782b37a
+          name: parent_order
+          type: text
+          value: f3f1aa5e-8b21-4d14-96fb-2217d6524c79
+        - disabled: true
+          id: pair_403010e3c4564b35a6468417ce742f36
+          name: ignore_filter_levels
+          type: text
+          value: "false"
+        - disabled: true
+          id: pair_40a2a88651c6428d9aa4e86712420f43
+          name: use_funding_currency
+          type: text
+          value: "false"
+        - disabled: true
+          id: pair_c215c061e28b47ba9aaad191497fe0e4
+          name: stop_price
+          type: text
+          value: string
+        - disabled: true
+          id: pair_3034966bfbec483ea2125094c9bd4510
+          name: end_offset
+          type: text
+          value: "0"
+        - disabled: true
+          id: pair_c743665f3ac7437a8b099dd895de44c2
+          name: quantity_currency
+          type: text
+          value: string
+        - disabled: true
+          id: pair_4568e8c9dd20409da871c39e68d41a96
+          name: sweep_to
+          type: text
+          value: disabled
+    parameters: []
+    headers:
+      - id: pair_d47bf25b7df044d194fe88e4c6dcb1f2
+        name: Authorization
+        value: Token {{ _.cr_token }}
+    authentication: {}
+    metaSortKey: -1652320534862.25
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_f8cf77b4f74e47debf1d3e480ff1bed7
+    parentId: fld_8b9a56b00cbf4add87d2f871f1f8b687
+    modified: 1653614466874
+    created: 1652326578604
+    url: "{{ _.cr_base_url }}/api/exchanges"
+    name: Exchanges
+    description: ""
+    method: GET
+    body:
+      mimeType: multipart/form-data
+      params:
+        - type: text
+          name: order_type
+          disabled: true
+          value: smart post
+          id: pair_ac783d48a6824156ace26c17eddd8942
+        - type: text
+          name: order_status
+          disabled: true
+          value: open
+          id: pair_352a8dceb5fc473481d7026b1b2675a8
+        - type: text
+          name: aggression
+          disabled: true
+          value: neutral
+          id: pair_568572fcb856469896765d1dd63736df
+        - type: text
+          name: move_percentage
+          disabled: true
+          value: string
+          id: pair_6fe0fd2dcb024d41bc6bdb838e6b761e
+        - type: text
+          name: percent_limit_price
+          disabled: true
+          value: "1.00"
+          id: pair_08ba78fb19a041c3843987bd565a1308
+        - type: text
+          name: max_post_size
+          disabled: true
+          value: string
+          id: pair_6c5d6a46519f442f8ad7f3d2f3394066
+        - type: text
+          name: is_twap
+          disabled: true
+          value: "false"
+          id: pair_de42b61291da4a739afb205609c55522
+        - type: text
+          name: end_time
+          disabled: true
+          value: 2019-08-24T14:15:22Z
+          id: pair_feb77063102c4f988da811d957371784
+        - type: text
+          name: interval_length
+          disabled: true
+          value: "5"
+          id: pair_d41883007db94dc09cb2b30596c34677
+        - type: text
+          name: tolerance_pct
+          disabled: true
+          value: "20"
+          id: pair_c66a87e2d44f46eba09796b367f59844
+        - type: text
+          name: sweep_pct
+          disabled: true
+          value: "0.1500"
+          id: pair_6c4468e5a1164896a39bcd4046f419c0
+        - type: text
+          name: reprice_seconds
+          disabled: true
+          value: "1"
+          id: pair_6a26af868be54d83b3577e7b833909de
+        - type: text
+          name: reprice_randomization_pct
+          disabled: true
+          value: "20.0000"
+          id: pair_d8db5cf43f9c4a709c50ce72a8da1a1d
+        - type: text
+          name: currency_pair
+          disabled: true
+          value: ETH-USD
+          id: pair_8e8282bc8e46414488e35c0507bc2b2b
+        - type: text
+          name: quantity
+          disabled: true
+          value: "1"
+          id: pair_e7e6c9d1e53047979124c4a765c28227
+        - type: text
+          name: limit_price
+          disabled: true
+          value: "200"
+          id: pair_befa0e23ee3a400aaba264a7474f01b4
+        - type: text
+          name: side
+          disabled: true
+          value: buy
+          id: pair_c347a739bba24f1d8a89fcbe8d1a321b
+        - type: text
+          name: exchanges
+          disabled: true
+          value: sim_kraken
+          id: pair_62ad44c10df24df8a69a1fb40895f66a
+        - type: text
+          name: market_data_exchanges
+          disabled: true
+          value: sim_kraken
+          id: pair_23acb080779d49969cfd6e65660a6f8c
+        - type: text
+          name: client_order_id
+          disabled: false
+          value: 8ba452f9-d385-41a8-92bd-74cbb3ceda0c
+          id: pair_e9e14c10381e4767a6ce593f920b0c8d
+        - type: text
+          name: strategy
+          disabled: true
+          value: Test1
+          id: pair_74b647b6bb924b7bb635e57914bace71
+        - type: text
+          name: post_exchange_count
+          disabled: true
+          value: "2"
+          id: pair_f19b5f403c9044caa08babb91d3432e9
+        - type: text
+          name: max_order_count
+          disabled: true
+          value: "4"
+          id: pair_b16a079ee7e64ae3a94e28b7690f11a8
+        - type: text
+          name: margin_leverage
+          disabled: true
+          value: "0"
+          id: pair_35a889a4eb524d30919a9add910ff9d0
+        - type: text
+          name: margin_borrow_pct
+          disabled: true
+          value: "0"
+          id: pair_9bffbf4e90df4df0b26e24c85eaee9f1
+        - type: text
+          name: parent_order
+          disabled: true
+          value: f3f1aa5e-8b21-4d14-96fb-2217d6524c79
+          id: pair_95a46ff5eb3a450f99592e318782b37a
+        - type: text
+          name: ignore_filter_levels
+          disabled: true
+          value: "false"
+          id: pair_403010e3c4564b35a6468417ce742f36
+        - type: text
+          name: use_funding_currency
+          disabled: true
+          value: "false"
+          id: pair_40a2a88651c6428d9aa4e86712420f43
+        - type: text
+          name: stop_price
+          disabled: true
+          value: string
+          id: pair_c215c061e28b47ba9aaad191497fe0e4
+        - type: text
+          name: end_offset
+          disabled: true
+          value: "0"
+          id: pair_3034966bfbec483ea2125094c9bd4510
+        - type: text
+          name: quantity_currency
+          disabled: true
+          value: string
+          id: pair_c743665f3ac7437a8b099dd895de44c2
+        - type: text
+          name: sweep_to
+          disabled: true
+          value: disabled
+          id: pair_4568e8c9dd20409da871c39e68d41a96
+    parameters: []
+    headers:
+      - name: Authorization
+        value: Token {{ _.cr_token }}
+        id: pair_d47bf25b7df044d194fe88e4c6dcb1f2
+    authentication: {}
+    metaSortKey: -1652320534862.125
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_d3003b7c38c04b5e8ab764711888b040
+    parentId: fld_8b9a56b00cbf4add87d2f871f1f8b687
+    modified: 1653938856143
+    created: 1652841715885
+    url: "{{ _.cr_base_url }}/api/exchange_accounts"
+    name: Exchange Accounts
+    description: ""
+    method: GET
+    body:
+      mimeType: multipart/form-data
+      params:
+        - type: text
+          name: order_type
+          disabled: true
+          value: smart post
+          id: pair_ac783d48a6824156ace26c17eddd8942
+        - type: text
+          name: order_status
+          disabled: true
+          value: open
+          id: pair_352a8dceb5fc473481d7026b1b2675a8
+        - type: text
+          name: aggression
+          disabled: true
+          value: neutral
+          id: pair_568572fcb856469896765d1dd63736df
+        - type: text
+          name: move_percentage
+          disabled: true
+          value: string
+          id: pair_6fe0fd2dcb024d41bc6bdb838e6b761e
+        - type: text
+          name: percent_limit_price
+          disabled: true
+          value: "1.00"
+          id: pair_08ba78fb19a041c3843987bd565a1308
+        - type: text
+          name: max_post_size
+          disabled: true
+          value: string
+          id: pair_6c5d6a46519f442f8ad7f3d2f3394066
+        - type: text
+          name: is_twap
+          disabled: true
+          value: "false"
+          id: pair_de42b61291da4a739afb205609c55522
+        - type: text
+          name: end_time
+          disabled: true
+          value: 2019-08-24T14:15:22Z
+          id: pair_feb77063102c4f988da811d957371784
+        - type: text
+          name: interval_length
+          disabled: true
+          value: "5"
+          id: pair_d41883007db94dc09cb2b30596c34677
+        - type: text
+          name: tolerance_pct
+          disabled: true
+          value: "20"
+          id: pair_c66a87e2d44f46eba09796b367f59844
+        - type: text
+          name: sweep_pct
+          disabled: true
+          value: "0.1500"
+          id: pair_6c4468e5a1164896a39bcd4046f419c0
+        - type: text
+          name: reprice_seconds
+          disabled: true
+          value: "1"
+          id: pair_6a26af868be54d83b3577e7b833909de
+        - type: text
+          name: reprice_randomization_pct
+          disabled: true
+          value: "20.0000"
+          id: pair_d8db5cf43f9c4a709c50ce72a8da1a1d
+        - type: text
+          name: currency_pair
+          disabled: true
+          value: ETH-USD
+          id: pair_8e8282bc8e46414488e35c0507bc2b2b
+        - type: text
+          name: quantity
+          disabled: true
+          value: "1"
+          id: pair_e7e6c9d1e53047979124c4a765c28227
+        - type: text
+          name: limit_price
+          disabled: true
+          value: "200"
+          id: pair_befa0e23ee3a400aaba264a7474f01b4
+        - type: text
+          name: side
+          disabled: true
+          value: buy
+          id: pair_c347a739bba24f1d8a89fcbe8d1a321b
+        - type: text
+          name: exchanges
+          disabled: true
+          value: sim_kraken
+          id: pair_62ad44c10df24df8a69a1fb40895f66a
+        - type: text
+          name: market_data_exchanges
+          disabled: true
+          value: sim_kraken
+          id: pair_23acb080779d49969cfd6e65660a6f8c
+        - type: text
+          name: client_order_id
+          disabled: false
+          value: 8ba452f9-d385-41a8-92bd-74cbb3ceda0c
+          id: pair_e9e14c10381e4767a6ce593f920b0c8d
+        - type: text
+          name: strategy
+          disabled: true
+          value: Test1
+          id: pair_74b647b6bb924b7bb635e57914bace71
+        - type: text
+          name: post_exchange_count
+          disabled: true
+          value: "2"
+          id: pair_f19b5f403c9044caa08babb91d3432e9
+        - type: text
+          name: max_order_count
+          disabled: true
+          value: "4"
+          id: pair_b16a079ee7e64ae3a94e28b7690f11a8
+        - type: text
+          name: margin_leverage
+          disabled: true
+          value: "0"
+          id: pair_35a889a4eb524d30919a9add910ff9d0
+        - type: text
+          name: margin_borrow_pct
+          disabled: true
+          value: "0"
+          id: pair_9bffbf4e90df4df0b26e24c85eaee9f1
+        - type: text
+          name: parent_order
+          disabled: true
+          value: f3f1aa5e-8b21-4d14-96fb-2217d6524c79
+          id: pair_95a46ff5eb3a450f99592e318782b37a
+        - type: text
+          name: ignore_filter_levels
+          disabled: true
+          value: "false"
+          id: pair_403010e3c4564b35a6468417ce742f36
+        - type: text
+          name: use_funding_currency
+          disabled: true
+          value: "false"
+          id: pair_40a2a88651c6428d9aa4e86712420f43
+        - type: text
+          name: stop_price
+          disabled: true
+          value: string
+          id: pair_c215c061e28b47ba9aaad191497fe0e4
+        - type: text
+          name: end_offset
+          disabled: true
+          value: "0"
+          id: pair_3034966bfbec483ea2125094c9bd4510
+        - type: text
+          name: quantity_currency
+          disabled: true
+          value: string
+          id: pair_c743665f3ac7437a8b099dd895de44c2
+        - type: text
+          name: sweep_to
+          disabled: true
+          value: disabled
+          id: pair_4568e8c9dd20409da871c39e68d41a96
+    parameters: []
+    headers:
+      - name: Authorization
+        value: Token {{ _.cr_token }}
+        id: pair_d47bf25b7df044d194fe88e4c6dcb1f2
+    authentication: {}
+    metaSortKey: -1652320534862.0625
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_348bba56aa5048d781676263422844c7
+    parentId: fld_8b9a56b00cbf4add87d2f871f1f8b687
+    modified: 1660793131317
+    created: 1652973956137
+    url: "{{ _.cr_base_url }}/api/currency_balances?strategy=ethnewcomp"
+    name: Currency Balances
+    description: ""
+    method: GET
+    body:
+      mimeType: multipart/form-data
+      params:
+        - disabled: true
+          id: pair_52c16b5023444559ad8802953891ee18
+          name: order_type
+          type: text
+          value: smart post
+        - disabled: true
+          id: pair_76e3d4b182194675b7fb4a30164f0b3f
+          name: order_status
+          type: text
+          value: open
+        - disabled: true
+          id: pair_4017e7c0c0954c9a9abbd2814884a268
+          name: aggression
+          type: text
+          value: neutral
+        - disabled: true
+          id: pair_906a0923832844139f1998c3d57ed5be
+          name: move_percentage
+          type: text
+          value: string
+        - disabled: true
+          id: pair_652a9b393e85485b95cb61bc4b4a2d6b
+          name: percent_limit_price
+          type: text
+          value: "1.00"
+        - disabled: true
+          id: pair_82bcb69b75cc4c37a3ac679ff7889b5c
+          name: max_post_size
+          type: text
+          value: string
+        - disabled: true
+          id: pair_c442727fd71541b092bae38b7eee14e6
+          name: is_twap
+          type: text
+          value: "false"
+        - disabled: true
+          id: pair_fc35903aa94a4011a3c29c18187c9fb2
+          name: end_time
+          type: text
+          value: 2019-08-24T14:15:22Z
+        - disabled: true
+          id: pair_820963da6cb941c3883c1e45ceca5550
+          name: interval_length
+          type: text
+          value: "5"
+        - disabled: true
+          id: pair_acf9d7ab04554013bb4b4ac646926dfc
+          name: tolerance_pct
+          type: text
+          value: "20"
+        - disabled: true
+          id: pair_c118d875b0594e34bc4705984ed58418
+          name: sweep_pct
+          type: text
+          value: "0.1500"
+        - disabled: true
+          id: pair_86e4567ef0c64305ad48c05c3009e1da
+          name: reprice_seconds
+          type: text
+          value: "1"
+        - disabled: true
+          id: pair_580ff741ef334979a65d59c4d4751b5e
+          name: reprice_randomization_pct
+          type: text
+          value: "20.0000"
+        - disabled: true
+          id: pair_a099b9df6ea444c3b6fd317318d1b4f7
+          name: currency_pair
+          type: text
+          value: ETH-USD
+        - disabled: true
+          id: pair_719444c222004801bf4369ef106d5c55
+          name: quantity
+          type: text
+          value: "1"
+        - disabled: true
+          id: pair_7636d51f3a004b589ab440f09bacf02a
+          name: limit_price
+          type: text
+          value: "200"
+        - disabled: true
+          id: pair_a0d0cca2172940aeb1385374e2a7ce1e
+          name: side
+          type: text
+          value: buy
+        - disabled: true
+          id: pair_1acbd88c4a7c4a67acd769c117e491d9
+          name: exchanges
+          type: text
+          value: sim_kraken
+        - disabled: true
+          id: pair_bb9cdb9a684349d4af870a52d29d1628
+          name: market_data_exchanges
+          type: text
+          value: sim_kraken
+        - disabled: false
+          id: pair_ee3a5623a4f947d4a7801ccdb05a3c56
+          name: client_order_id
+          type: text
+          value: 8ba452f9-d385-41a8-92bd-74cbb3ceda0c
+        - disabled: true
+          id: pair_198659dad9174677b4c47496ee280fb0
+          name: strategy
+          type: text
+          value: Test1
+        - disabled: true
+          id: pair_fdd2855dae1b4556a9602b0ee4a50929
+          name: post_exchange_count
+          type: text
+          value: "2"
+        - disabled: true
+          id: pair_64757da337714a63a8349c784d5e0b78
+          name: max_order_count
+          type: text
+          value: "4"
+        - disabled: true
+          id: pair_a9a15dc10d0847a0bb812465270d95aa
+          name: margin_leverage
+          type: text
+          value: "0"
+        - disabled: true
+          id: pair_ef54e97e3b55459a94a4c0f10e1a4bc6
+          name: margin_borrow_pct
+          type: text
+          value: "0"
+        - disabled: true
+          id: pair_3fe7dbb264794b0fa73c6d700043b078
+          name: parent_order
+          type: text
+          value: f3f1aa5e-8b21-4d14-96fb-2217d6524c79
+        - disabled: true
+          id: pair_a69ab7d07b6a4c5aa8816ea7648a3f90
+          name: ignore_filter_levels
+          type: text
+          value: "false"
+        - disabled: true
+          id: pair_ca50862894f4411b9dd7fe460f993d98
+          name: use_funding_currency
+          type: text
+          value: "false"
+        - disabled: true
+          id: pair_ca39a115767a4ed3ba37710fb4ab070f
+          name: stop_price
+          type: text
+          value: string
+        - disabled: true
+          id: pair_4d1e790eed0a4a0ca72228b14a79a6e3
+          name: end_offset
+          type: text
+          value: "0"
+        - disabled: true
+          id: pair_5e09d2c1c70a40eabf6012ba1e450834
+          name: quantity_currency
+          type: text
+          value: string
+        - disabled: true
+          id: pair_6a09d02bbffe4adc9033b1cf29d72d86
+          name: sweep_to
+          type: text
+          value: disabled
+    parameters: []
+    headers:
+      - id: pair_d68676a8d2fb46fe8286307b6adc1159
+        name: Authorization
+        value: Token {{ _.cr_token }}
+    authentication: {}
+    metaSortKey: -1652320534862.1875
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_f5e1bc82074d4874b681a977a5161976
+    parentId: fld_8b9a56b00cbf4add87d2f871f1f8b687
+    modified: 1653938097663
+    created: 1653109717658
+    url: "{{ _.cr_base_url }}/api/client_orders/"
+    name: New Order Funding Currency JSON
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |
+        {
+        "order_type": "smart post",
+        "order_status": "open",
+        "aggression": "neutral",
+        "currency_pair": "BTC-USD.IPERP",
+        "quantity": "280.000000",
+        "side": "sell",
+        "strategy": "btclstest",
+        "use_funding_currency": false
+        }
+    parameters: []
+    headers:
+      - name: Authorization
+        value: Token {{ _.cr_token }}
+        id: pair_d2090145541242c5b3d844529889dc59
+        disabled: false
+      - name: Content-Type
+        value: application/json
+        id: pair_311aea6528114d9fab0829f2eaef252d
+    authentication: {}
+    metaSortKey: -1652320534858.5
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_4fc688ce7986475cb729ecfb403def5a
+    parentId: fld_a0cba0a6302f42d4966024607ab57940
+    modified: 1660840941305
+    created: 1660832026070
+    url: "{{base_url}}/a"
+    name: BTC
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - description: ""
+        id: pair_13e8f5cbd54e4f73814873891a8b8de9
+        name: Authorization
+        value: Bearer
+          eyJhbGciOiJSUzI1NiIsImtpZCI6IjM4ZjM4ODM0NjhmYzY1OWFiYjQ0NzVmMzYzMTNkMjI1ODVjMmQ3Y2EiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzMjU1NTk0MDU1OS5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImF1ZCI6IjMyNTU1OTQwNTU5LmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTE3MDEwNjk3OTc0ODM5MDM2OTUxIiwiaGQiOiJsdW5haXRjb25zdWx0aW5nLmNvbSIsImVtYWlsIjoic2FsdmF0b3JlQGx1bmFpdGNvbnN1bHRpbmcuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiJvSC1RNUx5cUxMVnZBSmpqVDRSQUZ3IiwiaWF0IjoxNjU0MTQwMzg3LCJleHAiOjE2NTQxNDM5ODd9.Q1lhIJzYb7x46uvz6C8If5AxRMGxZ0Ee1akyaCPJj6kKf_cX5twtk1FjK-PvnQOsPDeyxj79k_roBW9DmohdnkmtDig0JZnjKnO-OXF4xeV8ZwDfGYMImFjlLo5o3ik-Gw2ShSVMipz9EiNbsWontrl-XldHSHXSNe-Vr0d67T3nGDSPJFQsov9ezo7wDRnZE6tt4weo8HzjZBUEarLwH-F1tHpe6k5YRfIfPQiOvKhwPkXvOkNy9-DZpMOVgTlr2fiGtTLllu0J3vjg-0Tq2roJNZ1pkOnPh1HgO2tA-j_QX6rXzWKjTR6KhnTDiSZoB1euzKGpZUtxKTET8hkyAQ
+    authentication:
+      disabled: true
+      prefix: ""
+      token: ya29.A0ARrdaM_VH5Uc3PGeaIlT3rleC-1_LkeY3e93zVEHkIuBvGUbawHWYq33C8cjGKGALHJYshCTyh4o3mWVcuZgp1FfFTw5O9pTS5t0EtDiLvH9bZbpGAhm1SwwhmesCUsmPwhlWPJ3Zuqo8EumxQmHkmC6J8POPs5WKWUgSw
+      type: bearer
+    metaSortKey: -1650748870368
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_a0cba0a6302f42d4966024607ab57940
+    parentId: wrk_c3d1da8e7d5143ea8d3515b3d762858b
+    modified: 1660840941303
+    created: 1660832026067
+    name: Yield MVP
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1000000000
+    _type: request_group
+  - _id: wrk_c3d1da8e7d5143ea8d3515b3d762858b
+    parentId: null
+    modified: 1660840941309
+    created: 1660832014436
+    name: Yield-MVP
+    description: ""
+    scope: collection
+    _type: workspace
+  - _id: req_d3a0a6562e6841fa9fddd3721b1372da
+    parentId: fld_a0cba0a6302f42d4966024607ab57940
+    modified: 1660840941307
+    created: 1660832026073
+    url: "{{base_url}}/b"
+    name: ETH
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1650748870318
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_e62b57d4adc848f29b2f63ad05d9ecd8
+    parentId: fld_a0cba0a6302f42d4966024607ab57940
+    modified: 1660840941307
+    created: 1660832026075
+    url: "{{base_url}}/accounts"
+    name: Get Exchange Accounts
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1650748870418
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_471bd4af422342d3baa5e9cd48e39a64
+    parentId: fld_a0cba0a6302f42d4966024607ab57940
+    modified: 1660840941304
+    created: 1660832026077
+    url: "{{base_url}}/update_balance"
+    name: Update Balance
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - description: ""
+        id: pair_13e8f5cbd54e4f73814873891a8b8de9
+        name: Authorization
+        value: Bearer
+          eyJhbGciOiJSUzI1NiIsImtpZCI6IjM4ZjM4ODM0NjhmYzY1OWFiYjQ0NzVmMzYzMTNkMjI1ODVjMmQ3Y2EiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzMjU1NTk0MDU1OS5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImF1ZCI6IjMyNTU1OTQwNTU5LmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTE3MDEwNjk3OTc0ODM5MDM2OTUxIiwiaGQiOiJsdW5haXRjb25zdWx0aW5nLmNvbSIsImVtYWlsIjoic2FsdmF0b3JlQGx1bmFpdGNvbnN1bHRpbmcuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiJvSC1RNUx5cUxMVnZBSmpqVDRSQUZ3IiwiaWF0IjoxNjU0MTQwMzg3LCJleHAiOjE2NTQxNDM5ODd9.Q1lhIJzYb7x46uvz6C8If5AxRMGxZ0Ee1akyaCPJj6kKf_cX5twtk1FjK-PvnQOsPDeyxj79k_roBW9DmohdnkmtDig0JZnjKnO-OXF4xeV8ZwDfGYMImFjlLo5o3ik-Gw2ShSVMipz9EiNbsWontrl-XldHSHXSNe-Vr0d67T3nGDSPJFQsov9ezo7wDRnZE6tt4weo8HzjZBUEarLwH-F1tHpe6k5YRfIfPQiOvKhwPkXvOkNy9-DZpMOVgTlr2fiGtTLllu0J3vjg-0Tq2roJNZ1pkOnPh1HgO2tA-j_QX6rXzWKjTR6KhnTDiSZoB1euzKGpZUtxKTET8hkyAQ
+    authentication:
+      disabled: true
+      prefix: ""
+      token: ya29.A0ARrdaM_VH5Uc3PGeaIlT3rleC-1_LkeY3e93zVEHkIuBvGUbawHWYq33C8cjGKGALHJYshCTyh4o3mWVcuZgp1FfFTw5O9pTS5t0EtDiLvH9bZbpGAhm1SwwhmesCUsmPwhlWPJ3Zuqo8EumxQmHkmC6J8POPs5WKWUgSw
+      type: bearer
+    metaSortKey: -1650748870393
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_ea27b6c2593b47d7bd72574cbe021eb7
+    parentId: fld_a0cba0a6302f42d4966024607ab57940
+    modified: 1660843762888
+    created: 1660832026079
+    url: "{{base_url}}/disable_strategy/onofftest"
+    name: Disable Strategy
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - description: ""
+        id: pair_13e8f5cbd54e4f73814873891a8b8de9
+        name: Authorization
+        value: Bearer {{ _.gcp_token }}
+    authentication:
+      disabled: true
+      prefix: ""
+      token: ""
+      type: bearer
+    metaSortKey: -1651798604898.25
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_c77ced2431ee49979d9997219e6a5b8e
+    parentId: fld_a0cba0a6302f42d4966024607ab57940
+    modified: 1660872257324
+    created: 1660832026081
+    url: "{{base_url}}/enable_strategy/onofftest"
+    name: Enable Strategy
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - description: ""
+        id: pair_13e8f5cbd54e4f73814873891a8b8de9
+        name: Authorization
+        value: Bearer {{ _.gcp_token }}
+    authentication:
+      disabled: true
+      prefix: ""
+      token: ""
+      type: bearer
+    metaSortKey: -1651798596082.625
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_9765efe55b3348e58aeccd47670e6228
+    parentId: fld_a0cba0a6302f42d4966024607ab57940
+    modified: 1660841562112
+    created: 1660832026083
+    url: "{{base_url}}/strategy"
+    name: Create Strategy
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"currency_pair": "ETH-USD.PERP",
+        	"enabled": false,
+        	"exchange": "ftx",
+        	"fixed_trade_amount": 9500,
+        	"leverage": 1,
+        	"margin": "usdm",
+        	"name": "sam-test",
+        	"signal_source_id": "01G9XM980S4DDAXPB60ZNXVMFY",
+        	"trade_strategy": "fixed",
+        	"type": "long_neutral",
+        	"user_id": "01G9XKZ6B407M8XARHRE3FXME1"
+        }
+    parameters: []
+    headers:
+      - description: ""
+        id: pair_13e8f5cbd54e4f73814873891a8b8de9
+        name: Authorization
+        value: Bearer {{ _.gcp_token }}
+      - id: pair_f299aead38564ea5bde93482ef16e708
+        name: Content-Type
+        value: application/json
+    authentication:
+      disabled: true
+      prefix: ""
+      token: ""
+      type: bearer
+    metaSortKey: -1651798604948.25
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_ed52bc879f7546058e97480e79a293f4
+    parentId: fld_a0cba0a6302f42d4966024607ab57940
+    modified: 1660840941308
+    created: 1660832026086
+    url: "{{base_url}}/strategy"
+    name: Update Strategy
+    description: ""
+    method: PATCH
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"id": "01GAMRT1VT4ZA8NY4KVB6Q4GZG",
+        	"signal_source_id": "01G9XM980S4DDAXPB60ZNXVMFY",
+        	"type": "foo",
+        	"name": "foo",
+        	"exchange": "foo",
+        	"margin": "usdt",
+        	"leverage": 2,
+        	"fixed_trade_amount": 100,
+        	"trade_strategy": "fixed",
+        	"currency_pair": "ETH-USD.PERP"
+        }
+    parameters: []
+    headers:
+      - description: ""
+        id: pair_13e8f5cbd54e4f73814873891a8b8de9
+        name: Authorization
+        value: Bearer {{ _.gcp_token }}
+      - id: pair_f299aead38564ea5bde93482ef16e708
+        name: Content-Type
+        value: application/json
+    authentication:
+      disabled: true
+      prefix: ""
+      token: ""
+      type: bearer
+    metaSortKey: -1651798604923.25
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_6884db1f5f8a4ac89e2f485acf731add
+    parentId: fld_a0cba0a6302f42d4966024607ab57940
+    modified: 1660843664428
+    created: 1660832026088
+    url: "{{base_url}}/strategy"
+    name: Get Strategies
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - description: ""
+        id: pair_13e8f5cbd54e4f73814873891a8b8de9
+        name: Authorization
+        value: Bearer {{ _.gcp_token }}
+    authentication:
+      disabled: true
+      prefix: ""
+      token: ""
+      type: bearer
+    metaSortKey: -1651798604998.25
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: env_0b7183017494c68fa875078f69e97e24ba716ed6
+    parentId: wrk_708129d2e97d4714a6df16be3f84b8af
+    modified: 1652148291213
+    created: 1651798450959
+    name: Base Environment
+    data: {}
+    dataPropertyOrder: {}
+    color: null
+    isPrivate: false
+    metaSortKey: 1651798450959
+    _type: environment
+  - _id: jar_0b7183017494c68fa875078f69e97e24ba716ed6
+    parentId: wrk_708129d2e97d4714a6df16be3f84b8af
+    modified: 1658196352132
+    created: 1652148292477
+    name: Default Jar
+    cookies:
+      - key: sessionid
+        value: rdlkcl01xfz2ei6r7gc0c42x4ujdthhs
+        expires: 2022-06-13T18:46:52.000Z
+        maxAge: 1209600
+        domain: uat.coinroutes.io
+        path: /
+        httpOnly: true
+        extensions:
+          - SameSite=Lax
+        hostOnly: true
+        creation: 2022-05-12T01:56:32.372Z
+        lastAccessed: 2022-05-30T18:46:49.711Z
+        id: "6072002646126311"
+      - key: sessionid
+        value: f38ym7ghejvzw6b4sh9gg42ezbvd6lfb
+        expires: 2022-08-02T02:05:52.000Z
+        maxAge: 1209600
+        domain: yieldchain.coinroutes.io
+        path: /
+        httpOnly: true
+        extensions:
+          - SameSite=Lax
+        hostOnly: true
+        creation: 2022-05-25T16:29:10.750Z
+        lastAccessed: 2022-07-19T02:05:52.132Z
+        id: "6541028218828198"
+    _type: cookie_jar
+  - _id: spc_1bf1662bb5584377b209918f84a39045
+    parentId: wrk_708129d2e97d4714a6df16be3f84b8af
+    modified: 1652148291217
+    created: 1652148291217
+    fileName: Yield
+    contents: ""
+    contentType: yaml
+    _type: api_spec
+  - _id: env_d316784b531c473a90131ea6417aa29a
+    parentId: env_0b7183017494c68fa875078f69e97e24ba716ed6
+    modified: 1660793131316
+    created: 1651798682842
+    name: local
+    data:
+      base_url: 127.0.0.1:8080
+      cr_base_url: https://uat.coinroutes.io
+      cr_token: 457a69e6168935ee2733dd77b704cd046651609b
+      gcp_token: ""
+    dataPropertyOrder:
+      "&":
+        - base_url
+        - cr_base_url
+        - cr_token
+        - gcp_token
+    color: null
+    isPrivate: false
+    metaSortKey: 1651798682842
+    _type: environment
+  - _id: env_9d5c47664778408f8c05f5ec26fa5cff
+    parentId: env_0b7183017494c68fa875078f69e97e24ba716ed6
+    modified: 1660840958039
+    created: 1651798689664
+    name: production
+    data:
+      base_url: https://yield-mvp-vqr2435hwq-ue.a.run.app
+      cr_base_url: https://yieldchain.coinroutes.io
+      cr_token: 75f1b084913f43b70f6b4bee6d67da6ae981eb9b
+      gcp_token: 
+    dataPropertyOrder:
+      "&":
+        - base_url
+        - cr_base_url
+        - cr_token
+        - gcp_token
+    color: null
+    isPrivate: false
+    metaSortKey: 1651798689664
+    _type: environment
+  - _id: env_205f7784cadf5d00f5c4aca582e3662ccda236eb
+    parentId: wrk_c3d1da8e7d5143ea8d3515b3d762858b
+    modified: 1660840941302
+    created: 1660832014440
+    name: Base Environment
+    data: {}
+    dataPropertyOrder: {}
+    color: null
+    isPrivate: false
+    metaSortKey: 1660832014440
+    _type: environment
+  - _id: jar_205f7784cadf5d00f5c4aca582e3662ccda236eb
+    parentId: wrk_c3d1da8e7d5143ea8d3515b3d762858b
+    modified: 1660840963703
+    created: 1660840963703
+    name: Default Jar
+    cookies: []
+    _type: cookie_jar
+  - _id: spc_a5d90849a49046918e53f3b9d6bb1860
+    parentId: wrk_c3d1da8e7d5143ea8d3515b3d762858b
+    modified: 1660840941309
+    created: 1660840941309
+    fileName: Yield-MVP
+    contents: ""
+    contentType: yaml
+    _type: api_spec
+  - _id: env_f897ea6e9df24fcb8061d12ebdd884e6
+    parentId: env_205f7784cadf5d00f5c4aca582e3662ccda236eb
+    modified: 1660871953718
+    created: 1660832099093
+    name: local
+    data:
+      base_url: 127.0.0.1:8080
+      cr_base_url: https://uat.coinroutes.io
+      cr_token: 457a69e6168935ee2733dd77b704cd046651609b
+      gcp_token: ""
+    dataPropertyOrder:
+      "&":
+        - base_url
+        - cr_base_url
+        - cr_token
+        - gcp_token
+    color: "#67cb97"
+    isPrivate: false
+    metaSortKey: 1660832099093
+    _type: environment
+  - _id: env_755e30a629b54065b7eb7984a6b66030
+    parentId: env_205f7784cadf5d00f5c4aca582e3662ccda236eb
+    modified: 1660841146540
+    created: 1660832139026
+    name: production
+    data:
+      base_url: https://yield-mvp-vqr2435hwq-ue.a.run.app
+      cr_base_url: https://yieldchain.coinroutes.io
+      cr_token: 75f1b084913f43b70f6b4bee6d67da6ae981eb9b
+      gcp_token: eyJhbGciOiJSUzI1NiIsImtpZCI6IjE3MjdiNmI0OTQwMmI5Y2Y5NWJlNGU4ZmQzOGFhN2U3YzExNjQ0YjEiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzMjU1NTk0MDU1OS5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImF1ZCI6IjMyNTU1OTQwNTU5LmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTE3MDEwNjk3OTc0ODM5MDM2OTUxIiwiaGQiOiJsdW5haXRjb25zdWx0aW5nLmNvbSIsImVtYWlsIjoic2FsdmF0b3JlQGx1bmFpdGNvbnN1bHRpbmcuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiI3WGJ3ZXlmbDRZTTRDbWlDZGtuWUtRIiwiaWF0IjoxNjYwODQxMTM3LCJleHAiOjE2NjA4NDQ3Mzd9.Tq_STFFx4JY2vviUJmxNwRQpjmLIPssKs5KAW12rStECyigsqagKIvKwFPywGW7RHRtwHMgKdHhYO7pP7ZIlb6cUmnOLF9gbF8vzLvxojCykd5IAyTc2xUNrVxIMbJXQg-wNW-BLzZHdoEjp6cpv4sk9H--aKWNZLpHc8jP2T3an1l7zHL8QTnPGOF8R-FkbRH8ZHAEYVNiDwLisCq6rvaRlevm1I4PU2Qj-VqVrK8Fbajk6z8EAJxuryWTgfZGUJf0zskVXs71rVUlKJNdPqd3Sdhj5hklDWiPS1-lHg3dgYChZsrca20y0Knl3ldlXSaZ6-9wBE-lnBdaEfOt0MQ
+    dataPropertyOrder:
+      "&":
+        - base_url
+        - cr_base_url
+        - cr_token
+        - gcp_token
+    color: "#e67070"
+    isPrivate: false
+    metaSortKey: 1660832139026
+    _type: environment

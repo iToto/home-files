@@ -1,0 +1,18 @@
+.PHONY: build deploy push-container build-and-push
+
+mvp-linux:
+	CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o bin/potato
+
+mvp-osx:
+	go build -o bin/potato
+
+clean:
+	rm -R bin
+
+build:
+	docker-compose build
+
+push-container:
+	docker push itoto/yield-mvp
+
+compile-build-and-push: mvp-linux build push-container

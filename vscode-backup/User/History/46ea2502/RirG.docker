@@ -1,0 +1,7 @@
+PORT=8080
+BTC_URL=http://35.204.101.142
+ETH_URL=http://34.141.231.198
+
+# logs
+PRETTY_LOGS=true
+MIN_LOG_LEVEL=debug

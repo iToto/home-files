@@ -1,0 +1,189 @@
+package signalsvc
+
+import (
+	"context"
+	"fmt"
+	"strconv"
+	"yield-mvp/internal/entities"
+	"yield-mvp/internal/wlog"
+	"yield-mvp/pkg/coinroutesapi"
+)
+
+func (ss *signalService) tradePosition(
+	ctx context.Context,
+	wl wlog.Logger,
+	chain entities.ChainType,
+	strategy *entities.Strategy,
+	signal *entities.Signal,
+	desiredSide coinroutesapi.SideType,
+	position *entities.ContractPosition,
+	currencyPair coinroutesapi.CurrencyPairType,
+	chainMarketPrice float64,
+) error {
+	var orderAmount float64
+
+	// handle fixed/compound strategies for position amount
+	if position == nil {
+		// neutral state, amount should simply be the available balance
+		balance, err := ss.exdal.GetBalanceForStrategy(
+			ctx,
+			wl,
+			coinroutesapi.CurrencyType(chain),
+			strategy,
+			true,
+		)
+		if err != nil {
+			return err
+		}
+
+		orderAmount = balance
+
+		// if fixed amount and balance < fixed amount, default to balance
+		if strategy.TradeStrategy == entities.Fixed {
+			if balance > strategy.FixedTradeAmount.Float64 {
+				wl.Debugf("balance greater than trade amount %f > %f",
+					balance,
+					strategy.FixedTradeAmount,
+				)
+				orderAmount = strategy.FixedTradeAmount.Float64
+			}
+		}
+
+	} else {
+		// position found, amount is either fixed or compound
+		switch strategy.TradeStrategy {
+		case entities.Fixed:
+			if strategy.FixedTradeAmount.Float64 == 0 {
+				return fmt.Errorf(
+					"strategy with fixed trade missing trade amount: %f",
+					strategy.FixedTradeAmount.Float64,
+				)
+			}
+			wl.Debugf("setting order amount to fixed amount: %f", strategy.FixedTradeAmount)
+			orderAmount = strategy.FixedTradeAmount.Float64
+
+		case entities.Compound:
+			wl.Debug("compound strategy found")
+			if position.Quantity <= 0 {
+				return fmt.Errorf("invalid position.quantity: %f", position.Quantity)
+			}
+
+			if position.EntryPrice <= 0 {
+				return fmt.Errorf("invalid position.entry_price: %f", position.EntryPrice)
+			}
+
+			upnl := 0.0
+			if position.UnrealizedPnl == 0 {
+				wl.Debugf("using market price of: %f", chainMarketPrice)
+				// manually calculate unrelized P&L
+				if position.Side == string(coinroutesapi.Short) ||
+					position.Side == string(coinroutesapi.Sell) {
+					// -1 X (Current price / entry price -1)
+					upnl = -1 * (chainMarketPrice/position.EntryPrice - 1)
+
+				} else {
+					// (Current price / entry price -1)
+					upnl = (chainMarketPrice/position.EntryPrice - 1)
+				}
+
+			} else {
+				upnl = position.UnrealizedPnl
+			}
+
+			orderAmount = (position.Quantity * position.EntryPrice) + upnl
+			wl.Debugf("setting order amount to compound amount: (%f * %f) + %f = %f",
+				position.Quantity,
+				position.EntryPrice,
+				upnl,
+				orderAmount,
+			)
+
+		default:
+			return fmt.Errorf("missing trade strategy, cannot set amount for position")
+		}
+
+	}
+
+	wl.Debugf("order amount: %f", orderAmount)
+
+	if orderAmount <= 0 {
+		if ss.cc.IsSimulated() {
+			wl.Info("stubbed trading, setting order amount to 1")
+			orderAmount = 1
+		} else {
+			wl.Error(fmt.Errorf("no-op: order amount not properly set: %f", orderAmount))
+			return ErrNoOpSignal
+		}
+	}
+
+	// apply buffer only to fixed trades
+	// apply buffer to trade amount and overwrite payload
+	if strategy.TradeStrategy == entities.Fixed {
+		wl.Debugf(
+			"applying buffer of %f. Original: %f Actual: %f",
+			tradeAmountBuffer,
+			orderAmount,
+			orderAmount*tradeAmountBuffer,
+		)
+		orderAmount *= tradeAmountBuffer
+	}
+
+	// set leverage for strategy
+	if strategy.Leverage > 1 {
+		wl.Debugf(
+			"applying leverage of %d. Original: %f Actual: %f",
+			strategy.Leverage,
+			orderAmount,
+			orderAmount*float64(strategy.Leverage),
+		)
+		orderAmount *= float64(strategy.Leverage)
+	}
+
+	// send 1 order at fixed price in USDT
+	orderPayload := coinroutesapi.ClientOrderCreateRequest{
+		OrderType:          coinroutesapi.SmartPost,
+		OrderStatus:        coinroutesapi.Open,
+		Aggression:         coinroutesapi.Neutral,
+		CurrencyPair:       currencyPair,
+		Quantity:           strconv.FormatFloat(orderAmount, 'f', 10, 64),
+		Side:               desiredSide,
+		Strategy:           strategy.Name,
+		UseFundingCurrency: true, // needs to be in USDT
+		// EndOffset:          tradeTTL,
+		// IntervalLength:     intLength,
+		// IsTwap:             false,
+	}
+
+	// make trade
+	wl.Debugf("about to create order with payload: %+v", orderPayload)
+	resp, err := ss.cc.CreateClientOrders(ctx, &orderPayload)
+	if err != nil {
+		return err
+	}
+
+	if resp.ClientOrderId == "" {
+		return fmt.Errorf("no client_order_id found in response: %+v", resp)
+	}
+
+	wl.Infof("order placed with coinroutes: %+v", resp)
+
+	//  record signal in log
+	err = ss.insertLatestSignalTradedForStrategy(ctx, wl, chain, signal, strategy)
+	if err != nil {
+		wl.Error(err)
+	}
+
+	// record trade in order table
+	err = ss.insertNewOrder(ctx, wl, resp, strategy, signal)
+	if err != nil {
+		wl.Error(err)
+	}
+
+	// log trade to BQ
+	err = ss.dl.Log(ctx, wl, strategy.Name, signal, resp)
+	if err != nil {
+		wl.Error(err)
+	}
+
+	return nil
+}

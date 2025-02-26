@@ -1,0 +1,22 @@
+.PHONY: run build-docker
+
+build:
+	GOARCH=amd64 CGO_ENABLED=0 go build -o bin/yield-mvp ./cmd/yield-mvp/main.go
+
+run:
+	TZ=UTC go run ./cmd/yield-mvp/main.go -e ./configs/env.local -local
+
+clean:
+	rm -R bin/*
+	rm -Rf vendor
+
+docker/build:
+	go mod vendor
+	docker build -t yield-mvp -f Dockerfile .
+	rm -Rf vendor
+
+docker/run:
+	docker compose up -d
+
+docker/bubild-and-push-image: docker/build
+	docker push gcr.io/765630159797/yield-mvp

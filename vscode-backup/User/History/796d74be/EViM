@@ -1,0 +1,10 @@
+add client error checking
+
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch salvatore/yie-109-create-api-for-signal-creation-and
+# Changes to be committed:
+#	modified:   internal/handler/signalhdl.go
+#

@@ -1,0 +1,59 @@
+PORT=8080
+BTC_URL=http://34.91.227.63
+ETH_URL=http://34.90.130.174
+STUB_SIGNAL=false
+SIMULATE_TRADE=true
+SIGNAL_RESOLUTION=60
+
+# DB
+DATABASE_URL=postgres://postgres:password@localhost:5432/yield-mvp?sslmode=disable
+
+# coinRoutes
+# UAT
+# CR_URL=https://uat.coinroutes.io
+# CR_TOKEN=457a69e6168935ee2733dd77b704cd046651609b
+# production
+CR_URL=https://yieldchain.coinroutes.io
+CR_TOKEN=75f1b084913f43b70f6b4bee6d67da6ae981eb9b
+CR_WS_BASE_URL=portal.coinroutes.com
+CR_WS_TOKEN=aca3055df0b67a6bda687885e973eb8985a0b790
+
+# logs
+PRETTY_LOGS=true
+MIN_LOG_LEVEL=debug
+
+# strategies
+BTC_LONG_SHORT=btclstestt #FIXME
+ETH_LONG_SHORT=yttest33 #FIXME
+BTC_LONG_NEUTRAL=btc-simulation
+ETH_LONG_NEUTRAL=eth-simulation
+ETH_USDT
+
+
+# trade logger
+TRADELOGGER_GCP_PROJECT_ID=yieldchain-track-records
+TRADELOGGER_DATASET=yield_mvp
+TRADELOGGER_TABLE=test_trade_log
+# only used for local development
+TRADELOGGER_SERVICE_ACCOUNT_FILE=/Users/salvatoredagostino/.gcp/yieldchain-track-records-d5ffccc9acb6.json
+
+# signal logger
+SIGNALLOGGER_GCP_PROJECT_ID=yieldchain-track-records
+SIGNALLOGGER_DATASET=yield_mvp
+SIGNALLOGGER_TABLE=test_signal_log
+# only used for local development
+SIGNALLOGGER_SERVICE_ACCOUNT_FILE=/Users/salvatoredagostino/.gcp/yieldchain-track-records-d5ffccc9acb6.json
+
+# balance logger
+BALANCELOGGER_GCP_PROJECT_ID=yieldchain-track-records
+BALANCELOGGER_DATASET=yield_mvp
+BALANCELOGGER_TABLE=test_balance_log
+# only used for local development
+BALANCELOGGER_SERVICE_ACCOUNT_FILE=/Users/salvatoredagostino/.gcp/yieldchain-track-records-d5ffccc9acb6.json
+
+# order logger
+ORDERLOGGER_GCP_PROJECT_ID=yieldchain-track-records
+ORDERLOGGER_DATASET=yield_mvp
+ORDERLOGGER_TABLE=test_order_log
+# only used for local development
+ORDERLOGGER_SERVICE_ACCOUNT_FILE=/Users/salvatoredagostino/.gcp/yieldchain-track-records-d5ffccc9acb6.json

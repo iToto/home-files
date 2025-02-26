@@ -1,0 +1,61 @@
+PORT=8080
+BTC_URL=api.beta.btc.xeohive.com/test-api/v3-beta
+ETH_URL=api.beta.eth.xeohive.com/test-api/r15v100-beta
+BTC_URL_NEUTRAL=api.beta.btc.xeohive.com/test-api/r17-neutral
+ETH_URL_NEUTRAL=api.beta.eth.xeohive.com/test-api/r15-neutral
+
+SIGNAL_RESOLUTION=30
+SIMULATE_TRADE=false
+
+# DB
+DB_USER=postgres
+DB_PASS=uhCx*7QpJvJVMnGovb
+INSTANCE_CONNECTION_NAME=yieldchain-track-records:us-east1:yield-mvp
+DB_NAME=yield-mvp
+
+# coinRoutes
+# NA box
+# CR_URL=https://yieldchain.coinroutes.io
+# CR_TOKEN=75f1b084913f43b70f6b4bee6d67da6ae981eb9b
+# CR_WS_BASE_URL=portal.coinroutes.com
+# CR_WS_TOKEN=aca3055df0b67a6bda687885e973eb8985a0b790
+
+# Japan box
+CR_URL=https://yieldchain2.coinroutes.io
+CR_TOKEN=4d757623e7c70501e77193caa54350143d80d0da
+CR_WS_BASE_URL=portal.coinroutes.com
+CR_WS_TOKEN=aca3055df0b67a6bda687885e973eb8985a0b790
+
+# logs
+PRETTY_LOGS=false
+MIN_LOG_LEVEL=debug
+
+# user_id
+USER_ID=01G9XKZ6B407M8XARHRE3FXME1
+
+# email
+SMTP_PORT=587
+SMTP_HOST=smtp.gmail.com
+SMTP_USER=salvatore@lunaitconsulting.com
+SMTP_PASS=fvpmtfchirprvvej
+PATH_TO_CSV=/yield/reports/
+
+# trade logger
+TRADELOGGER_GCP_PROJECT_ID=yieldchain-track-records
+TRADELOGGER_DATASET=yield_mvp
+TRADELOGGER_TABLE=trade_log
+
+# signal logger
+SIGNALLOGGER_GCP_PROJECT_ID=yieldchain-track-records
+SIGNALLOGGER_DATASET=yield_mvp
+SIGNALLOGGER_TABLE=signal_log
+
+# balance logger
+BALANCELOGGER_GCP_PROJECT_ID=yieldchain-track-records
+BALANCELOGGER_DATASET=yield_mvp
+BALANCELOGGER_TABLE=balance_log
+
+# order logger
+ORDERLOGGER_GCP_PROJECT_ID=yieldchain-track-records
+ORDERLOGGER_DATASET=yield_mvp
+ORDERLOGGER_TABLE=order_log

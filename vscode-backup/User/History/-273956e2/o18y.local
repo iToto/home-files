@@ -1,0 +1,13 @@
+PORT=8080
+SIGNAL_RESOLUTION=30
+
+# logs
+PRETTY_LOGS=true
+MIN_LOG_LEVEL=debug
+
+# signal logger
+SIGNALLOGGER_GCP_PROJECT_ID=yieldchain-track-records
+SIGNALLOGGER_DATASET=yield_mvp
+SIGNALLOGGER_TABLE=test_signal_log
+# only used for local development
+SIGNALLOGGER_SERVICE_ACCOUNT_FILE=

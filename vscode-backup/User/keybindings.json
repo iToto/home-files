@@ -1,0 +1,67 @@
+// Place your key bindings in this file to overwrite the defaults
+[
+  {
+    "key": "cmd+g cmd+s",
+    "command": "git.stage"
+  },
+  {
+    "key": "cmd+g cmd+c",
+    "command": "git.commitStaged"
+  },
+  {
+    "key": "cmd+g cmd+p",
+    "command": "git.push"
+  },
+  {
+    "key": "cmd+g cmd+l",
+    "command": "gitlens.toggleFileBlame",
+    "when": "editorTextFocus && gitlens:isTracked"
+  },
+  {
+    "key": "alt+b",
+    "command": "-gitlens.toggleFileBlame",
+    "when": "editorTextFocus && gitlens:isTracked"
+  },
+  {
+    "key": "cmd+g cmd+r",
+    "command": "git.branch"
+  },
+  {
+    "key": "cmd+g cmd+b",
+    "command": "git.checkout"
+  },
+  {
+    "key": "shift+cmd+l",
+    "command": "editor.action.insertCursorAtEndOfEachLineSelected",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+alt+i",
+    "command": "-editor.action.insertCursorAtEndOfEachLineSelected",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "cmd+\\",
+    "command": "-workbench.action.splitEditor"
+  },
+  {
+    "key": "cmd+k cmd+\\",
+    "command": "-workbench.action.splitEditorOrthogonal"
+  },
+  {
+    "key": "cmd+k shift+cmd+left",
+    "command": "-workbench.action.moveEditorLeftInGroup"
+  },
+  {
+    "key": "ctrl+k s",
+    "command": "workbench.action.splitEditor"
+  },
+  {
+    "key": "ctrl+k v",
+    "command": "workbench.action.splitEditorOrthogonal"
+  },
+  {
+    "key": "ctrl+k z",
+    "command": "togglemaxeditor.toggleMaximizeEditor"
+  }
+]

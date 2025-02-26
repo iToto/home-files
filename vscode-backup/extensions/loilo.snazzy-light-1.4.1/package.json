@@ -1,0 +1,46 @@
+{
+	"name": "snazzy-light",
+	"displayName": "Snazzy Light",
+	"publisher": "loilo",
+	"description": "A vivid light color theme determined to be clear and distinct under bright ambient light",
+	"version": "1.4.1",
+	"engines": {
+		"vscode": "^1.28.0"
+	},
+	"scripts": {
+		"deploy": "./deploy-checks && git push && git push --tags && vsce publish"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/loilo/vscode-snazzy-light.git"
+	},
+	"icon": "favicon.png",
+	"galleryBanner": {
+		"color": "#FAFBFC",
+		"theme": "light"
+	},
+	"categories": [
+		"Themes"
+	],
+	"contributes": {
+		"themes": [
+			{
+				"label": "Snazzy Light",
+				"uiTheme": "vs",
+				"path": "./themes/Snazzy-Light-color-theme.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "20077bb9-6134-4ff3-8f68-23555bb241f3",
+		"publisherId": "541949d0-3bea-4547-a4de-f7c108b6c624",
+		"publisherDisplayName": "Florian Reuschel",
+		"targetPlatform": "undefined",
+		"isApplicationScoped": false,
+		"updated": true,
+		"isPreReleaseVersion": false,
+		"installedTimestamp": 1696945224736,
+		"preRelease": false,
+		"size": 111359
+	}
+}

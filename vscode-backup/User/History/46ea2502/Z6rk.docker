@@ -1,0 +1,15 @@
+PORT=8080
+BTC_URL=http://35.204.101.142
+ETH_URL=http://34.141.231.198
+
+# coinRoutes
+CR_URL=https://yieldchain.coinroutes.io
+CR_TOKEN=75f1b084913f43b70f6b4bee6d67da6ae981eb9b
+
+# logs
+PRETTY_LOGS=true
+MIN_LOG_LEVEL=debug
+
+# strategies
+LONG_SHORT=yttest3
+LONG_NEUTRAL=simulation

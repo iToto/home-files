@@ -1,0 +1,212 @@
+package signalsvc
+
+import (
+	"context"
+	"errors"
+	"fmt"
+	"strings"
+	"yield-mvp/internal/entities"
+	"yield-mvp/internal/wlog"
+	"yield-mvp/pkg/coinroutesapi"
+)
+
+func (ss *signalService) tradeMarginStrategy(
+	ctx context.Context,
+	wl wlog.Logger,
+	chain entities.ChainType,
+	strategy *entities.Strategy,
+	desiredSide coinroutesapi.SideType,
+	signal *entities.Signal,
+) error {
+	currencyPair := coinroutesapi.CurrencyPairType(strategy.CurrencyPair)
+	var chainMarketPrice float64
+	var err error
+
+	// get market price
+	switch chain {
+	case entities.BTC:
+		chainMarketPrice, err = ss.btcPrice.GetPrice()
+		if err != nil {
+			return fmt.Errorf("unable to get market price: %w", err)
+		}
+	case entities.ETH:
+		chainMarketPrice, err = ss.ethPrice.GetPrice()
+		if err != nil {
+			return fmt.Errorf("unable to get market price: %w", err)
+		}
+	default:
+		return fmt.Errorf("invalid chain found:%s", chain)
+	}
+
+	// get current position from exchange
+	wl.Debug("strategy is USDT, calculating trade amount")
+	position, err := ss.exdal.GetPositionForStrategy(
+		ctx,
+		wl,
+		strategy,
+		currencyPair,
+	)
+	if err != nil {
+		return err
+	}
+
+	// get balance from exchange
+	balance, err := ss.exdal.GetBalanceForStrategy(
+		ctx,
+		wl,
+		coinroutesapi.CurrencyType(currencyPair),
+		strategy,
+	)
+	if err != nil {
+		return err
+	}
+
+	// calculate if we are long/short/neutral
+	currentSide, err := ss.calculateMarginSide(ctx, wl, position, balance)
+	if err != nil {
+		return err
+	}
+
+	// if we are in desired state, no-op
+	if currentSide.IsEquivalent(entities.SignalType(desiredSide)) {
+		wl.Infof("already in desired state: %s == %s", currentSide, desiredSide)
+		// log signal and no-op
+		err = ss.insertLatestSignalTradedForStrategy(ctx, wl, chain, signal, strategy)
+		if err != nil {
+			return err
+		}
+		return nil // no-op
+	}
+
+	// calculate trade amount
+	amountToTrade := 0.0
+
+	switch currentSide {
+	case entities.Long:
+		switch desiredSide {
+		case coinroutesapi.Neut:
+			amountToTrade = balance
+		case coinroutesapi.Short:
+			amountToTrade = 2 * balance
+		default:
+			return fmt.Errorf("unexpected desired side found for long state:%s", desiredSide)
+		}
+
+	case entities.Neutral:
+		switch desiredSide {
+		case coinroutesapi.Long:
+			amountToTrade = balance
+		case coinroutesapi.Short:
+			amountToTrade = balance + (balance - position.UnrealizedPnl)/3
+		default:
+			return fmt.Errorf("unexpected desired side found for neutral state:%s", desiredSide)
+
+	case entities.Short:
+		switch desiredSide {
+		case coinroutesapi.Long:
+			amountToTrade = position.Quantity
+		case coinroutesapi.Neut:
+			amountToTrade = (position.Quantity / chainMarketPrice) - (balance + balance - position.UnrealizedPnl)
+		default:
+			return fmt.Errorf("unexpected desired side found for short state:%s", desiredSide)
+
+	default:
+		return fmt.Errorf("invalid side found:%s", currentSide)
+	}
+
+	// create order
+	orderPayload := coinroutesapi.ClientOrderCreateRequest{
+		OrderType:          coinroutesapi.SmartPost,
+		OrderStatus:        coinroutesapi.Open,
+		Aggression:         coinroutesapi.Neutral,
+		CurrencyPair:       currencyPair,
+		Quantity:           strconv.FormatFloat(amountToTrade, 'f', 10, 64),
+		Side:               desiredSide,
+		Strategy:           strategy.Name,
+		UseFundingCurrency: true, // needs to be in USDT
+		// EndOffset:          tradeTTL,
+		// IntervalLength:     intLength,
+		// IsTwap:             false,
+	}
+
+	// check for neutral state (no contracts)
+	if position == nil {
+		// neutral state: just need to make position order
+		wl.Debug("found neutral state")
+		err := ss.tradePosition(
+			ctx,
+			wl,
+			chain,
+			strategy,
+			signal,
+			desiredSide,
+			position,
+			currencyPair,
+			chainMarketPrice,
+		)
+		if err != nil {
+			if errors.Is(err, ErrNoOpSignal) {
+				// log signal and no-op
+				err = ss.insertLatestSignalTradedForStrategy(ctx, wl, chain, signal, strategy)
+				if err != nil {
+					return err
+				}
+				return nil // no-op
+			}
+			return fmt.Errorf("could not trade into position from neutral: %w", err)
+		}
+		return nil
+
+	} // end of starting neutral
+
+	// starting in position: make two orders (go-neutral and then fixed price)
+
+	currentSide := coinroutesapi.SideType(strings.ToLower(position.Side))
+
+	if currentSide.IsEquivalent(desiredSide) {
+		wl.Infof("position is already in desired state: %s = %s",
+			position.Side,
+			desiredSide,
+		)
+		// log signal and no-op
+		err = ss.insertLatestSignalTradedForStrategy(ctx, wl, chain, signal, strategy)
+		if err != nil {
+			return err
+		}
+		return nil // no-op
+	}
+
+	wl.Debug("changing position, creating two orders")
+
+	// go neutral
+	err = ss.tradeNeutral(ctx, wl, chain, strategy, signal, position, currencyPair)
+	if err != nil {
+		return fmt.Errorf("could not go neutral: %w", err)
+	}
+
+	// make position trade
+	err = ss.tradePosition(
+		ctx,
+		wl,
+		chain,
+		strategy,
+		signal,
+		desiredSide,
+		position,
+		currencyPair,
+		chainMarketPrice,
+	)
+	if err != nil {
+		if errors.Is(err, ErrNoOpSignal) {
+			// log signal and no-op
+			err = ss.insertLatestSignalTradedForStrategy(ctx, wl, chain, signal, strategy)
+			if err != nil {
+				return err
+			}
+			return nil // no-op
+		}
+		return fmt.Errorf("could not trade into position: %w", err)
+	}
+
+	return nil
+}

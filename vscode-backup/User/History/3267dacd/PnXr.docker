@@ -1,0 +1,23 @@
+PORT=8080
+SIGNAL_RESOLUTION=5
+SIMULATE_TRADE=false
+
+# logs
+PRETTY_LOGS=false
+MIN_LOG_LEVEL=debug
+
+# DB
+DB_USER=postgres
+DB_PASS=uhCx*7QpJvJVMnGovb
+INSTANCE_CONNECTION_NAME=yieldchain-track-records:us-east1:yield-mvp
+DB_NAME=yield-mvp
+
+# signal logger
+SIGNALLOGGER_GCP_PROJECT_ID=yieldchain-track-records
+SIGNALLOGGER_DATASET=yield_mvp
+SIGNALLOGGER_TABLE=signal_logger_log
+
+# signal logger v2
+SIGNALLOGGER_V2_GCP_PROJECT_ID=yieldchain-track-records
+SIGNALLOGGER_V2_DATASET=yield_mvp
+SIGNALLOGGER_V2_TABLE=signal_logger_log_v2

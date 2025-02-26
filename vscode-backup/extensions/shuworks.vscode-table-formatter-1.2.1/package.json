@@ -1,0 +1,132 @@
+{
+	"name": "vscode-table-formatter",
+	"displayName": "Table Formatter",
+	"description": "Format table syntax of Markdown, Textile and reStructuredText.",
+	"version": "1.2.1",
+	"publisher": "shuworks",
+	"author": "Shuzo Iwasaki <shu.works.7@gmail.com>",
+	"engines": {
+		"vscode": "^1.5.0"
+	},
+	"license": "MIT",
+	"categories": [
+		"Formatters"
+	],
+	"keywords": [
+		"table",
+		"markdown",
+		"textile",
+		"restructuredtext"
+	],
+	"galleryBanner": {
+		"color": "#946243",
+		"theme": "dark"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/shuGH/vscode-table-formatter.git"
+	},
+	"bugs": {
+		"url": "https://github.com/shuGH/vscode-table-formatter/issues"
+	},
+	"icon": "res/vscode_formatter_icon_128.png",
+	"main": "./out/src/extension",
+	"contributes": {
+		"commands": [
+			{
+				"command": "extension.table.formatCurrent",
+				"title": "Table: Format Current"
+			},
+			{
+				"command": "extension.table.formatAll",
+				"title": "Table: Format All"
+			}
+		],
+		"keybindings": [
+			{
+				"command": "extension.table.formatCurrent",
+				"key": "ctrl+alt+t c",
+				"mac": "cmd+alt+t c",
+				"when": "editorTextFocus"
+			},
+			{
+				"command": "extension.table.formatAll",
+				"key": "ctrl+alt+t a",
+				"mac": "cmd+alt+t a",
+				"when": "editorTextFocus"
+			}
+		],
+		"configuration": {
+			"type": "object",
+			"title": "Table Formatter Configuration",
+			"properties": {
+				"tableformatter.common.explicitFullwidthChars": {
+					"type": "array",
+					"default": [],
+					"description": "Characters processed as fullwidth forcibly.",
+					"items": {
+						"anyOf": [
+							{
+								"type": "string"
+							}
+						]
+					}
+				},
+				"tableformatter.common.trimTrailingWhitespace": {
+					"type": "boolean",
+					"default": true,
+					"description": "Remove trailing whitespace or not when formatting table."
+				},
+				"tableformatter.common.centerAlignedHeader": {
+					"type": "boolean",
+					"default": true,
+					"description": "Force header cell to be center aligned or not."
+				},
+				"tableformatter.markdown.oneSpacePadding": {
+					"type": "boolean",
+					"default": true,
+					"description": "[Markdown only] Header separator in markdown has one space padding at both ends or not."
+				},
+				"tableformatter.markdown.tableEdgesType": {
+					"type": "string",
+					"default": "Auto",
+					"description": "[Markdown only] Type of formatted table's delimiters on its both sides. (Auto, Normal or Borderless)",
+					"enum": [
+						"Auto",
+						"Normal",
+						"Borderless"
+					]
+				}
+			}
+		}
+	},
+	"activationEvents": [
+		"onCommand:extension.table.formatCurrent",
+		"onCommand:extension.table.formatAll"
+	],
+	"scripts": {
+		"vscode:prepublish": "tsc -p ./",
+		"compile": "tsc -watch -p ./",
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "node ./node_modules/vscode/bin/test"
+	},
+	"dependencies": {
+		"string-width": "2.*",
+		"utils-pad-string": "1.*",
+		"trim": "0.0.1"
+	},
+	"devDependencies": {
+		"typescript": "^2.0.3",
+		"vscode": "^1.0.0",
+		"mocha": "^2.3.3",
+		"@types/node": "^6.0.40",
+		"@types/mocha": "^2.2.32"
+	},
+	"extensionDependencies": [],
+	"__metadata": {
+		"id": "4b416b07-e709-46fb-a84b-644ab2dfe1b4",
+		"publisherId": "ededadfa-d9ba-49e0-81cd-d0b2e0630df5",
+		"publisherDisplayName": "Shuzo Iwasaki",
+		"size": 1339866
+	}
+}

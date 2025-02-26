@@ -1,0 +1,4 @@
+
+# logs
+PRETTY_LOGS=true
+MIN_LOG_LEVEL=debug

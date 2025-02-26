@@ -1,0 +1,30 @@
+name: deploy
+on:
+  push:
+    tags:
+      - v*
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: lts/*
+
+      - name: pnpm setup
+        uses: pnpm/action-setup@v2
+
+      - run: pnpm install
+
+      - name: Generate extension
+        run: yarn generate
+
+      - name: Publish to Visual Studio Marketplace
+        uses: HaaLeo/publish-vscode-extension@v1
+        with:
+          pat: ${{ secrets.VS_MARKETPLACE_TOKEN }}
+          registryUrl: https://marketplace.visualstudio.com
+          dependencies: false

@@ -1,0 +1,7 @@
+version: "3.1"
+services:
+  social-links-api:
+    build: .
+    ports:
+      - "8080:8080"
+    image: "itoto/social-links-api"

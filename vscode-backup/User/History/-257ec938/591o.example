@@ -1,0 +1,23 @@
+PORT=8080
+BTC_URL=http://0.0.0.0
+ETH_URL=http://0.0.0.0
+STUB_SIGNAL=true
+
+# DB
+# local
+DATABASE_URL=postgres://postgres:password@localhost:5432/yield-mvp?sslmode=disable
+
+# coinRoutes
+# UAT
+CR_URL=https://uat.coinroutes.io
+CR_TOKEN=[TOKEN]
+
+# logs
+PRETTY_LOGS=true
+MIN_LOG_LEVEL=debug
+
+# strategies
+BTC_LONG_SHORT=btclstest
+ETH_LONG_SHORT=yttest3
+BTC_LONG_NEUTRAL=btc-simulation
+ETH_LONG_NEUTRAL=eth-simulation

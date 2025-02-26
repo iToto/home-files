@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+		<Metadata>
+			<Identity Language="en-US" Id="vuejs-extension-pack" Version="2.0.2" Publisher="mubaidr" />
+			<DisplayName>Vue.js Extension Pack</DisplayName>
+			<Description xml:space="preserve">Popular VS Code extensions for Vue.js development providing Syntax highlighting, Code format, Code snippets, IntelliSense, Linting support, npm &amp; node tools.</Description>
+			<Tags>vue,nuxt,javascript,typescript,snippets,node,linters,__web_extension</Tags>
+			<Categories>Extension Packs</Categories>
+			<GalleryFlags>Public</GalleryFlags>
+			
+			<Properties>
+				<Property Id="Microsoft.VisualStudio.Code.Engine" Value="^1.26.0" />
+				<Property Id="Microsoft.VisualStudio.Code.ExtensionDependencies" Value="" />
+				<Property Id="Microsoft.VisualStudio.Code.ExtensionPack" Value="Vue.volar,Nuxt.mdc,Nuxtr.nuxtr-vscode,sdras.vue-vscode-snippets,antfu.vite,ZixuanChen.vitest-explorer,xabikos.javascriptsnippets,dbaeumer.vscode-eslint,esbenp.prettier-vscode,tombonnike.vscode-status-bar-format-toggle,christian-kohler.npm-intellisense,VisualStudioExptTeam.vscodeintellicode" />
+				<Property Id="Microsoft.VisualStudio.Code.ExtensionKind" Value="workspace,web" />
+				<Property Id="Microsoft.VisualStudio.Code.LocalizedLanguages" Value="" />
+				
+				
+				<Property Id="Microsoft.VisualStudio.Services.Links.Source" Value="https://github.com/mubaidr/vuejs-extension-pack.git" />
+				<Property Id="Microsoft.VisualStudio.Services.Links.Getstarted" Value="https://github.com/mubaidr/vuejs-extension-pack.git" />
+				<Property Id="Microsoft.VisualStudio.Services.Links.GitHub" Value="https://github.com/mubaidr/vuejs-extension-pack.git" />
+				<Property Id="Microsoft.VisualStudio.Services.Links.Support" Value="https://github.com/mubaidr/vuejs-extension-pack/issues" />
+				<Property Id="Microsoft.VisualStudio.Services.Links.Learn" Value="https://github.com/mubaidr/vuejs-extension-pack" />
+				<Property Id="Microsoft.VisualStudio.Services.Branding.Color" Value="#333333" />
+				<Property Id="Microsoft.VisualStudio.Services.Branding.Theme" Value="dark" />
+				<Property Id="Microsoft.VisualStudio.Services.GitHubFlavoredMarkdown" Value="true" />
+				<Property Id="Microsoft.VisualStudio.Services.Content.Pricing" Value="Free"/>
+
+				
+				
+			</Properties>
+			<License>extension/LICENSE.txt</License>
+			<Icon>extension/vuejs-icon.png</Icon>
+		</Metadata>
+		<Installation>
+			<InstallationTarget Id="Microsoft.VisualStudio.Code"/>
+		</Installation>
+		<Dependencies/>
+		<Assets>
+			<Asset Type="Microsoft.VisualStudio.Code.Manifest" Path="extension/package.json" Addressable="true" />
+			<Asset Type="Microsoft.VisualStudio.Services.Content.Details" Path="extension/README.md" Addressable="true" />
+<Asset Type="Microsoft.VisualStudio.Services.Content.Changelog" Path="extension/CHANGELOG.md" Addressable="true" />
+<Asset Type="Microsoft.VisualStudio.Services.Content.License" Path="extension/LICENSE.txt" Addressable="true" />
+<Asset Type="Microsoft.VisualStudio.Services.Icons.Default" Path="extension/vuejs-icon.png" Addressable="true" />
+		</Assets>
+	</PackageManifest>

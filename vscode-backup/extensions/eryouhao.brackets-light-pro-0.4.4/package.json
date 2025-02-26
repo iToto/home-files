@@ -1,0 +1,42 @@
+{
+	"name": "brackets-light-pro",
+	"displayName": "Brackets Light Pro",
+	"icon": "icon.png",
+	"description": "A theme basic Brackets Light and more beautiful.",
+	"version": "0.4.4",
+	"publisher": "eryouhao",
+	"engines": {
+		"vscode": "^1.17.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/EryouHao/brackets-light-pro"
+	},
+	"keywords": [
+		"VSCode",
+		"Themes"
+	],
+	"contributes": {
+		"themes": [
+			{
+				"label": "Brackets Light Pro",
+				"uiTheme": "vs",
+				"path": "./themes/Brackets Light Pro-color-theme.json"
+			},
+			{
+				"label": "Brackets Light Pro Bold",
+				"uiTheme": "vs",
+				"path": "./themes/Brackets Light Pro-color-theme-Bold.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "5b653174-476c-4d78-a8b6-a4e863383a81",
+		"publisherId": "b6ee7718-6eb7-4882-855b-2398eb326fde",
+		"publisherDisplayName": "EryouHao",
+		"size": 1220071
+	}
+}

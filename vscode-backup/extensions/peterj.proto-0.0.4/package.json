@@ -1,0 +1,67 @@
+{
+	"name": "proto",
+	"displayName": "Protobuf support",
+	"description": "Protobuf support (.proto file syntax highlighting)",
+	"version": "0.0.4",
+	"publisher": "peterj",
+	"license": "SEE LICENSE IN LICENSE.md",
+	"icon": "images/protobuficon.png",
+	"galleryBanner": {
+		"color": "#5c2d91",
+		"theme": "dark"
+	},
+	"homepage": "https://github.com/peterj/vscode-protobuf/blob/master/README.md",
+	"bugs": {
+		"url": "https://github.com/peterj/vscode-protobuf/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/peterj/vscode-protobuf"
+	},
+	"engines": {
+		"vscode": "^1.37.0"
+	},
+	"categories": [
+		"Programming Languages"
+	],
+	"contributes": {
+		"languages": [
+			{
+				"id": "proto",
+				"aliases": [
+					"Protocol Buffers",
+					"proto"
+				],
+				"extensions": [
+					".proto"
+				],
+				"configuration": "./proto.configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "proto",
+				"scopeName": "source.proto",
+				"path": "./syntaxes/proto.tmLanguage"
+			}
+		]
+	},
+	"devDependencies": {
+		"svgexport": "^0.4.2"
+	},
+	"scripts": {
+		"vscode:prepublish": "svgexport ./images/protobuficon.svg ./images/protobuficon.png"
+	},
+	"__metadata": {
+		"id": "30bcbe00-bac0-497a-838a-eda8e45d1864",
+		"publisherId": "dde0e98a-1f51-4d1d-be41-4af4f134ca7e",
+		"publisherDisplayName": "peterj",
+		"targetPlatform": "undefined",
+		"isApplicationScoped": false,
+		"updated": true,
+		"isPreReleaseVersion": false,
+		"installedTimestamp": 1682043526822,
+		"preRelease": false,
+		"size": 4076562
+	}
+}

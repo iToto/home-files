@@ -1,0 +1,7 @@
+PORT=8080
+BTC_URL=http://localhost
+ETH_URL=http://localhost
+
+# logs
+PRETTY_LOGS=true
+MIN_LOG_LEVEL=debug

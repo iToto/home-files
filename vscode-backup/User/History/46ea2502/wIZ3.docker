@@ -1,0 +1,18 @@
+PORT=8080
+BTC_URL=http://35.204.101.142
+ETH_URL=http://34.141.231.198
+DATABASE_URL=postgres://postgres:uhCx*7QpJvJVMnGovb@34.74.208.50/yield-mvp
+
+# coinRoutes
+CR_URL=https://yieldchain.coinroutes.io
+CR_TOKEN=75f1b084913f43b70f6b4bee6d67da6ae981eb9b
+
+# logs
+PRETTY_LOGS=false
+MIN_LOG_LEVEL=debug
+
+# strategies
+BTC_LONG_SHORT=btclstest
+ETH_LONG_SHORT=yttest3
+BTC_LONG_NEUTRAL=btc-simulation
+ETH_LONG_NEUTRAL=eth-simulation

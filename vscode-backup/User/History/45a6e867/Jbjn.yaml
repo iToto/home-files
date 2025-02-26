@@ -1,0 +1,7 @@
+version: "3.1"
+services:
+  qr-tracker:
+    build: .
+    ports:
+      - "8080:8080"
+    image: "itoto/qr-tracker"

@@ -1,0 +1,129 @@
+steps:
+  #Vendor deps for builds
+  - name: 'golang:1.16'
+    id: 'vendor'
+    args: ['go', 'mod', 'vendor']
+  #Build braavos production image
+  - name: "gcr.io/cloud-builders/docker"
+    id: 'build'
+    args:
+      [
+        "build",
+        "--build-arg",
+        "ENV=production",
+        "-t",
+        "us.gcr.io/wingo-registry/braavos:${SHORT_SHA}",
+        "-t",
+        "us.gcr.io/wingo-registry/braavos:jobs-latest",
+        "-f",
+        "build/Dockerfile",
+        ".",
+      ]
+  #Push braavos production image
+  - name: "gcr.io/cloud-builders/docker"
+    id: 'pushImage'
+    args: ["push", "us.gcr.io/wingo-registry/braavos:${SHORT_SHA}"]
+  #Push braavos cli production image
+  - name: "gcr.io/cloud-builders/docker"
+    id: 'pushImageJobs'
+    args: ["push", "us.gcr.io/wingo-registry/braavos:jobs-latest"]
+  #Create DB migrations job
+  # - name: "gcr.io/google.com/cloudsdktool/cloud-sdk:slim"
+  #   id: 'create-job-db-migrations'
+  #   entrypoint: 'gcloud'
+  #   args:
+  #     [
+  #       "--quiet",
+  #       "alpha",
+  #       "run",
+  #       "jobs",
+  #       "create",
+  #       "db-migrations-${SHORT_SHA}-${BUILD_ID}",
+  #       "--image",
+  #       "us.gcr.io/wingo-registry/braavos:jobs-latest",
+  #       "--command",
+  #       "/wingocard/braavoscli",
+  #       "--args=-e,/wingocard/config.env,migratedb",
+  #       "--region",
+  #       "us-east1",
+  #       "--vpc-connector",
+  #       "braavos-vpc-connector",
+  #       "--service-account",
+  #       "braavos-db-migration@wingocard-production.iam.gserviceaccount.com",
+  #       "--max-retries",
+  #       "0",
+  #       "--task-timeout",
+  #       "3m",
+  #     ]
+  #Run DB migrations job
+  # - name: "gcr.io/google.com/cloudsdktool/cloud-sdk:slim"
+  #   id: 'run-job-db-migrations'
+  #   entrypoint: 'gcloud'
+  #   args:
+  #     [
+  #       "--quiet",
+  #       "alpha",
+  #       "run",
+  #       "jobs",
+  #       "run",
+  #       "db-migrations-${SHORT_SHA}-${BUILD_ID}",
+  #       "--region",
+  #       "us-east1",
+  #       "--wait",
+  #     ]
+  #Deploy braavos service to cloud run (production)
+  - name: "gcr.io/google.com/cloudsdktool/cloud-sdk:slim"
+    id: 'deploy'
+    entrypoint: 'gcloud'
+    args:
+      [
+        "run",
+        "deploy",
+        "braavos",
+        "--image",
+        "us.gcr.io/wingo-registry/braavos:${SHORT_SHA}",
+        "--region",
+        "us-east1",
+        "--platform",
+        "managed",
+        "--allow-unauthenticated",
+        "--vpc-connector",
+        "braavos-vpc-connector",
+        "--service-account",
+        "braavos-service-account@wingocard-production.iam.gserviceaccount.com",
+        "--min-instances=3",
+        "--cpu=2",
+      ]
+  #Deploy braavos-admin service to cloud run (production)
+  - name: "gcr.io/google.com/cloudsdktool/cloud-sdk:slim"
+    id: 'deploy-admin'
+    entrypoint: 'gcloud'
+    args:
+      [
+        "run",
+        "deploy",
+        "braavos-admin",
+        "--image",
+        "us.gcr.io/wingo-registry/braavos:${SHORT_SHA}",
+        "--region",
+        "us-east1",
+        "--platform",
+        "managed",
+        "--command",
+        "/wingocard/braavosadmin",
+        "--args=-e,/wingocard/config.env",
+        "--no-allow-unauthenticated",
+        "--vpc-connector",
+        "braavos-admin-vpc-con",
+        "--service-account",
+        "braavos-admin-service-account@wingocard-production.iam.gserviceaccount.com",
+      ]
+images: [
+  "us.gcr.io/wingo-registry/braavos:${SHORT_SHA}",
+  "us.gcr.io/wingo-registry/braavos:jobs-latest"
+  ]
+
+options:
+  env: [
+    'GOFLAGS=-mod=vendor'
+  ]

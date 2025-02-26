@@ -1,0 +1,149 @@
+[
+	{
+		"name": "hoffman-wingo-mvp",
+		"rootPath": "/Users/salvatoredagostino/Dev/wingo/marketing-site/hoffman/wingo",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "jolly-helper",
+		"rootPath": "/Users/salvatoredagostino/Dev/golang/src/github.com/iToto/jolly-helper",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "home-files",
+		"rootPath": "/Users/salvatoredagostino/Dev/home-files",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "braavos",
+		"rootPath": "/Users/salvatoredagostino/Dev/golang/src/github.com/wingocard/braavos",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "serum",
+		"rootPath": "/Users/salvatoredagostino/Dev/golang/src/github.com/wingocard/serum",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "gcpubsub",
+		"rootPath": "/Users/salvatoredagostino/Dev/golang/src/github.com/wingocard/gcpubsub",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "tycho",
+		"rootPath": "/Users/salvatoredagostino/Dev/golang/src/github.com/wingocard/tycho",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "docker-files",
+		"rootPath": "/Users/salvatoredagostino/Dev/wingo/docker-files",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "utils",
+		"rootPath": "/Users/salvatoredagostino/Dev/golang/src/github.com/wingocard/utils",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "server-for-mobile-interview",
+		"rootPath": "/Users/salvatoredagostino/Dev/golang/src/github.com/wingocard/server-for-mobile-interview",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "syrio",
+		"rootPath": "/Users/salvatoredagostino/Dev/golang/src/github.com/wingocard/syrio",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "platform-devops",
+		"rootPath": "/Users/salvatoredagostino/Dev/wingo/platform-devops",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "workbench",
+		"rootPath": "/Users/salvatoredagostino/Dev/wingo/workbench",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "yield-mvp",
+		"rootPath": "/Users/salvatoredagostino/Dev/lunait-clients/yield/yield-mvp",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "varys",
+		"rootPath": "/Users/salvatoredagostino/Dev/golang/src/github.com/wingocard/varys",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "Yield Configuration Files",
+		"rootPath": "/Volumes/GoogleDrive-117010697974839036951/My Drive/Yield Technologies/Private/Configuration Files",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "yield-signal-logger",
+		"rootPath": "/Users/salvatoredagostino/Dev/lunait-clients/yield/yield-signal-logger",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "vino-amici",
+		"rootPath": "/Users/salvatoredagostino/Dev/projects/vino-amici",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "boilerplate-go-api",
+		"rootPath": "/Users/salvatoredagostino/Dev/projects/boilerplate-go-api",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "qr-tracker",
+		"rootPath": "/Users/salvatoredagostino/Dev/projects/qr-tracker",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "social-links-api",
+		"rootPath": "/Users/salvatoredagostino/Dev/projects/social-links-api",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	}
+]

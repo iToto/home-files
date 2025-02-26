@@ -1,0 +1,88 @@
+{
+	"name": "mdc",
+	"packageManager": "pnpm@8.7.1",
+	"displayName": "MDC - Markdown Components",
+	"description": "Provides syntax highlighting and colon matching for MDC (Markdown Components) files for Nuxt Content.",
+	"version": "0.2.0",
+	"publisher": "Nuxt",
+	"icon": "images/icon.png",
+	"repository": {
+		"url": "https://github.com/nuxtlabs/vscode-mdc",
+		"type": "git"
+	},
+	"homepage": "https://github.com/nuxtlabs/vscode-mdc/blob/main/README.md",
+	"license": "MIT",
+	"engines": {
+		"vscode": "^1.42.0"
+	},
+	"categories": [
+		"Programming Languages",
+		"Snippets"
+	],
+	"contributes": {
+		"languages": [
+			{
+				"id": "mdc",
+				"aliases": [
+					"MDC",
+					"mdc",
+					"Markdown Components",
+					"Nuxt Content"
+				],
+				"configuration": "./language-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "mdc",
+				"scopeName": "text.markdown.mdc",
+				"path": "./syntaxes/mdc.tmLanguage.json",
+				"injectTo": [
+					"text.html.markdown",
+					"text.html.markdown.jsx"
+				]
+			}
+		],
+		"snippets": [
+			{
+				"language": "mdc",
+				"path": "./snippets/markdown.code-snippets"
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run build",
+		"build": "esno scripts/build.ts",
+		"dev": "esno watch scripts/build.ts",
+		"lint": "eslint src --ext ts",
+		"test": "vitest",
+		"release": "standard-version && git push --follow-tags",
+		"generate": "vsce package --no-dependencies",
+		"publish": "vsce publish --no-dependencies"
+	},
+	"devDependencies": {
+		"@nuxtjs/eslint-config-typescript": "^12.1.0",
+		"@types/node": "^18.17.12",
+		"@types/vscode": "1.42.0",
+		"@vscode/vsce": "^2.21.0",
+		"eslint": "^8.48.0",
+		"esno": "^0.17.0",
+		"standard-version": "^9.5.0",
+		"typescript": "5.2.2",
+		"vscode-textmate": "^9.0.0"
+	},
+	"__metadata": {
+		"id": "53bfb95c-4567-441b-b6fe-a8ccb555bcd4",
+		"publisherId": "af9a2388-243a-4b50-ba4b-3ee7fa8ae7fa",
+		"publisherDisplayName": "Nuxt",
+		"targetPlatform": "undefined",
+		"isApplicationScoped": false,
+		"isPreReleaseVersion": false,
+		"hasPreReleaseVersion": false,
+		"installedTimestamp": 1720982804632,
+		"pinned": false,
+		"preRelease": false,
+		"source": "gallery",
+		"size": 186428
+	}
+}
